@@ -1,0 +1,49 @@
+//choose-list
+.choose-list{
+  display: none;
+  position: absolute;
+  top: 104px;
+  left: 38px;
+  box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+  border-radius: 4px;
+  background: #fff;
+  width: 543px;
+  box-sizing: border-box;
+  padding-top: 19px;
+  padding-bottom: 44px;
+  z-index: 1;
+  max-height: 960px;
+  overflow-y: auto;
+
+  &--subcategory{
+    top: 27px;
+  }
+
+  &--show{
+    display: block;
+  }
+
+  &__item{
+    display: block;
+  }
+
+  &__link{
+    display: block;
+    padding-top: 25px;
+    padding-left: 32px;
+    padding-bottom: 21px;
+    font-family: $open-sans;
+    font-size: $smaller-font-size-plus + px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $dark;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+
+    &:hover,
+    &focus{
+      background: $border;
+    }
+  }
+}

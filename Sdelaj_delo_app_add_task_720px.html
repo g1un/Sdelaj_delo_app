@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Сделай дело</title>
+    <meta name="viewport" content="width=device-width">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400|Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="task-header">
+      <div class="task-header__menu"></div>
+      <div class="task-header__text">
+        Создать задание
+      </div>
+      <div class="task-header__button"></div>
+    </header>
+
+    <form class="task-form" action="#" method="post">
+      <div class="task-form__item">
+        <div class="task-form__label task-form__label--category">
+          Выбрать категорию
+        </div>
+        <input class="task-form__select" id="task-form__category" type="text" name="task-form__category" value="Бытовой ремонт" disabled required>
+        <a class="task-form__link task-form__link--category" href="#"></a>
+      </div>
+
+      <div class="task-form__item">
+        <div class="task-form__label task-form__label--select task-form__label--subcategory">
+          Выбрать подкатегорию
+        </div>
+        <input class="task-form__select" id="task-form__subcategory" type="text" name="task-form__category" value="" disabled required>
+        <a class="task-form__link task-form__link--subcategory" href="#"></a>
+      </div>
+
+      <div class="task-form__item clearfix">
+        <label class="task-form__label task-form__label--task-text" for="task-form__task-text">Коротко сформулируйте задачу</label>
+        <textarea class="task-form__task-text task-form__input-text" id="task-form__task-text" name="task-form__task-text" required>Дос
+        </textarea>
+
+        <label class="task-form__button" for="task-form__foto">Добавить фото</label>
+        <input class="task-form__foto-input" type="file" id="task-form__foto" name="task-form__foto">
+
+      </div>
+
+      <div class="task-form__item">
+        <label class="task-form__label task-form__label--date" for="task-form__date">Время и дата</label>
+        <div class="task-form__input-link task-form__input-link--date task-form__label--select">
+          <input class="task-form__input task-form__input-text" id="task-form__date" type="text" name="task-form__date" value="1 Января 2015" disabled required>
+          <a class="task-form__link task-form__link--date" href="#"></a>
+        </div>
+        <div class="task-form__input-link task-form__input-link--time task-form__label--select">
+          <input class="task-form__input task-form__input-text" id="task-form__time" type="text" name="task-form__time" value="12:00" disabled required>
+          <a class="task-form__link task-form__link--time" href="#"></a>
+        </div>
+      </div>
+
+      <div class="task-form__item task-form__item--address clearfix">
+        <div class="task-form__label task-form__label--address">
+          Адрес
+        </div>
+        <div class="task-form__input-link task-form__input-link--address task-form__label--select">
+          <input class="task-form__input task-form__input-text" id="task-form__city" name="task-form__city" value="Хабаровск" disabled required>
+          <a class="task-form__link task-form__link--city" href="#"></a>
+        </div>
+
+        <textarea class="task-form__address task-form__input-text" id="task-form__address" name="task-form__address" placeholder="Улица, номер дома" required></textarea>
+
+        <div class="task-form__button task-form__button--address">Добавить адрес</div>
+      </div>
+
+      <div class="task-form__item">
+        <div class="task-form__label task-form__label--payment">Оплата</div>
+
+        <input class="task-form__payment-input" id="task-form__pay-variant-1" type="radio" name="task-form__pay-radio">
+        <label class="task-form__payment-label task-form__input-text" for="task-form__pay-variant-1">Цену предлагают исполнители</label>
+
+        <input class="task-form__payment-input" id="task-form__pay-variant-2" type="radio" name="task-form__pay-radio" checked>
+        <label class="task-form__payment-label task-form__input-text" for="task-form__pay-variant-2">Я готов заплатить за работу</label>
+      </div>
+
+      <div class="task-form__item">
+        <div class="task-form__label task-form__label--contacts">Контакты и публикация</div>
+        <label class="task-form__address-label task-form__input-text" for="task-form__contacts">Номер телефона</label>
+        <input class="task-form__input task-form__input-text task-form__input-text--tel" id="task-form__contacts" type="text" name="task-form__contacts" placeholder="(###) ### - ## - ##" required>
+        <p class="task-form__tel-text task-form__input-text">Номер будет доступен выбранному исполнителю</p>
+      </div>
+
+      <div class="task-form__item task-form__item--sms">
+        <input class="task-form__sms-notification" id="task-form__sms-notification" type="checkbox" name="task-form__sms-notification" checked>
+        <label class="task-form__label task-form__checkbox" for="task-form__sms-notification">Получать смс о новых предложениях</label>
+      </div>
+
+      <div class="task-form__item task-form__item--loading">
+        <input class="task-form__loading" id="task-form__loading" type="checkbox" name="task-form__loading">
+        <label class="task-form__label task-form__checkbox task-form__checkbox--loading" for="task-form__loading">В стоимость входят услуги погрузки</label>
+      </div>
+
+      <div class="task-form__item--publish">
+        <input class="task-form__publish" type="submit" name="task-form__publish" value="Опубликовать задание">
+      </div>
+
+      <ul class="choose-list choose-list--category">
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и установка бытовой техники</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Транспортные перевозки и курьерские услуги</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и строительство</a></li>
+      </ul>
+
+      <ul class="choose-list choose-list--subcategory">
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Мелкий бытовой ремонт</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт под ключ</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Отделочные работы</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Сантехнические услуги</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Электрика</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Ворота, ограждения, рольставни</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Благоустройство и земляные работы</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Изготовление, сборка, ремонт мебели</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Услуги плотника</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Окна и балконы</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Натяжные потолки</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Малоэтажное строительство</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Установка, ремонт дверей</a></li>
+        <li class="choose-list__item"><a class="choose-list__link" href="#">Прочее</a></li>
+      </ul>
+
+    </form>
+
+    <script src='js/script.js'></script>
+  </body>
+</html>

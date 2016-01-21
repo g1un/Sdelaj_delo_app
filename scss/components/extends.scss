@@ -1,0 +1,14 @@
+//extends
+.three-points-button{
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 39px;
+    right: 28px;
+    width: 6px;
+    height: 40px;
+    background: url("../img/sprite.svg") no-repeat 0 -66px;
+  }
+}

@@ -1,0 +1,86 @@
+//task-header
+.task-header{
+  min-height: 111px;
+  width: 100%;
+  background: $sand;
+  padding-top: 35px;
+  padding-left: 38px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 7px 0 #8d742d;
+
+  &--all-tasks{
+    min-height: 195px;
+  }
+
+  &__menu{
+    float: left;
+    margin-right: 35px;
+    width: 36px;
+    height: 25px;
+    background: url(../img/sprite.svg) no-repeat 0 0;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+
+  &__text{
+    font-family: $roboto;
+    font-size: $big-font-size + px;
+    line-height: 40/$big-font-size + em;
+    font-weight: 400;
+    color: $dark;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    float: left;
+  }
+
+  &__button{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.svg) no-repeat 0 -25px;
+    cursor: pointer;
+    margin-top: -2px;
+    margin-right: 38px;
+  }
+
+  &__types{
+    clear: both;
+    font-size: 0;
+    margin-top: 71px;
+
+    &-item{
+      display: inline-block;
+      margin-right: 50px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &--active{
+        margin-right: 21px;
+      }
+    }
+
+    &-link{
+      font-family: $roboto;
+      font-size: $smaller-font-size + px;
+      line-height: 30/$smaller-font-size + em;
+      font-weight: 400;
+      color: $dirty-sand;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: .01em;
+      padding: 26px 0;
+
+      &--active{
+        font-weight: 700;
+        color: #fff;
+        display: block;
+        width: 202px;
+        text-align: center;
+        background: $foxy;
+      }
+    }
+  }
+}
