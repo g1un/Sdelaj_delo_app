@@ -1,94 +1,80 @@
 //script
 
-//category/subcategory-list
+//choose-list
 if(document.querySelector('.choose-list')){
-  var linkCategory = document.querySelector('.task-form__link--category');
-  var chooseList = document.querySelectorAll('.choose-list');
+  var chooseListLinkCategory = document.querySelector('.task-form__link--category');
+  var chooseListLinkSubcategory = document.querySelector('.task-form__link--subcategory');
   var chooseListCategory = document.querySelector('.choose-list--category');
-  var linkSubcategory = document.querySelector('.task-form__link--subcategory');
   var chooseListSubcategory = document.querySelector('.choose-list--subcategory');
-  var closingHeader = document.querySelector('.task-header');
-  var closingForm = document.querySelector('.task-form');
 
-  linkCategory.addEventListener('click', function(event) {
+  chooseListLinkCategory.addEventListener('click', function(event) {
     event.preventDefault();
-    var show = 1;
-    if (chooseListCategory.classList.contains('choose-list--show')){
-      show = 0;
-    }
-    for (var i=0; i<chooseList.length; i++){
-      chooseList[i].classList.remove('choose-list--show');
-    }
-    if (show){
-      chooseListCategory.classList.toggle('choose-list--show');
-    }
-    show = 1;
+    chooseListCategory.classList.toggle('choose-list--show');
   });
 
-  linkSubcategory.addEventListener('click', function(event) {
+  chooseListLinkSubcategory.addEventListener('click', function(event) {
     event.preventDefault();
-    var show = 1;
-    if (chooseListSubcategory.classList.contains('choose-list--show')){
-      show = 0;
-    }
-    for (var i=0; i<chooseList.length; i++){
-      chooseList[i].classList.remove('choose-list--show');
-    }
-    if (show){
-      chooseListSubcategory.classList.toggle('choose-list--show');
-    }
-    show = 1;
+    chooseListSubcategory.classList.toggle('choose-list--show');
+  });
+}
+
+//choose-list__form
+if(document.querySelector('.choose-list__form--task-types')){
+  var taskTypesLink = document.querySelector('.tasks__title-link--task-types');
+  var taskTypes = document.querySelector('.choose-list__form--task-types');
+  var taskTypesCancel = document.querySelector('.choose-list__form-cancel--task-types');
+
+  taskTypesLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    taskTypes.classList.toggle('choose-list--show');
   });
 
-  document.addEventListener('click', function(){
-    if (document.querySelector('.choose-list--show')){
+  taskTypesCancel.addEventListener('click', function(event) {
+    event.preventDefault();
+    taskTypes.classList.toggle('choose-list--show');
+  });
+}
 
-      //select elements
-      var chooseListCategoryId = document.getElementById('choose-list--category');
-      var chooseListSubCategoryId = document.getElementById('choose-list--subcategory');
+//choose-list__form--task-status
+if(document.querySelector('.choose-list__form--task-status')){
+  var myTasksTypesLink = document.querySelectorAll('.task-header__types--task-status a');
+  var myTasksTypes = document.querySelector('.choose-list__form--task-status');
+  var myTasksTypesCancel = document.querySelector('.choose-list__form-cancel');
 
-      //click on a box does nothing
-      chooseListCategoryId.onclick = function (e) {
-        e = e || window.event;
-        e.cancelBubble = true;
-        if (e.stopPropagation)
-          e.stopPropagation();
-      }
-      chooseListSubCategoryId.onclick = function (e) {
-        e = e || window.event;
-        e.cancelBubble = true;
-        if (e.stopPropagation)
-          e.stopPropagation();
-      }
-      linkCategory.onclick = function (e) {
-        e = e || window.event;
-        e.cancelBubble = true;
-        if (e.stopPropagation)
-          e.stopPropagation();
-      }
-      linkSubcategory.onclick = function (e) {
-        e = e || window.event;
-        e.cancelBubble = true;
-        if (e.stopPropagation)
-          e.stopPropagation();
-      }
-      // click everywhere else closes the box
-      function close_box() {
-        if(document.querySelector('.choose-list--show')){
-          chooseListCategoryId.classList.remove('choose-list--show');
-          chooseListSubCategoryId.classList.remove('choose-list--show');
-        }
-      }
+  for(var i=0; i<myTasksTypesLink.length; i++){
+    myTasksTypesLink[i].addEventListener('click', function(event) {
+      event.preventDefault();
+      myTasksTypes.classList.toggle('choose-list--show');
+    });
+  }
 
-      //register close event handlers
-      document.onclick = close_box;
-    }
+
+  myTasksTypesCancel.addEventListener('click', function(event) {
+    event.preventDefault();
+    myTasksTypes.classList.toggle('choose-list--show');
+  });
+}
+
+//task-header menu
+if(document.querySelector('.task-header__button')){
+  var menuLink = document.querySelector('.task-header__button');
+  var headerMenu = document.querySelector('.task-header__menu');
+  var menuClose = document.querySelector('.task-header__menu-close');
+
+  menuLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    headerMenu.classList.toggle('choose-list--show');
+  });
+
+  menuClose.addEventListener('click', function(event) {
+    event.preventDefault();
+    headerMenu.classList.toggle('choose-list--show');
   });
 }
 
 //side-menu
 if(document.querySelector('.side-menu')){
-  var sideMenulink = document.querySelector('.task-header__menu');
+  var sideMenulink = document.querySelector('.task-header__sandwich');
   var sideMenu = document.querySelector('.side-menu');
   var background = document.querySelector('.background');
   var back = document.querySelector('.side-menu__footer-back-link');

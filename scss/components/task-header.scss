@@ -7,12 +7,13 @@
   padding-left: 38px;
   box-sizing: border-box;
   box-shadow: 0 3px 7px 0 #8d742d;
+  position: relative;
 
   &--all-tasks{
     min-height: 195px;
   }
 
-  &__menu{
+  &__sandwich{
     float: left;
     margin-right: 35px;
     width: 36px;
@@ -80,6 +81,145 @@
         width: 202px;
         text-align: center;
         background: $foxy;
+      }
+    }
+  }
+
+  &__menu{
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: 24px;
+    max-width: 543px;
+    border-radius: 8px;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+    background: #fff;
+    box-sizing: border-box;
+    padding: 39px 10px 27px;
+    z-index: 1;
+
+    &-list{
+      font-size: 0;
+    }
+
+    &-item{
+      display: inline-block;
+      vertical-align: top;
+      width: 174px;
+      min-height: 140px;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    &-link{
+      display: block;
+      font-family: $open-sans-reg;
+      font-size: $smallest-font-size + px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: $light-grey-plus;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      padding-top: 47px;
+      position: relative;
+      
+      &--main{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 45px;
+          width: 45px;
+          height: 34px;
+          background: url("../img/house-icon--gold.svg") no-repeat 0 0;
+        }        
+      }
+
+      &--add-task{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 53px;
+          width: 30px;
+          height: 35px;
+          background: url("../img/add-task-icon--gold.svg") no-repeat 0 0;
+        }
+      }
+
+      &--all-tasks{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 57px;
+          width: 29px;
+          height: 35px;
+          background: url("../img/all-tasks-icon--gold.svg") no-repeat 0 0;
+        }
+      }
+
+      &--profile{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 53px;
+          width: 26px;
+          height: 34px;
+          background: url("../img/profile-icon--gold.svg") no-repeat 0 0;
+        }
+      }
+
+      &--news{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 47px;
+          width: 35px;
+          height: 31px;
+          background: url("../img/news-icon--gold.svg") no-repeat 0 0;
+        }
+      }
+
+      &--contacts{
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 49px;
+          width: 34px;
+          height: 24px;
+          background: url("../img/contacts-icon--gold.svg") no-repeat 0 0;
+        }
+      }
+    }
+
+    &-close{
+      float: right;
+      font-family: $roboto;
+      font-size: $smaller-font-size-plus + px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: $light-grey-plus;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-right: 26px;
+      cursor: pointer;
+
+      &:hover,
+      &:focus{
+        color: $sand-green;
       }
     }
   }

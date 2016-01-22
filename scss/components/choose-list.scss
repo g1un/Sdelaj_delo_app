@@ -15,10 +15,6 @@
   max-height: 960px;
   overflow-y: auto;
 
-  &--show{
-    display: block;
-  }
-
   &__item{
     display: block;
   }
@@ -41,5 +37,134 @@
     &focus{
       background: $border;
     }
+  }
+
+  &__form{
+    display: none;
+    position: absolute;
+    top: 104px;
+    right: 139px;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,.19);
+    border-radius: 4px;
+    background: #fff;
+    width: 526px;
+    box-sizing: border-box;
+    padding: 29px 10px 41px 25px;
+    z-index: 1;
+    overflow-y: auto;
+
+    &--task-status{
+      top: 170px;
+      max-width: 440px;
+    }
+
+    &-title{
+      font-family: $open-sans;
+      font-size: $smaller-font-size-plus + px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: $dark;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-bottom: 51px;
+    }
+
+    &-buttons{
+      width: 378px;
+      margin-top: 57px;
+      margin-left: 76px;
+
+      &--task-status{
+        margin-left: 5px;
+      }
+    }
+
+    &-cancel{
+      display: block;
+      float: left;
+      font-family: $roboto;
+      font-size: $medium-font-size + px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: $light-grey-plus;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+
+      &:hover,
+      &:focus{
+        color: $sand-green;
+      }
+    }
+  }
+
+  &__input{
+    display: none;
+
+    &:checked + label{
+
+      &:before{
+        border-color: $sand-green;
+      }
+    }
+  }
+
+  &__label{
+    display: block;
+    font-family: $open-sans-reg;
+    font-size: $smaller-font-size-plus + px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $dark;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin-bottom: 43px;
+    padding-left: 78px;
+    cursor: pointer;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 20px;
+      border-left: 3px solid;
+      border-bottom: 3px solid;
+      border-color: $border;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__submit{
+    display: block;
+    float: right;
+    font-family: $roboto;
+    font-size: $medium-font-size + px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $light-grey-plus;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+
+    &:hover,
+    &:focus{
+      color: $sand-green;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--show{
+    display: block;
   }
 }

@@ -1,14 +1,42 @@
 //extends
-.three-points-button{
-  position: relative;
+//.three-points-button{
+//  position: relative;
+//
+//  &:after{
+//    content: '';
+//    position: absolute;
+//    top: 39px;
+//    right: 28px;
+//    width: 6px;
+//    height: 40px;
+//    background: url("../img/sprite.svg") no-repeat 0 -66px;
+//  }
+//}
 
-  &:after{
-    content: '';
-    position: absolute;
-    top: 39px;
-    right: 28px;
-    width: 6px;
-    height: 40px;
-    background: url("../img/sprite.svg") no-repeat 0 -66px;
+.three-points-button{
+  display: block;
+  position: absolute;
+  top: 31px;
+  right: 9px;
+  width: 66px;
+  height: 66px;
+  background: url("../img/action-button.svg") no-repeat 0 0;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus{
+    background: url("../img/action-button--hover.svg") no-repeat 0 0;
+  }
+
+  &--date{
+    top: -19px;
+  }
+
+  &--time{
+    top: -12px;
+  }
+
+  &--city{
+    top: -10px;
   }
 }

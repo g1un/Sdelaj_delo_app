@@ -1,0 +1,65 @@
+//my tasks
+.my-tasks{
+
+  &__info{
+    font-family: $open-sans-reg;
+    font-size: $smallest-font-size + px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $light-grey-plus;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    padding: 37px 0 33px 36px;
+    border-bottom: 3px solid #E5E4E4;
+  }
+
+  &__item{
+    padding: 0 37px 37px;
+    border-bottom: 3px solid #E5E4E4;
+
+    &:last-child{
+      border: none;
+    }
+
+    &-price{
+      float: right;
+      font-family: $roboto;
+      font-size: $big-font-size + px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: $light-grey-plus;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-top: 17px;
+    }
+  }
+
+  &__cancel{
+    float: left;
+    margin-top: 24px;
+    margin-right: 28px;
+    background: url("../img/cancel-icon.svg") no-repeat 0 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+  }
+
+  &__link{
+    display: block;
+    float: left;
+    font-family: $roboto;
+    font-size: $big-font-size + px;
+    line-height: 1em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    max-width: 380px;
+    margin-top: 26px;
+  }
+
+
+}
