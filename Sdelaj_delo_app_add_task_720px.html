@@ -24,6 +24,14 @@
         </div>
         <input class="task-form__select" id="task-form__category" type="text" name="task-form__category" value="Бытовой ремонт" disabled required>
         <a class="task-form__link task-form__link--category" href="#"></a>
+
+        <!--popup category list-->
+        <ul class="choose-list choose-list--category" id="choose-list--category">
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и установка бытовой техники</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Транспортные перевозки и курьерские услуги</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и строительство</a></li>
+        </ul>
+        <!--end of popup category list-->
       </div>
 
       <div class="task-form__item">
@@ -32,6 +40,25 @@
         </div>
         <input class="task-form__select" id="task-form__subcategory" type="text" name="task-form__category" value="" disabled required>
         <a class="task-form__link task-form__link--subcategory" href="#"></a>
+
+        <!--popup subcategory list-->
+        <ul class="choose-list choose-list--subcategory" id="choose-list--subcategory">
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Мелкий бытовой ремонт</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт под ключ</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Отделочные работы</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Сантехнические услуги</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Электрика</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Ворота, ограждения, рольставни</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Благоустройство и земляные работы</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Изготовление, сборка, ремонт мебели</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Услуги плотника</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Окна и балконы</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Натяжные потолки</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Малоэтажное строительство</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Установка, ремонт дверей</a></li>
+          <li class="choose-list__item"><a class="choose-list__link" href="#">Прочее</a></li>
+        </ul>
+        <!--end of popup subcategory list-->
       </div>
 
       <div class="task-form__item clearfix">
@@ -101,30 +128,42 @@
         <input class="task-form__publish" type="submit" name="task-form__publish" value="Опубликовать задание">
       </div>
 
-      <ul class="choose-list choose-list--category">
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и установка бытовой техники</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Транспортные перевозки и курьерские услуги</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт и строительство</a></li>
-      </ul>
-
-      <ul class="choose-list choose-list--subcategory">
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Мелкий бытовой ремонт</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Ремонт под ключ</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Отделочные работы</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Сантехнические услуги</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Электрика</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Ворота, ограждения, рольставни</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Благоустройство и земляные работы</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Изготовление, сборка, ремонт мебели</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Услуги плотника</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Окна и балконы</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Натяжные потолки</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Малоэтажное строительство</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Установка, ремонт дверей</a></li>
-        <li class="choose-list__item"><a class="choose-list__link" href="#">Прочее</a></li>
-      </ul>
-
     </form>
+
+    <!--side-menu-->
+    <div class="side-menu">
+      <footer class="side-menu__footer">
+        <div class="side-menu__footer-icon"></div>
+        <a class="side-menu__footer-back-link" href="#">Создать задание</a>
+        <div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+        <div class="side-menu__footer-user-name">Татьяна Иванова</div>
+      </footer>
+
+      <ul class="side-menu__list">
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+        </li>
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+            <span class="side-menu__list-link-number">3</span>Мои задания
+          </a>
+        </li>
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+        </li>
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+        </li>
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+        </li>
+        <li class="side-menu__list-item">
+          <a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+        </li>
+      </ul>
+    </div>
+    <div class="background"></div>
+    <!--end of side-menu-->
 
     <script src='js/script.js'></script>
   </body>

@@ -3,7 +3,7 @@
   display: none;
   position: absolute;
   top: 104px;
-  left: 38px;
+  right: 139px;
   box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
   border-radius: 4px;
   background: #fff;
@@ -14,10 +14,6 @@
   z-index: 1;
   max-height: 960px;
   overflow-y: auto;
-
-  &--subcategory{
-    top: 27px;
-  }
 
   &--show{
     display: block;
