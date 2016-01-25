@@ -1,0 +1,38 @@
+//news
+.news{
+
+  &__list{
+
+    &-item{
+      padding: 30px 20px 21px 29px;
+      border-bottom: 3px solid $button;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      &-img{
+        display: block;
+        float: left;
+        margin-top: 13px;
+        margin-left: 5px;
+        width: 93px;
+
+        img{
+          max-width: 100%;
+        }
+      }
+
+      &-link{
+        display: block;
+        margin-left: 131px;
+        margin-bottom: 11px;
+      }
+
+      &-date{
+        display: block;
+        margin-left: 131px;
+      }
+    }
+  }
+}

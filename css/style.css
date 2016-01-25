@@ -92,6 +92,37 @@ ul, p, h1, h2, h3 {
   top: -10px;
 }
 
+.text-main {
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.text-middle {
+  font-family: "Open Sans Reg";
+  font-size: 28px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.text-undermain {
+  font-family: "Open Sans Reg";
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #949594;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
 .task-header {
   min-height: 111px;
   width: 100%;
@@ -1301,6 +1332,90 @@ ul, p, h1, h2, h3 {
   letter-spacing: 0;
   max-width: 380px;
   margin-top: 26px;
+}
+
+.news__list-item {
+  padding: 30px 20px 21px 29px;
+  border-bottom: 3px solid #f2f2f2;
+}
+.news__list-item:last-child {
+  border-bottom: none;
+}
+.news__list-item-img {
+  display: block;
+  float: left;
+  margin-top: 13px;
+  margin-left: 5px;
+  width: 93px;
+}
+.news__list-item-img img {
+  max-width: 100%;
+}
+.news__list-item-link {
+  display: block;
+  margin-left: 131px;
+  margin-bottom: 11px;
+}
+.news__list-item-date {
+  display: block;
+  margin-left: 131px;
+}
+
+.notifications__list-item {
+  padding: 18px 27px 20px 161px;
+  border-bottom: 3px solid #f2f2f2;
+  position: relative;
+}
+.notifications__list-item:last-child {
+  border-bottom: none;
+}
+.notifications__list-item::before {
+  content: '';
+  position: absolute;
+  top: 37px;
+  left: 34px;
+  width: 93px;
+  height: 93px;
+  background: url("../img/notification-icon--big.svg") no-repeat 0 0;
+}
+.notifications__list-item--unread::before {
+  background: url("../img/notification-icon--big-green.svg") no-repeat 0 0;
+}
+.notifications__list-item-time {
+  display: block;
+  float: left;
+  color: #000;
+  margin-bottom: 17px;
+}
+.notifications__list-item-status {
+  display: block;
+  float: right;
+}
+.notifications__list-item-link {
+  clear: both;
+  display: block;
+  max-height: 68px;
+  margin-bottom: 11px;
+  overflow: hidden;
+  line-height: 1.25em;
+  -webkit-transition: all .5s;
+          transition: all .5s;
+}
+.notifications__list-item-close {
+  display: none;
+  float: right;
+  color: #d7d7d7;
+  cursor: pointer;
+  position: relative;
+}
+.notifications__list-item-close::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -31px;
+  width: 15px;
+  height: 21px;
+  background: url("../img/arrow-up-icon.svg") no-repeat 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+//notifications
+.notifications{
+
+  &__list{
+
+    &-item{
+      padding: 18px 27px 20px 161px;
+      border-bottom: 3px solid $button;
+      position: relative;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 37px;
+        left: 34px;
+        width: 93px;
+        height: 93px;
+        background: url("../img/notification-icon--big.svg") no-repeat 0 0;
+      }
+
+      &--unread{
+
+        &::before{
+          background: url("../img/notification-icon--big-green.svg") no-repeat 0 0;
+        }
+      }
+
+      &-time{
+        display: block;
+        float: left;
+        color: #000;
+        margin-bottom: 17px;
+      }
+
+      &-status{
+        display: block;
+        float: right;
+      }
+
+      &-link{
+        clear: both;
+        display: block;
+        max-height: 68px;
+        margin-bottom: 11px;
+        overflow: hidden;
+        line-height: 1.25em;
+        transition: all .5s;
+      }
+
+      &-close{
+        display: none;
+        float: right;
+        color: $light-grey;
+        cursor: pointer;
+        position: relative;
+
+        &::before{
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -31px;
+          width: 15px;
+          height: 21px;
+          background: url("../img/arrow-up-icon.svg") no-repeat 0 0;
+        }
+      }
+    }
+  }
+}

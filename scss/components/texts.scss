@@ -1,0 +1,36 @@
+//texts
+.text{
+
+  &-main{
+    font-family: $roboto;
+    font-size: $big-font-size + px; //36
+    line-height: 1em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  &-middle{
+    font-family: $open-sans-reg;
+    font-size: $smaller-font-size-plus + px; //28
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  &-undermain{
+    font-family: $open-sans-reg;
+    font-size: $smallest-font-size + px; //24
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $light-grey-plus;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+}

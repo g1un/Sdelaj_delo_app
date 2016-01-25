@@ -103,3 +103,26 @@ if(document.querySelector('.side-menu')){
     setTimeout(function(){background.classList.remove('background--show');}, 500);
   });
 }
+
+//notifications open/close
+if(document.querySelector('.notifications__list')){
+  var notificationslink = document.querySelectorAll('.notifications__list-item-link');
+  var notificationsClose = document.querySelectorAll('.notifications__list-item-close');
+
+  for(i=0; i<notificationslink.length; i++){
+    notificationslink[i].addEventListener('click', function(event) {
+      event.preventDefault();
+      this.style.maxHeight = 'none';
+      this.nextElementSibling.style.display = 'block';
+    });
+  }
+
+  for(i=0; i<notificationslink.length; i++){
+    notificationsClose[i].addEventListener('click', function(event) {
+      event.preventDefault();
+      this.style.display = 'none';
+      this.previousElementSibling.style.maxHeight = '68px';
+    });
+  }
+
+}
