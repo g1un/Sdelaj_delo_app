@@ -24,7 +24,7 @@
   }
 
   &__text{
-    font-family: $roboto;
+    font-family: Roboto-Regular, Arial, sans-serif;
     font-size: $big-font-size + px;
     line-height: 40/$big-font-size + em;
     font-weight: 400;
@@ -64,7 +64,7 @@
     }
 
     &-link{
-      font-family: $roboto;
+      font-family: Roboto-Regular, Arial, sans-serif;
       font-size: $smaller-font-size + px;
       line-height: 30/$smaller-font-size + em;
       font-weight: 400;
@@ -113,7 +113,7 @@
 
     &-link{
       display: block;
-      font-family: $open-sans-reg;
+      font-family: OpenSans-Regular, Arial, sans-serif;
       font-size: $smallest-font-size + px;
       line-height: 1.2em;
       font-weight: 400;
@@ -206,7 +206,7 @@
 
     &-close{
       float: right;
-      font-family: $roboto;
+      font-family: Roboto-Regular, Arial, sans-serif;
       font-size: $smaller-font-size-plus + px;
       line-height: 1.2em;
       font-weight: 400;

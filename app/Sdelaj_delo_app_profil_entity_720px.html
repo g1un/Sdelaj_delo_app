@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Сделай дело</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<header class="task-header task-header--all-tasks">
+			<div class="task-header__sandwich"></div>
+			<div class="task-header__text">
+				Профиль
+			</div>
+			<div class="task-header__button"></div>
+
+			<ul class="task-header__types task-header__types--task-status">
+				<li class="task-header__types-item task-header__types-item--active">
+					<a class="task-header__types-link" href="#">Обо мне</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="task-header__types-link task-header__types-link--active" href="#">Виды работ</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="task-header__types-link" href="#">Отзывы</a>
+				</li>
+			</ul>
+
+			<!--header-menu-->
+			<div class="task-header__menu clearfix">
+				<ul class="task-header__menu-list">
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--main" href="#">Главная</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--add-task" href="#">Создать задание</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--all-tasks" href="#">Все задания</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--profile" href="#">Мой профиль</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--news" href="#">Новости</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--contacts" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="task-header__menu-close">Закрыть</div>
+			</div>
+		</header>
+
+		<form class="profile-entity clearfix" action="#" method="get">
+			<div class="profile__img">
+				<img src="img/entity-logo.png" alt="entity-logo">
+				<a class="profile__img-edit" href="#"></a>
+			</div>
+
+			<div class="profile__name">Стройтрест</div>
+
+			<div class="profile__features clearfix">
+				<div class="profile__rating">
+					<div class="profile__thumbs">10</div>
+					<div class="profile__stars">5</div>
+					<div class="profile__hats">2</div>
+				</div>
+
+				<div class="profile__city">Хабаровск</div>
+			</div>
+
+			<div class="profile__note">Вы пока не создали ни одного задания</div>
+
+			<div class="profile__place">
+				<div class="profile__place-title">Место в общем рейтинге исполнителей</div>
+				<div class="profile__place-val">110</div>
+			</div>
+
+			<table class="profile-entity__requisites">
+				<tr class="profile-entity__tr">
+					<td class="profile-entity__td">
+						<label class="profile-entity__td-title" for="profile-entity__inn"></label>
+					</td>
+					<td class="profile-entity__td">
+						<input class="profile-entity__td-input" type="text" name="profile-entity__inn" id="profile-entity__inn">
+					</td>
+				</tr>
+				<tr class="profile-entity__tr">
+					<td class="profile-entity__td">
+						<label class="profile-entity__td-title" for="profile-entity__kpp"></label>
+					</td>
+					<td class="profile-entity__td">
+						<input class="profile-entity__td-input" type="text" name="profile-entity__kpp" id="profile-entity__kpp">
+					</td>
+				</tr>
+				<tr class="profile-entity__tr">
+					<td class="profile-entity__td">
+						<label class="profile-entity__td-title" for="profile-entity__ogrn"></label>
+					</td>
+					<td class="profile-entity__td">
+						<input class="profile-entity__td-input" type="text" name="profile-entity__ogrn" id="profile-entity__ogrn">
+					</td>
+				</tr>
+				<tr class="profile-entity__tr">
+					<td class="profile-entity__td">
+						<label class="profile-entity__td-title" for="profile-entity__checking-account"></label>
+					</td>
+					<td class="profile-entity__td">
+						<input class="profile-entity__td-input" type="text" name="profile-entity__checking-account" id="profile-entity__checking-account">
+					</td>
+				</tr>
+				<tr class="profile-entity__tr">
+					<td class="profile-entity__td">
+						<label class="profile-entity__td-title" for="profile-entity__correspondent-account"></label>
+					</td>
+					<td class="profile-entity__td">
+						<input class="profile-entity__td-input" type="text" name="profile-entity__correspondent-account" id="profile-entity__correspondent-account">
+					</td>
+				</tr>
+			</table>
+
+			<div class="profile__experience">
+				<label for="profile__experience">Опыт работы</label>
+				<textarea name="profile__experience" id="profile__experience" placeholder="Кратко опишите место работы, свои обязанности и достижения"></textarea>
+			</div>
+
+			<div class="profile__about">
+				<label for="profile__about">Опыт работы</label>
+				<textarea name="profile__about" id="profile__about" placeholder="Кратко опишите место работы, свои обязанности и достижения">
+					Компания осуществляет масштабное жилищное строительство в г. Хабаровск. В 2009 году компания построила в городе около 35 тыс.кв.метров высококачественного доступного жилья.  Также планы предусматривают строительство поселков малоэтажного жилья в рамках проекта Хабаровской Агломерации.
+				</textarea>
+			</div>
+
+			<div class="profile__conditions">
+				<label for="profile__conditions">Опыт работы</label>
+				<textarea name="profile__conditions" id="profile__conditions" placeholder="Например, фирма работает только удаленно"></textarea>
+			</div>
+
+			<input class="profile-entity__submit grey-button" type="submit" name="profile-entity__submit" id="profile-entity__submit" value="Сохранить">
+		</form>
+
+		<!--side-menu-->
+		<div class="side-menu">
+			<footer class="side-menu__footer">
+				<div class="side-menu__footer-icon"></div>
+				<a class="side-menu__footer-back-link" href="#">Все задания</a>
+				<div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+				<div class="side-menu__footer-user-name">Татьяна Иванова</div>
+			</footer>
+
+			<ul class="side-menu__list">
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+						<span class="side-menu__list-link-number">3</span>Мои задания
+					</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+				</li>
+			</ul>
+		</div>
+		<div class="background"></div>
+		<!--end of side-menu-->
+
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

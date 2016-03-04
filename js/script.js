@@ -124,5 +124,4 @@ if(document.querySelector('.notifications__list')){
       this.previousElementSibling.style.maxHeight = '68px';
     });
   }
-
 }

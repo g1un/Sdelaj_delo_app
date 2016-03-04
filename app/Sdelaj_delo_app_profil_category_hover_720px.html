@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Сделай дело</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<header class="task-header task-header--all-tasks">
+			<div class="task-header__sandwich"></div>
+			<div class="task-header__text">
+				Профиль
+			</div>
+			<div class="task-header__button"></div>
+
+			<ul class="task-header__types task-header__types--task-status">
+				<li class="task-header__types-item task-header__types-item--active">
+					<a class="task-header__types-link" href="#">Обо мне</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="task-header__types-link task-header__types-link--active" href="#">Виды работ</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="task-header__types-link" href="#">Отзывы</a>
+				</li>
+			</ul>
+
+			<!--header-menu-->
+			<div class="task-header__menu clearfix">
+				<ul class="task-header__menu-list">
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--main" href="#">Главная</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--add-task" href="#">Создать задание</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--all-tasks" href="#">Все задания</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--profile" href="#">Мой профиль</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--news" href="#">Новости</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--contacts" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="task-header__menu-close">Закрыть</div>
+			</div>
+		</header>
+
+		<form class="profile-choose-work clearfix">
+			<h2 class="profile-choose-work__title">Выберите виды выполняемых работ</h2>
+
+			<div class="profile-choose-work__list-title">
+				Грузоперевозки и курьерские услуги
+			</div>
+
+			<ul class="profile-choose-work__list">
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-1" id="profile-choose-work__check-input-1">
+					<label class="check-item" for="profile-choose-work__check-input-1">Мелкий бытовой ремонт</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-2" id="profile-choose-work__check-input-2">
+					<label class="check-item" for="profile-choose-work__check-input-2">Ремонт под ключ</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-3" id="profile-choose-work__check-input-3">
+					<label class="check-item" for="profile-choose-work__check-input-3">Отделочные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-4" id="profile-choose-work__check-input-4">
+					<label class="check-item" for="profile-choose-work__check-input-4">Сантехнические услуги</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-5" id="profile-choose-work__check-input-5">
+					<label class="check-item" for="profile-choose-work__check-input-5">Электрика</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-6" id="profile-choose-work__check-input-6">
+					<label class="check-item" for="profile-choose-work__check-input-6">Ворота, ограждения, рольставни</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-7" id="profile-choose-work__check-input-7">
+					<label class="check-item" for="profile-choose-work__check-input-7">Благоустройство и земляные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-8" id="profile-choose-work__check-input-8">
+					<label class="check-item" for="profile-choose-work__check-input-8">Изготовление, сборка, ремонт мебели</label>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-9" id="profile-choose-work__check-input-9">
+					<label class="check-item" for="profile-choose-work__check-input-9">Услуги плотника</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-10" id="profile-choose-work__check-input-10">
+					<label class="check-item" for="profile-choose-work__check-input-10">Окна и балконы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-11" id="profile-choose-work__check-input-11">
+					<label class="check-item" for="profile-choose-work__check-input-11">Натяжные потолки</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-12" id="profile-choose-work__check-input-12">
+					<label class="check-item" for="profile-choose-work__check-input-12">Малоэтажное строительство</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-13" id="profile-choose-work__check-input-13">
+					<label class="check-item" for="profile-choose-work__check-input-13">Установка, ремонт дверей</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-14" id="profile-choose-work__check-input-14">
+					<label class="check-item" for="profile-choose-work__check-input-14">Прочее</label>
+				</li>
+			</ul>
+
+			<div class="profile-choose-work__list-title">
+				Ремонт и строительство
+			</div>
+
+			<ul class="profile-choose-work__list">
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-15" id="profile-choose-work__check-input-15">
+					<label class="check-item" for="profile-choose-work__check-input-15">Мелкий бытовой ремонт</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-16" id="profile-choose-work__check-input-16">
+					<label class="check-item" for="profile-choose-work__check-input-16">Ремонт под ключ</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-17" id="profile-choose-work__check-input-17">
+					<label class="check-item" for="profile-choose-work__check-input-3">Отделочные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-18" id="profile-choose-work__check-input-18">
+					<label class="check-item" for="profile-choose-work__check-input-18">Сантехнические услуги</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-19" id="profile-choose-work__check-input-19">
+					<label class="check-item" for="profile-choose-work__check-input-19">Электрика</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-20" id="profile-choose-work__check-input-20">
+					<label class="check-item" for="profile-choose-work__check-input-20">Ворота, ограждения, рольставни</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-21" id="profile-choose-work__check-input-21">
+					<label class="check-item" for="profile-choose-work__check-input-21">Благоустройство и земляные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-22" id="profile-choose-work__check-input-22">
+					<label class="check-item" for="profile-choose-work__check-input-22">Изготовление, сборка, ремонт мебели</label>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-23" id="profile-choose-work__check-input-23">
+					<label class="check-item" for="profile-choose-work__check-input-23">Услуги плотника</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-24" id="profile-choose-work__check-input-24">
+					<label class="check-item" for="profile-choose-work__check-input-24">Окна и балконы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-25" id="profile-choose-work__check-input-25">
+					<label class="check-item" for="profile-choose-work__check-input-25">Натяжные потолки</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-26" id="profile-choose-work__check-input-26">
+					<label class="check-item" for="profile-choose-work__check-input-26">Малоэтажное строительство</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-27" id="profile-choose-work__check-input-27">
+					<label class="check-item" for="profile-choose-work__check-input-27">Установка, ремонт дверей</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-28" id="profile-choose-work__check-input-28">
+					<label class="check-item" for="profile-choose-work__check-input-28">Прочее</label>
+				</li>
+			</ul>
+
+			<div class="profile-choose-work__list-title">
+				Ремонт и установка бытовой техники
+			</div>
+
+			<ul class="profile-choose-work__list">
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-29" id="profile-choose-work__check-input-29">
+					<label class="check-item" for="profile-choose-work__check-input-29">Мелкий бытовой ремонт</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-30" id="profile-choose-work__check-input-30">
+					<label class="check-item" for="profile-choose-work__check-input-30">Ремонт под ключ</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-31" id="profile-choose-work__check-input-31">
+					<label class="check-item" for="profile-choose-work__check-input-31">Отделочные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-32" id="profile-choose-work__check-input-32">
+					<label class="check-item" for="profile-choose-work__check-input-32">Сантехнические услуги</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-33" id="profile-choose-work__check-input-33">
+					<label class="check-item" for="profile-choose-work__check-input-33">Электрика</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-34" id="profile-choose-work__check-input-34">
+					<label class="check-item" for="profile-choose-work__check-input-34">Ворота, ограждения, рольставни</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-35" id="profile-choose-work__check-input-35">
+					<label class="check-item" for="profile-choose-work__check-input-35">Благоустройство и земляные работы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-36" id="profile-choose-work__check-input-36">
+					<label class="check-item" for="profile-choose-work__check-input-36">Изготовление, сборка, ремонт мебели</label>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-37" id="profile-choose-work__check-input-37">
+					<label class="check-item" for="profile-choose-work__check-input-37">Услуги плотника</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-38" id="profile-choose-work__check-input-38">
+					<label class="check-item" for="profile-choose-work__check-input-38">Окна и балконы</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-39" id="profile-choose-work__check-input-39">
+					<label class="check-item" for="profile-choose-work__check-input-39">Натяжные потолки</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-40" id="profile-choose-work__check-input-40">
+					<label class="check-item" for="profile-choose-work__check-input-40">Малоэтажное строительство</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-41" id="profile-choose-work__check-input-41">
+					<label class="check-item" for="profile-choose-work__check-input-41">Установка, ремонт дверей</label>
+				</li>
+				<li class="profile-choose-work__list-item">
+					<input class="profile-choose-work__check-input check-input" type="checkbox" name="profile-choose-work__check-input-42" id="profile-choose-work__check-input-42">
+					<label class="check-item" for="profile-choose-work__check-input-42">Прочее</label>
+				</li>
+			</ul>
+
+			<input class="profile-choose-work__submit grey-button" type="submit" name="profile-choose-work__submit" id="profile-choose-work__submit" value="Сохранить">
+		</form>
+
+		<!--side-menu-->
+		<div class="side-menu">
+			<footer class="side-menu__footer">
+				<div class="side-menu__footer-icon"></div>
+				<a class="side-menu__footer-back-link" href="#">Все задания</a>
+				<div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+				<div class="side-menu__footer-user-name">Татьяна Иванова</div>
+			</footer>
+
+			<ul class="side-menu__list">
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+						<span class="side-menu__list-link-number">3</span>Мои задания
+					</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+				</li>
+			</ul>
+		</div>
+		<div class="background"></div>
+		<!--end of side-menu-->
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

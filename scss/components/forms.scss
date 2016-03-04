@@ -1,0 +1,37 @@
+/*FORMS*/
+/*checkbox*/
+.check-input{
+	display: none;
+
+	&:checked + .check-item::before{
+		border-color: #b4d338;
+	}
+}
+
+.check-item{
+	padding: 0 0 0 87px;
+	font-family: OpenSans-Light, Arial, sans-serif;
+	font-size: 28px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #252525;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	cursor: pointer;
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		top: -6px;
+		left: 11px;
+		width: 21px;
+		height: 40px;
+		border-right: 3px solid #dedcdb;
+		border-bottom: 3px solid #dedcdb;
+		transform: rotate(45deg);
+	}
+}
+/*end of checkbox*/
+/*end of FORMS*/

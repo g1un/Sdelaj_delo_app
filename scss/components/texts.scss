@@ -1,4 +1,4 @@
-//texts
+/*texts*/
 .text{
 
   &-main{
@@ -34,3 +34,15 @@
     letter-spacing: 0;
   }
 }
+
+.slogan{
+	font-family: 'Open Sans Reg', 'Arial', sans-serif;
+	font-size: 48px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+/*end of texts*/

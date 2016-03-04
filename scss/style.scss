@@ -1,9 +1,13 @@
-//style
+/*style*/
 @import "components/fonts";
 @import "components/myvariables";
 @import "components/general";
 @import "components/extends";
 @import "components/texts";
+@import "components/buttons";
+@import "components/forms";
+@import "components/logo";
+
 @import "components/task-header";
 @import "components/task-form";
 @import "components/tasks";
@@ -14,3 +18,7 @@
 @import "components/my-tasks";
 @import "components/news";
 @import "components/notifications";
+@import "components/enter-page";
+@import "components/login-page";
+@import "components/profile";
+/*end of style*/

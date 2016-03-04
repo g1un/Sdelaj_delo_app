@@ -1,0 +1,82 @@
+/*buttons*/
+.enter-button{
+	display: block;
+	padding: 26px 0 25px;
+	background: #ebebeb;
+	box-shadow: 0 1px 1px 0 rgba(139,139,139,.74);
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 31px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .045em;
+	
+	&:hover,
+	&:focus{
+		box-shadow: none;
+		background: #fff;
+	}
+}
+
+.sandy-button{
+	outline: none;
+	border: none;
+	box-shadow: none;
+	display: block;
+	padding: 26px 0 25px;
+	background: #f3af27;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 31px;
+	line-height: 1.2em;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .045em;
+	text-align: center;
+
+	&:hover,
+	&:focus{
+		background: #e9a722;
+	}
+}
+
+.action-button{
+	display: block;
+	width: 66px;
+	height: 66px;
+	background: url("../img/action-button.svg") no-repeat 0 0;
+	border-radius: 50%;
+
+	&:hover,
+	&:focus{
+		background: url("../img/action-button--hover.svg") no-repeat 0 0;
+	}
+}
+
+.grey-button{
+	display: block;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #464647;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0;
+	text-align: center;
+	background: #f2f2f2;
+	border-radius: 2px;
+	padding: 28px 0 24px;
+
+	&:hover,
+	&:focus{
+		box-shadow: 0 3px 7px 0 rgba(0,0,0,.15);
+	}
+}
+/*end of buttons*/

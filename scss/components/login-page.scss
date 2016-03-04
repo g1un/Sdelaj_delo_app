@@ -1,0 +1,129 @@
+/*login-page*/
+.login-page{
+	background: #fdd049;
+	text-align: center;
+	padding: 73px 0 139px;
+
+	&__logo{
+		margin: 0 0 68px;
+	}
+
+	&__slogan{
+		margin: 0 auto 94px;
+	}
+
+	&__form{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 auto;
+		padding: 89px 31px 60px;
+		background: #fff;
+		box-shadow: 3px 3px 5px 0 rgba(148,120,45,.45);
+		border-radius: 4px;
+	}
+
+	&__label{
+		display: block;
+		padding: 0 0 0 68px;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+		}
+
+		&--tel{
+			margin: 0 0 67px;
+
+			&::before{
+				top: 9px;
+				left: 0;
+				width: 34px;
+				height: 34px;
+				background: url("../img/tel-icon--grey.svg") no-repeat 0 0;
+			}
+		}
+
+		&--password{
+			margin: 0 0 72px;
+
+			&::before{
+				top: 0;
+				left: 0;
+				width: 32px;
+				height: 42px;
+				background: url("../img/lock-icon--grey.svg") no-repeat 0 0;
+			}
+		}
+	}
+
+	&__input-text{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 1px 1px 9px;
+		outline: none;
+		border: none;
+		border-bottom: 2px solid #e5e4e4;
+		background: transparent;
+		font-family: 'Open Sans Reg', 'Arial', sans-serif;
+		font-size: 36px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		&::-webkit-input-placeholder{
+			font-family: 'Open Sans Reg', 'Arial', sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&:-ms-input-placeholder{
+			font-family: 'Open Sans Reg', 'Arial', sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&::-moz-placeholder{
+			font-family: 'Open Sans Reg', 'Arial', sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	&__submit{
+		margin: 0 auto 45px;
+		display: block;
+		width: 580px;
+	}
+
+	&__password-recover{
+		font-family: 'Open Sans', 'Arial', sans-serif;
+		font-size: 32px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #adacad;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+}
+/*end of login-page*/

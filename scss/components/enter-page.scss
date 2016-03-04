@@ -1,0 +1,25 @@
+/*enter-page*/
+.enter-page{
+	background: #fdd049;
+	text-align: center;
+	padding: 167px 0 279px;
+
+	&__logo{
+		margin: 0 0 68px;
+	}
+
+	&__slogan{
+		margin: 0 auto 225px;
+	}
+
+	&__login{
+		margin: 0 auto 29px;
+		width: 646px;
+	}
+
+	&__reg{
+		margin: 0 auto 0;
+		width: 646px;
+	}
+}
+/*end of enter-page*/

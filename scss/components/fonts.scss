@@ -1,22 +1,42 @@
 //fonts
 @font-face {
-  font-family: 'PragmaticaLightC';
-  src: url(../fonts/PragmaticaLightC.otf),
-       url(../fonts/PragmaticaLightC.eot);
+	font-family: 'PragmaticaLightC';
+	src: url(../fonts/PragmaticaLightC.otf),
+			 url(../fonts/PragmaticaLightC.eot);
 }
 
 @font-face {
-  font-family: 'Open Sans Regular';
-  src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-//light
-@font-face {
-  font-family: 'Open Sans Reg';
-  src: url(../fonts/OpenSans-Regular.ttf);
+	font-family: 'Open Sans Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Open Sans Sb';
-  src: url(../fonts/OpenSans-Semibold.ttf);
+	font-family: 'Open Sans Reg';
+	src: url(../fonts/OpenSans-Regular.ttf);
 }
+
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Open Sans Sb';
+	src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
