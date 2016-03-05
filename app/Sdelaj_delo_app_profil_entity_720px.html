@@ -61,7 +61,7 @@
 
 			<div class="profile__name">Стройтрест</div>
 
-			<div class="profile__features clearfix">
+			<div class="profile__features profile__item clearfix">
 				<div class="profile__rating">
 					<div class="profile__thumbs">10</div>
 					<div class="profile__stars">5</div>
@@ -71,71 +71,73 @@
 				<div class="profile__city">Хабаровск</div>
 			</div>
 
-			<div class="profile__note">Вы пока не создали ни одного задания</div>
+			<div class="profile__note content-title profile__item">Вы пока не создали ни одного задания</div>
 
-			<div class="profile__place">
-				<div class="profile__place-title">Место в общем рейтинге исполнителей</div>
+			<div class="profile__place profile__item">
+				<div class="profile__place-title content-title">Место в общем рейтинге исполнителей</div>
 				<div class="profile__place-val">110</div>
 			</div>
 
-			<table class="profile-entity__requisites">
-				<tr class="profile-entity__tr">
-					<td class="profile-entity__td">
-						<label class="profile-entity__td-title" for="profile-entity__inn"></label>
-					</td>
-					<td class="profile-entity__td">
-						<input class="profile-entity__td-input" type="text" name="profile-entity__inn" id="profile-entity__inn">
-					</td>
-				</tr>
-				<tr class="profile-entity__tr">
-					<td class="profile-entity__td">
-						<label class="profile-entity__td-title" for="profile-entity__kpp"></label>
-					</td>
-					<td class="profile-entity__td">
-						<input class="profile-entity__td-input" type="text" name="profile-entity__kpp" id="profile-entity__kpp">
-					</td>
-				</tr>
-				<tr class="profile-entity__tr">
-					<td class="profile-entity__td">
-						<label class="profile-entity__td-title" for="profile-entity__ogrn"></label>
-					</td>
-					<td class="profile-entity__td">
-						<input class="profile-entity__td-input" type="text" name="profile-entity__ogrn" id="profile-entity__ogrn">
-					</td>
-				</tr>
-				<tr class="profile-entity__tr">
-					<td class="profile-entity__td">
-						<label class="profile-entity__td-title" for="profile-entity__checking-account"></label>
-					</td>
-					<td class="profile-entity__td">
-						<input class="profile-entity__td-input" type="text" name="profile-entity__checking-account" id="profile-entity__checking-account">
-					</td>
-				</tr>
-				<tr class="profile-entity__tr">
-					<td class="profile-entity__td">
-						<label class="profile-entity__td-title" for="profile-entity__correspondent-account"></label>
-					</td>
-					<td class="profile-entity__td">
-						<input class="profile-entity__td-input" type="text" name="profile-entity__correspondent-account" id="profile-entity__correspondent-account">
-					</td>
-				</tr>
-			</table>
+			<div class="profile-entity__requisites profile__item">
+				<div class="profile-entity__requisites-title content-title">Реквизиты организации</div>
 
-			<div class="profile__experience">
-				<label for="profile__experience">Опыт работы</label>
-				<textarea name="profile__experience" id="profile__experience" placeholder="Кратко опишите место работы, свои обязанности и достижения"></textarea>
+				<table class="profile-entity__table">
+					<tr class="profile-entity__tr">
+						<td class="profile-entity__td">
+							<label class="profile-entity__td-title" for="profile-entity__inn">ИНН</label>
+						</td>
+						<td class="profile-entity__td">
+							<input class="profile-entity__td-input input-text" type="text" name="profile-entity__inn" id="profile-entity__inn" placeholder="Введите номер ИНН">
+						</td>
+					</tr>
+					<tr class="profile-entity__tr">
+						<td class="profile-entity__td">
+							<label class="profile-entity__td-title" for="profile-entity__kpp">КПП</label>
+						</td>
+						<td class="profile-entity__td">
+							<input class="profile-entity__td-input input-text" type="text" name="profile-entity__kpp" id="profile-entity__kpp" placeholder="Введите номер КПП">
+						</td>
+					</tr>
+					<tr class="profile-entity__tr">
+						<td class="profile-entity__td">
+							<label class="profile-entity__td-title" for="profile-entity__ogrn">ОГРН</label>
+						</td>
+						<td class="profile-entity__td">
+							<input class="profile-entity__td-input input-text" type="text" name="profile-entity__ogrn" id="profile-entity__ogrn" placeholder="Введите номер ОГРН">
+						</td>
+					</tr>
+					<tr class="profile-entity__tr">
+						<td class="profile-entity__td">
+							<label class="profile-entity__td-title" for="profile-entity__checking-account">р/с</label>
+						</td>
+						<td class="profile-entity__td">
+							<input class="profile-entity__td-input input-text" type="text" name="profile-entity__checking-account" id="profile-entity__checking-account" placeholder="Введите номер р/с">
+						</td>
+					</tr>
+					<tr class="profile-entity__tr">
+						<td class="profile-entity__td">
+							<label class="profile-entity__td-title" for="profile-entity__correspondent-account">к/с</label>
+						</td>
+						<td class="profile-entity__td">
+							<input class="profile-entity__td-input input-text" type="text" name="profile-entity__correspondent-account" id="profile-entity__correspondent-account" placeholder="Введите номер к/с">
+						</td>
+					</tr>
+				</table>
 			</div>
 
-			<div class="profile__about">
-				<label for="profile__about">Опыт работы</label>
-				<textarea name="profile__about" id="profile__about" placeholder="Кратко опишите место работы, свои обязанности и достижения">
-					Компания осуществляет масштабное жилищное строительство в г. Хабаровск. В 2009 году компания построила в городе около 35 тыс.кв.метров высококачественного доступного жилья.  Также планы предусматривают строительство поселков малоэтажного жилья в рамках проекта Хабаровской Агломерации.
-				</textarea>
+			<div class="profile__experience profile__item">
+				<label class="content-title" for="profile__experience">Опыт работы</label>
+				<textarea class="input-text" name="profile__experience" id="profile__experience" placeholder="Кратко опишите место работы, свои обязанности и достижения"></textarea>
+			</div>
+
+			<div class="profile__about profile__item">
+				<label class="content-title" for="profile__about">Об организации</label>
+				<textarea class="input-text" name="profile__about" id="profile__about" placeholder="Кратко опишите организацию">Компания осуществляет масштабное жилищное строительство в г. Хабаровск. В 2009 году компания построила в городе около 35 тыс.кв.метров высококачественного доступного жилья.  Также планы предусматривают строительство поселков малоэтажного жилья в рамках проекта Хабаровской Агломерации.</textarea>
 			</div>
 
 			<div class="profile__conditions">
-				<label for="profile__conditions">Опыт работы</label>
-				<textarea name="profile__conditions" id="profile__conditions" placeholder="Например, фирма работает только удаленно"></textarea>
+				<label class="content-title" for="profile__conditions">Условия работы</label>
+				<textarea class="input-text" name="profile__conditions" id="profile__conditions" placeholder="Например, фирма работает только удаленно"></textarea>
 			</div>
 
 			<input class="profile-entity__submit grey-button" type="submit" name="profile-entity__submit" id="profile-entity__submit" value="Сохранить">

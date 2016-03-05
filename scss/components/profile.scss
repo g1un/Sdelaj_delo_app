@@ -211,9 +211,74 @@
 	}
 
 	&-entity{
-		padding: 33px 0 0;
+		padding: 33px 0 64px;
 
+		&__requisites{
+			margin: 0 0 36px;
+			padding: 0 38px 54px 36px;
 
+			&-title{
+				margin: 0 0 42px;
+			}
+		}
+
+		&__table{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			border-collapse: collapse;
+			border: none;
+		}
+
+		&__tr{
+
+			&:nth-child(n+2){
+
+				td{
+					padding-top: 69px;
+				}
+			}
+		}
+
+		&__td{
+			margin: 0;
+			padding: 0;
+			border: none;
+			vertical-align: top;
+
+			&:first-child{
+				width: 117px;
+			}
+
+			&:last-child{
+				border-bottom: 1px solid #e5e4e4;
+			}
+
+			&-title{
+				font-family: OpenSans-Regular, Arial, sans-serif;
+				font-size: 30px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #a0a0a0;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-input{
+				width: 100%;
+				padding: 0 10px 13px;
+				box-sizing: border-box;
+			}
+		}
+
+		&__submit{
+			display: block;
+			float: right;
+			margin: 0 37px 0 0;
+			width: 337px;
+		}
 	}
 
 	&__img{
@@ -257,7 +322,8 @@
 	}
 
 	&__features{
-		margin: 0 46px 0 0;
+		margin: 0 0 38px;
+		padding: 0 46px 46px 0;
 	}
 
 	&__rating{
@@ -372,6 +438,87 @@
 		text-decoration: none;
 		letter-spacing: 0;
 		text-align: center;
+	}
+
+	&__item{
+		border-bottom: 1px solid #e5e4e4;
+	}
+
+	&__note{
+		margin: 0 0 22px;
+		padding: 0 0 41px 36px;
+	}
+
+	&__place{
+		margin: 0 0 42px;
+		padding: 0 0 25px 36px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-val{
+			min-width: 152px;
+			font-family: OpenSans-Semibold, Arial, sans-serif;
+			font-size: 45px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #363636;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+	}
+
+	&__experience{
+		margin: 0 0 37px;
+		padding: 0 36px 22px;
+
+		label{
+			display: block;
+			margin: 0 0 27px;
+		}
+
+		textarea{
+			display: block;
+			width: 100%;
+			min-height: 108px;
+			box-sizing: border-box;
+		}
+	}
+
+	&__about{
+		margin: 0 0 35px;
+		padding: 0 35px 48px;
+
+		label{
+			display: block;
+			margin: 0 0 18px;
+		}
+
+		textarea{
+			display: block;
+			width: 100%;
+			min-height: 324px;
+			box-sizing: border-box;
+		}
+	}
+
+	&__conditions{
+		margin: 0;
+		padding: 0 35px 43px;
+
+		label{
+			display: block;
+			margin: 0 0 23px;
+		}
+
+		textarea{
+			display: block;
+			width: 100%;
+			min-height: 36px;
+			box-sizing: border-box;
+		}
 	}
 }
 /*end of profile*/

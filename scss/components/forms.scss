@@ -33,5 +33,52 @@
 		transform: rotate(45deg);
 	}
 }
+
+.input-text{
+	outline: none;
+	border: none;
+	display: block;
+	font-family: OpenSans-Light, Arial, sans-serif;
+	font-size: 30px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #252525;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+
+	&::-webkit-input-placeholder{
+		font-family: OpenSans-Light, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #d7d7d7;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&:-ms-input-placeholder{
+		font-family: OpenSans-Light, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #d7d7d7;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&::-moz-placeholder{
+		font-family: OpenSans-Light, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #d7d7d7;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+}
 /*end of checkbox*/
 /*end of FORMS*/

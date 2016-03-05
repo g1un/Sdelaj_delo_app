@@ -1,42 +1,42 @@
 /*texts*/
 .text{
 
-  &-main{
-    font-family: $roboto;
-    font-size: $big-font-size + px; //36
-    line-height: 1em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
+	&-main{
+		font-family: $roboto;
+		font-size: $big-font-size + px; //36
+		line-height: 1em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
 
-  &-middle{
-    font-family: $open-sans-reg;
-    font-size: $smaller-font-size-plus + px; //28
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
+	&-middle{
+		font-family: $open-sans-reg;
+		font-size: $smaller-font-size-plus + px; //28
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
 
-  &-undermain{
-    font-family: $open-sans-reg;
-    font-size: $smallest-font-size + px; //24
-    line-height: 1.2em;
-    font-weight: 400;
-    color: $light-grey-plus;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-  }
+	&-undermain{
+		font-family: $open-sans-reg;
+		font-size: $smallest-font-size + px; //24
+		line-height: 1.2em;
+		font-weight: 400;
+		color: $light-grey-plus;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
 }
 
 .slogan{
-	font-family: 'Open Sans Reg', 'Arial', sans-serif;
+	font-family: OpenSans-Regular, 'Arial', sans-serif;
 	font-size: 48px;
 	line-height: 1.2em;
 	font-weight: 400;
@@ -45,4 +45,16 @@
 	text-decoration: none;
 	letter-spacing: 0;
 }
+
+.content-title{
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 30px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #363636;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+
 /*end of texts*/
