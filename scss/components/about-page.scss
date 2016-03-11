@@ -1,0 +1,55 @@
+/*about-page*/
+.about-page{
+	background: #fdd049;
+	padding: 107px 0 39px;
+	text-align: center;
+
+	&__logo{
+		margin: 0 0 90px;
+		width: 483px;
+	}
+
+	&__text{
+		margin: 0 0 145px;
+		font-family: OpenSans-Regular, Arial, sans-serif;
+		font-size: 44px;
+		line-height: 1.4em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__version{
+		margin: 0 0 343px;
+		font-family: OpenSans-Regular, Arial, sans-serif;
+		font-size: 36px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__developer{
+		margin: 0;
+		font-family: OpenSans-Regular, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #b28f30;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+
+		span{
+			font-family: OpenSans-Semibold, Arial, sans-serif;
+		}
+	}
+}
+/*end of about-page*/

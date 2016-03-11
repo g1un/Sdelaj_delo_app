@@ -8,22 +8,28 @@
 	<link href='css/style.css' rel='stylesheet'>
 </head>
 	<body>
-		<header class="task-header task-header--all-tasks">
-			<div class="task-header__sandwich"></div>
-			<div class="task-header__text">
-				Профиль
-			</div>
-			<div class="task-header__button"></div>
+		<header class="task-header">
+			<div class="task-header__up clearfix">
+				<div class="task-header__sandwich"></div>
 
-			<ul class="task-header__types task-header__types--task-status">
-				<li class="task-header__types-item task-header__types-item--active">
-					<a class="task-header__types-link" href="#">Обо мне</a>
+				<div class="task-header__text">
+					Счет
+				</div>
+
+				<div class="task-header__action-button action-button"></div>
+
+				<div class="task-header__button task-header__button--score"></div>
+			</div>
+
+			<ul class="task-header__types">
+				<li class="task-header__types-item">
+					<a class="active" href="#">Мой счет</a>
 				</li>
 				<li class="task-header__types-item">
-					<a class="task-header__types-link task-header__types-link--active" href="#">Виды работ</a>
+					<a href="#">Мои ставки</a>
 				</li>
 				<li class="task-header__types-item">
-					<a class="task-header__types-link" href="#">Отзывы</a>
+					<a href="#">Платные услуги</a>
 				</li>
 			</ul>
 
@@ -53,33 +59,39 @@
 			</div>
 		</header>
 
-		<section class="profile-users-works clearfix">
-			<h2 class="profile-users-works__title clearfix">
-				Виды выполняемых работ
-				<img src="img/side-menu__footer-photo.png" alt="user">
-			</h2>
+		<section class="score">
+			<div class="score__balance">
+				<div class="score__balance-title">На вашем счете</div>
+				<div class="score__balance-val">300 руб</div>
+			</div>
 
-			<div class="profile-users-works__subtitle">Ремонт и строительство</div>
+			<a class="score__add sandy-button" href="#">
+				Пополнить счет
+			</a>
 
-			<ul class="profile-users-works__list">
-				<li class="profile-users-works__list-item active">Укладка плитки</li>
-				<li class="profile-users-works__list-item">Малярные работы</li>
-				<li class="profile-users-works__list-item">Электрика</li>
-				<li class="profile-users-works__list-item active">Услуги плотника</li>
-			</ul>
+			<form class="score__card clearfix">
+				<div class="score__card-title content-title">Привязать карту</div>
 
-			<div class="profile-users-works__subtitle">Грузоперевозки и курьерские услуги</div>
+				<div class="score__card-select">
+					<div class="score__card-select-title">Выберите карту</div>
 
-			<ul class="profile-users-works__list">
-				<li class="profile-users-works__list-item active">Аренда спецтехники</li>
-				<li class="profile-users-works__list-item">Вывоз снега</li>
-			</ul>
+					<div class="score__card-select-button action-button"></div>
+				</div>
 
-			<a class="profile-users-works__ask grey-button" href="#">Задать вопрос</a>
+				<input class="score__card-input-num input-text" type="text" name="score__card-input-num" id="score__card-input-num" placeholder="Введите номер карты">
 
-			<a class="profile__hire sandy-button" href="#">Предложить задание</a>
+				<input class="score__card-input-password input-text" type="password" name="score__card-input-password" id="score__card-input-password" placeholder="Введите код">
 
+				<input class="score__card-submit grey-button" type="submit" name="score__card-submit" id="score__card-submit" value="Привязать карту">
+			</form>
 		</section>
+
+		<footer class="footer">
+			<a class="footer__button" href="#"></a>
+			<div class="footer__tel">+7 4212 650-658</div>
+			<div class="footer__schedule">(с 10:00 до 19:00)</div>
+			<a class="footer__mail" href="mailto:support@sdelay-delo.ru">support@sdelay-delo.ru</a>
+		</footer>
 
 		<!--side-menu-->
 		<div class="side-menu">

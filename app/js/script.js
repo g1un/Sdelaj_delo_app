@@ -141,3 +141,87 @@ if($('.profile-choose-work__list').length){
 	}
 }
 /*end of profile-choose-work__list*/
+
+/*become-performer window*/
+if ($('.become-performer').length) {
+	var becomePerformerLink = $('.profile__features-button');
+	var windowBg = $('.become-performer');
+	var windowMsg = $('.become-performer__wrapper');
+	var windowCancel = $('.become-performer__cancel');
+
+	becomePerformerLink.on('click', function(e){
+		e.preventDefault();
+		windowBg.addClass('show');
+		becomePerformerCss();
+	});
+
+	function becomePerformerCss() {
+		if (window.innerHeight >= windowMsg.outerHeight()) {
+			var becomePerformerMargin = (window.innerHeight - windowMsg.outerHeight()) / 2;
+			windowMsg.css('margin-top', becomePerformerMargin);
+		}
+	}
+
+	becomePerformerCss();
+
+	$(window).on('resize', function () {
+		becomePerformerCss();
+	});
+
+	windowCancel.on('click', function () {
+		windowBg.removeClass('show');
+	});
+
+	windowBg.mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.become-performer__wrapper') || clicked.closest('.become-performer__wrapper').length) {
+			return;
+		} else {
+			windowBg.removeClass('show');
+		}
+	});
+}
+/*end of become-performer window*/
+
+/*profile-photo window*/
+if ($('.profile-photo').length) {
+	var profilePhotoEdit = $('.profile__img-edit');
+	var profilePhotoBg = $('.profile-photo');
+	var profilePhotoMsg = $('.profile-photo__wrapper');
+	var profilePhotoClose = $('.profile-photo__close');
+
+	profilePhotoEdit.on('click', function(e){
+		e.preventDefault();
+		profilePhotoBg.addClass('show');
+		profilePhotoCss();
+	});
+
+	function profilePhotoCss() {
+		if (window.innerHeight >= profilePhotoMsg.outerHeight()) {
+			var profilePhotoMargin = (window.innerHeight - profilePhotoMsg.outerHeight()) / 2;
+			profilePhotoMsg.css('margin-top', profilePhotoMargin);
+		} else{
+			profilePhotoMsg.css('margin-top', 0);
+		}
+	}
+
+	profilePhotoCss();
+
+	$(window).on('resize', function () {
+		profilePhotoCss();
+	});
+
+	profilePhotoClose.on('click', function () {
+		profilePhotoBg.removeClass('show');
+	});
+
+	profilePhotoBg.mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.profile-photo__wrapper') || clicked.closest('.profile-photo__wrapper').length) {
+			return;
+		} else {
+			profilePhotoBg.removeClass('show');
+		}
+	});
+}
+/*end of profile-photo window*/

@@ -1,0 +1,64 @@
+/*become-performer*/
+.become-performer{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background: rgba(0,0,0,.25);
+	font-size: 0;
+	text-align: right;
+
+	&.show{
+		display: block;
+	}
+
+	&__wrapper{
+		margin: 0 auto;
+		padding: 51px 31px 35px;
+		box-sizing: border-box;
+		width: 561px;
+		border-radius: 6px;
+		background: #fff;
+		box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+	}
+
+	&__title{
+		margin: 0 0 40px;
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: 38px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: left;
+	}
+
+	&__radio-label{
+		display: block;
+		margin: 0 0 30px;
+		padding: 0 0 0 70px;
+		text-align: left;
+
+		&:last-of-type{
+			margin: 0 0 66px;
+		}
+	}
+
+	&__cancel{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 60px 0 0;
+	}
+
+	&__submit{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 24px 0 0;
+	}
+}
+/*end of become-performer*/

@@ -33,7 +33,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "Sdelaj_delo_app_profil_entity_720px.html"
+			index: "Sdelaj_delo_app_rates_720px.html"
 		},
 	})
 });

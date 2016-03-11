@@ -17,13 +17,13 @@
 
 			<ul class="task-header__types task-header__types--task-status">
 				<li class="task-header__types-item task-header__types-item--active">
-					<a class="task-header__types-link" href="#">Обо мне</a>
+					<a class="task-header__types-link task-header__types-link--active" href="#">Обо мне</a>
 				</li>
 				<li class="task-header__types-item">
-					<a class="task-header__types-link task-header__types-link--active" href="#">Виды работ</a>
+					<a class="task-header__types-link" href="#">Виды работ</a>
 				</li>
 				<li class="task-header__types-item">
-					<a class="task-header__types-link" href="#">Отзывы</a>
+					<a class="task-header__types-link" href="#">Отзывы(3)</a>
 				</li>
 			</ul>
 
@@ -53,33 +53,35 @@
 			</div>
 		</header>
 
-		<section class="profile-users-works clearfix">
-			<h2 class="profile-users-works__title clearfix">
-				Виды выполняемых работ
-				<img src="img/side-menu__footer-photo.png" alt="user">
-			</h2>
+		<form class="profile-individual clearfix" action="#" method="get">
+			<div class="profile__img">
+				<img src="img/user.png" alt="user">
+				<a class="profile__img-edit" href="#"></a>
+			</div>
 
-			<div class="profile-users-works__subtitle">Ремонт и строительство</div>
+			<div class="profile__name">Татьяна Иванова</div>
 
-			<ul class="profile-users-works__list">
-				<li class="profile-users-works__list-item active">Укладка плитки</li>
-				<li class="profile-users-works__list-item">Малярные работы</li>
-				<li class="profile-users-works__list-item">Электрика</li>
-				<li class="profile-users-works__list-item active">Услуги плотника</li>
-			</ul>
+			<div class="profile__features profile__item clearfix">
+				<div class="profile__rating">
+					<div class="profile__thumbs">10</div>
+					<div class="profile__stars">5</div>
+					<div class="profile__hats">2</div>
+				</div>
 
-			<div class="profile-users-works__subtitle">Грузоперевозки и курьерские услуги</div>
+				<div class="profile__city">Хабаровск, 22 года</div>
 
-			<ul class="profile-users-works__list">
-				<li class="profile-users-works__list-item active">Аренда спецтехники</li>
-				<li class="profile-users-works__list-item">Вывоз снега</li>
-			</ul>
+				<a class="profile__features-button sandy-button" href="#">Я хочу стать исполнителем</a>
+			</div>
 
-			<a class="profile-users-works__ask grey-button" href="#">Задать вопрос</a>
+			<div class="profile__note content-title profile__item">Вы пока не создали ни одного задания</div>
 
-			<a class="profile__hire sandy-button" href="#">Предложить задание</a>
+			<div class="profile__about profile__about--general profile__item">
+				<label class="content-title" for="profile__about">О себе</label>
+				<textarea class="input-text" name="profile__about" id="profile__about" placeholder="">Ответственна, аккуратна, выполняю все в срок</textarea>
+			</div>
 
-		</section>
+			<input class="profile__submit grey-button" type="submit" name="profile-general__submit" id="profile-general__submit" value="Сохранить">
+		</form>
 
 		<!--side-menu-->
 		<div class="side-menu">
@@ -116,6 +118,25 @@
 		<div class="background"></div>
 		<!--end of side-menu-->
 
+		<!--become-performer window-->
+		<div class="become-performer">
+			<form class="become-performer__wrapper" action="#" method="get">
+				<div class="become-performer__title">Стать исполнителем как:</div>
+
+				<input class="radio-input" type="radio" name="become-performer__radio" id="become-performer__individual">
+				<label class="become-performer__radio-label radio-label" for="become-performer__individual">Физическое лицо</label>
+
+				<input class="radio-input" type="radio" name="become-performer__radio" id="become-performer__entity">
+				<label class="become-performer__radio-label radio-label" for="become-performer__entity">Юридическое лицо</label>
+
+				<div class="become-performer__cancel window-button">Отмена</div>
+
+				<input class="become-performer__submit window-button" type="submit" name="become-performer__submit" id="become-performer__submit" value="Выбрать">
+			</form>
+		</div>
+		<!--end of become-performer window-->
+
+		<script src="js/jquery-2.2.1.min.js"></script>
 		<script src="js/script.js"></script>
 
 	</body>

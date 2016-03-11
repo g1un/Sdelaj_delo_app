@@ -1,226 +1,235 @@
 //task-header
 .task-header{
-  min-height: 111px;
-  width: 100%;
-  background: $sand;
-  padding-top: 35px;
-  padding-left: 38px;
-  box-sizing: border-box;
-  box-shadow: 0 3px 7px 0 #8d742d;
-  position: relative;
+	min-height: 111px;
+	width: 100%;
+	background: $sand;
+	padding-top: 35px;
+	box-sizing: border-box;
+	box-shadow: 0 3px 7px 0 #8d742d;
+	position: relative;
 
-  &--all-tasks{
-    min-height: 195px;
-  }
+	&--all-tasks{
+		min-height: 195px;
+	}
 
-  &__sandwich{
-    float: left;
-    margin-right: 35px;
-    width: 36px;
-    height: 25px;
-    background: url(../img/sprite.svg) no-repeat 0 0;
-    cursor: pointer;
-    margin-top: 8px;
-  }
+	&__up{
+		margin: 0 0 19px;
+	}
 
-  &__text{
-    font-family: Roboto-Regular, Arial, sans-serif;
-    font-size: $big-font-size + px;
-    line-height: 40/$big-font-size + em;
-    font-weight: 400;
-    color: $dark;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-    float: left;
-  }
+	&__sandwich{
+		float: left;
+		margin: 8px 35px 0 38px;
+		width: 36px;
+		height: 25px;
+		background: url(../img/sprite.svg) no-repeat 0 0;
+		cursor: pointer;
+	}
 
-  &__button{
-    float: right;
-    width: 40px;
-    height: 40px;
-    background: url(../img/sprite.svg) no-repeat 0 -25px;
-    cursor: pointer;
-    margin-top: -2px;
-    margin-right: 38px;
-  }
+	&__text{
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: $big-font-size + px;
+		line-height: 40/$big-font-size + em;
+		font-weight: 400;
+		color: $dark;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		float: left;
+	}
 
-  &__types{
-    clear: both;
-    font-size: 0;
-    margin-top: 71px;
+	&__button{
+		float: right;
+		width: 40px;
+		height: 40px;
+		background: url(../img/sprite.svg) no-repeat 0 -25px;
+		cursor: pointer;
+		margin-top: -2px;
+		margin-right: 38px;
 
-    &-item{
-      display: inline-block;
-      margin-right: 50px;
+		&--score{
+			margin: 0 7px 0 0;
+		}
+	}
 
-      &:last-child{
-        margin-right: 0;
-      }
+	&__action-button{
+		float: right;
+		margin: -13px 9px 0 0;
+	}
 
-      &--active{
-        margin-right: 21px;
-      }
-    }
+	&__types{
+		clear: both;
+		font-size: 0;
+		padding: 0 16px 5px;
+		white-space: nowrap;
+		overflow: hidden;
 
-    &-link{
-      font-family: Roboto-Regular, Arial, sans-serif;
-      font-size: $smaller-font-size + px;
-      line-height: 30/$smaller-font-size + em;
-      font-weight: 400;
-      color: $dirty-sand;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: .01em;
-      padding: 26px 0;
+		&-item{
+			display: inline-block;
+			vertical-align: top;
 
-      &--active{
-        font-weight: 700;
-        color: #fff;
-        display: block;
-        width: 202px;
-        text-align: center;
-        background: $foxy;
-      }
-    }
-  }
+			a{
+				display: block;
+				padding: 24px 32px;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 29px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #a57e2d;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
 
-  &__menu{
-    display: none;
-    position: absolute;
-    top: 34px;
-    right: 24px;
-    max-width: 543px;
-    border-radius: 8px;
-    box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
-    background: #fff;
-    box-sizing: border-box;
-    padding: 39px 10px 27px;
-    z-index: 1;
+				&.active{
+					font-family: Roboto-Bold, Arial, sans-serif;
+					color: #fff;
+					background: #f3bb31;
+				}
+			}
+		}
+	}
 
-    &-list{
-      font-size: 0;
-    }
+	&__menu{
+		display: none;
+		position: absolute;
+		top: 34px;
+		right: 24px;
+		max-width: 543px;
+		border-radius: 8px;
+		box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+		background: #fff;
+		box-sizing: border-box;
+		padding: 39px 10px 27px;
+		z-index: 1;
 
-    &-item{
-      display: inline-block;
-      vertical-align: top;
-      width: 174px;
-      min-height: 140px;
-      box-sizing: border-box;
-      padding: 0 20px;
-    }
+		&-list{
+			font-size: 0;
+		}
 
-    &-link{
-      display: block;
-      font-family: OpenSans-Regular, Arial, sans-serif;
-      font-size: $smallest-font-size + px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: $light-grey-plus;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: center;
-      padding-top: 47px;
-      position: relative;
-      
-      &--main{
+		&-item{
+			display: inline-block;
+			vertical-align: top;
+			width: 174px;
+			min-height: 140px;
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 45px;
-          width: 45px;
-          height: 34px;
-          background: url("../img/house-icon--gold.svg") no-repeat 0 0;
-        }        
-      }
+		&-link{
+			display: block;
+			font-family: OpenSans-Regular, Arial, sans-serif;
+			font-size: $smallest-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: $light-grey-plus;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			padding-top: 47px;
+			position: relative;
 
-      &--add-task{
+			&--main{
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 53px;
-          width: 30px;
-          height: 35px;
-          background: url("../img/add-task-icon--gold.svg") no-repeat 0 0;
-        }
-      }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 45px;
+					width: 45px;
+					height: 34px;
+					background: url("../img/house-icon--gold.svg") no-repeat 0 0;
+				}
+			}
 
-      &--all-tasks{
+			&--add-task{
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 57px;
-          width: 29px;
-          height: 35px;
-          background: url("../img/all-tasks-icon--gold.svg") no-repeat 0 0;
-        }
-      }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 53px;
+					width: 30px;
+					height: 35px;
+					background: url("../img/add-task-icon--gold.svg") no-repeat 0 0;
+				}
+			}
 
-      &--profile{
+			&--all-tasks{
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 53px;
-          width: 26px;
-          height: 34px;
-          background: url("../img/profile-icon--gold.svg") no-repeat 0 0;
-        }
-      }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 57px;
+					width: 29px;
+					height: 35px;
+					background: url("../img/all-tasks-icon--gold.svg") no-repeat 0 0;
+				}
+			}
 
-      &--news{
+			&--profile{
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 47px;
-          width: 35px;
-          height: 31px;
-          background: url("../img/news-icon--gold.svg") no-repeat 0 0;
-        }
-      }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 53px;
+					width: 26px;
+					height: 34px;
+					background: url("../img/profile-icon--gold.svg") no-repeat 0 0;
+				}
+			}
 
-      &--contacts{
+			&--news{
 
-        &:before{
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 49px;
-          width: 34px;
-          height: 24px;
-          background: url("../img/contacts-icon--gold.svg") no-repeat 0 0;
-        }
-      }
-    }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 47px;
+					width: 35px;
+					height: 31px;
+					background: url("../img/news-icon--gold.svg") no-repeat 0 0;
+				}
+			}
 
-    &-close{
-      float: right;
-      font-family: Roboto-Regular, Arial, sans-serif;
-      font-size: $smaller-font-size-plus + px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: $light-grey-plus;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin-right: 26px;
-      cursor: pointer;
+			&--contacts{
 
-      &:hover,
-      &:focus{
-        color: $sand-green;
-      }
-    }
-  }
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 49px;
+					width: 34px;
+					height: 24px;
+					background: url("../img/contacts-icon--gold.svg") no-repeat 0 0;
+				}
+			}
+		}
+
+		&-close{
+			float: right;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: $smaller-font-size-plus + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: $light-grey-plus;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin-right: 26px;
+			cursor: pointer;
+
+			&:hover,
+			&:focus{
+				color: $sand-green;
+			}
+		}
+	}
+
+	&--shadowless{
+		box-shadow: none;
+		min-height: 0;
+	}
 }

@@ -203,11 +203,11 @@
 			margin: 0 auto 21px;
 			width: 646px;
 		}
+	}
 
-		&__hire{
-			margin: 0 auto 0;
-			width: 646px;
-		}
+	&__hire{
+		margin: 0 auto 0;
+		width: 646px;
 	}
 
 	&-entity{
@@ -272,13 +272,10 @@
 				box-sizing: border-box;
 			}
 		}
+	}
 
-		&__submit{
-			display: block;
-			float: right;
-			margin: 0 37px 0 0;
-			width: 337px;
-		}
+	&-individual{
+		padding: 33px 0 64px;
 	}
 
 	&__img{
@@ -306,6 +303,15 @@
 			width: 35px;
 			height: 35px;
 		}
+
+		&-favourite{
+			position: absolute;
+			top: 19px;
+			right: -89px;
+			background: url("../img/star-icon.svg") no-repeat 0 0;
+			width: 50px;
+			height: 48px;
+		}
 	}
 
 	&__name{
@@ -323,12 +329,21 @@
 
 	&__features{
 		margin: 0 0 38px;
-		padding: 0 46px 46px 0;
+		padding: 0 0 46px;
+
+		&-button{
+			display: block;
+			clear: both;
+			margin: 0 auto 0;
+			width: 642px;
+		}
 	}
 
 	&__rating{
 		float: left;
-		margin: 0 0 0 48px;
+		max-width: 30%;
+		box-sizing: border-box;
+		margin: 0 0 30px 48px;
 		font-size: 0;
 		line-height: 0;
 	}
@@ -428,7 +443,9 @@
 
 	&__city{
 		float: right;
-		margin: 4px 0 0;
+		max-width: 50%;
+		box-sizing: border-box;
+		margin: 4px 46px 30px 0;
 		font-family: OpenSans-Light, Arial, sans-serif;
 		font-size: 36px;
 		line-height: 1.2em;
@@ -442,6 +459,10 @@
 
 	&__item{
 		border-bottom: 1px solid #e5e4e4;
+
+		p{
+			margin: 27px 0 0;
+		}
 	}
 
 	&__note{
@@ -449,7 +470,7 @@
 		padding: 0 0 41px 36px;
 	}
 
-	&__place{
+	&__place, &__tasks-done{
 		margin: 0 0 42px;
 		padding: 0 0 25px 36px;
 		display: flex;
@@ -458,6 +479,7 @@
 
 		&-val{
 			min-width: 152px;
+			padding: 0 39px 0 0;
 			font-family: OpenSans-Semibold, Arial, sans-serif;
 			font-size: 45px;
 			line-height: 1.2em;
@@ -466,11 +488,28 @@
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
-			text-align: center;
+			text-align: right;
 		}
 	}
 
 	&__experience{
+		margin: 0 0 37px;
+		padding: 0 36px 22px;
+
+		label{
+			display: block;
+			margin: 0 0 27px;
+		}
+
+		textarea{
+			display: block;
+			width: 100%;
+			min-height: 108px;
+			box-sizing: border-box;
+		}
+	}
+
+	&__education{
 		margin: 0 0 37px;
 		padding: 0 36px 22px;
 
@@ -502,6 +541,13 @@
 			min-height: 324px;
 			box-sizing: border-box;
 		}
+
+		&--general{
+
+			textarea{
+				min-height: 108px;
+			}
+		}
 	}
 
 	&__conditions{
@@ -519,6 +565,263 @@
 			min-height: 36px;
 			box-sizing: border-box;
 		}
+
+		&--public{
+			border-bottom: none;
+		}
 	}
+
+	&__submit{
+		display: block;
+		float: right;
+		margin: 0 37px 0 0;
+		width: 337px;
+	}
+
+	&__lock{
+		margin: 0 38px 42px;
+		padding: 17px 10px 21px 92px;
+		background: #f7f8f8 url("../img/lock-icon--grey.svg") no-repeat 32px center;
+		background-size: 28px auto;
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: 29px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #898989;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+	}
+
+	&-photo{
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		background: rgba(0,0,0,.25);
+
+		&.show{
+			display: block;
+		}
+
+		&__wrapper{
+			margin: 0 auto;
+			width: 646px;
+		}
+
+		&__img{
+			box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+			margin: 0 0 27px;
+			font-size: 0;
+			line-height: 0;
+
+			img{
+				max-width: 100%;
+				border-radius: 10px;
+			}
+		}
+
+		&__load{
+			display: none;
+
+			&-label{
+				margin: 0 0 10px;
+				outline: none;
+				border: none;
+				display: block;
+				padding: 26px 0 25px;
+				background: #b4d339;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 31px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #121212;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+
+		&__edit{
+			margin: 0 0 10px;
+			outline: none;
+			border: none;
+			display: block;
+			padding: 26px 0 25px;
+			background: #fff;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 31px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #121212;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		&__close{
+			margin: 0 0 10px;
+			outline: none;
+			border: none;
+			display: block;
+			padding: 26px 0 25px;
+			background: #fff;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 31px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+
+	/*profile-reviews*/
+	&-reviews{
+		padding: 58px 0 0;
+
+		&__title{
+			margin: 0 0 55px 37px;
+			color: #464647;
+		}
+
+		&__marks{
+			margin: 0 0 60px;
+
+			&-positive{
+				float: left;
+				width: 50%;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 29px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				span{
+					font-family: Roboto-Bold, Arial, sans-serif;
+				}
+
+				&.active{
+					color: #f4bc32;
+				}
+			}
+
+			&-negative{
+				float: right;
+				width: 50%;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 29px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				span{
+					font-family: Roboto-Bold, Arial, sans-serif;
+				}
+
+				&.active{
+					color: #f4bc32;
+				}
+			}
+		}
+
+		&__list{
+			margin: 0;
+		}
+
+		&__item{
+			margin: 0 46px 29px 38px;
+
+			&:last-child{
+
+				p{
+					border-bottom: none;
+				}
+			}
+
+			&-img{
+				float: left;
+				margin: 3px 0 0;
+				width: 93px;
+				font-size: 0;
+				line-height: 0;
+				border-radius: 50%;
+
+				img{
+					max-width: 100%;
+					border-radius: 50%;
+				}
+			}
+
+			&-customer{
+				margin: 0 0 15px 135px;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-wrapper{
+				display: flex;
+				margin: 0 0 8px 135px;
+				justify-content: space-between;
+			}
+
+			&-name{
+				margin: 0;
+			}
+
+			&-time{
+				float: right;
+				margin: 0;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 30px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-text{
+				margin: 0 0 0 135px;
+				padding: 0 0 28px;
+				border-bottom: 1px solid #e5e4e4;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 30px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #363636;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+	/*end of profile-reviews*/
 }
 /*end of profile*/
