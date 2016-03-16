@@ -406,7 +406,7 @@ ul, p, h1, h2, h3 {
       margin: 0 7px 0 0; }
   .task-header__action-button {
     float: right;
-    margin: -13px 9px 0 0; }
+    margin: -13px 9px -13px 0; }
   .task-header__types {
     clear: both;
     font-size: 0;
@@ -1808,6 +1808,10 @@ ul, p, h1, h2, h3 {
         width: 100%;
         padding: 0 10px 13px;
         box-sizing: border-box; }
+    .profile-entity__submit {
+      width: 337px;
+      float: right;
+      margin: 0 38px 0 0; }
   .profile-individual {
     padding: 33px 0 64px; }
   .profile__img {
