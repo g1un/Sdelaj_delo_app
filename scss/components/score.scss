@@ -164,5 +164,128 @@
 			}
 		}
 	}
+
+	&-paid-services{
+		padding: 32px 24px 45px;
+
+		&__title{
+			margin: 0 0 29px;
+			color: #464646;
+		}
+
+		&__subtitle{
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+
+			h3{
+				margin: 8px 0 0;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 30px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			a{
+				margin: 0;
+				min-width: 66px;
+			}
+		}
+
+		&__type{
+			margin: 0 0 26px;
+
+			span{
+				display: block;
+				margin: 0 0 24px;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #adacad;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-img{
+				width: 219px;
+				font-size: 0;
+				line-height: 0;
+
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+
+		&__date{
+			margin: 0 0 31px;
+			font-family: OpenSans-Light, Arial, sans-serif;
+			font-size: 24px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #adacad;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			span{
+				display: inline-block;
+				vertical-align: top;
+				width: 150px;
+			}
+		}
+
+		&__begin{
+			margin: 0 0 11px;
+		}
+
+		&__term{
+			margin: 25px 0 23px;
+
+			label{
+				margin: 0 0 26px;
+				padding: 0 0 0 68px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		&__cost{
+			margin: 0 0 41px;
+			display: flex;
+			justify-content: space-between;
+
+			h3{
+				margin: 6px 0 0;
+				color: #464646;
+			}
+
+			span{
+				margin: 0 27px 0 0;
+				display: block;
+				min-width: 230px;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 36px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: right;
+			}
+		}
+
+		&__submit{
+			width: 646px;
+			margin: 0 auto 0;
+		}
+	}
 }
 /*end of score*/

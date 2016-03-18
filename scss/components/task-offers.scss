@@ -1,0 +1,249 @@
+/*task-offers*/
+.task-offers{
+	padding: 28px 0 10px;
+
+	&__title{
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+
+		h2{
+			margin: 0 0 0 37px;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 44px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		a{
+			display: block;
+			margin: -2px 10px 0 0;
+			min-width: 66px;
+		}
+
+		&-img{
+			margin: 11px 28px 0 0;
+			width: 53px;
+			min-width: 53px;
+			font-size: 0;
+			line-height: 0;
+			border-radius: 50%;
+			overflow: hidden;
+
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__category{
+		margin: -7px 0 0 0;
+		padding: 0 0 27px 38px;
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: 24px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		border-bottom: 1px solid #e5e4e4;
+	}
+
+	&__item{
+		border-bottom: 1px solid #e5e4e4;
+		padding: 27px 36px 36px;
+
+		&:last-child{
+			border: none;
+		}
+
+		&-performer{
+			margin: 0 0 15px;
+			font-size: 0;
+			line-height: 0;
+
+			&-name{
+				margin: 4px 0 0;
+				display: inline-block;
+				vertical-align: top;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 30px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				span{
+					display: block;
+					margin: 10px 0 0;
+					font-family: OpenSans-Light, Arial, sans-serif;
+					font-size: 23px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #464646;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
+			}
+		}
+
+		&-photo{
+			margin: 0 31px 0 0;
+			width: 93px;
+			display: inline-block;
+			vertical-align: top;
+			border-radius: 50%;
+			overflow: hidden;
+
+			img{
+				max-width: 100%;
+			}
+		}
+
+		&-text{
+			margin: 0 0 7px;
+			font-family: OpenSans-Light, Arial, sans-serif;
+			font-size: 30px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #363636;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&-price{
+			margin: 0 0 21px;
+			display: flex;
+			justify-content: space-between;
+
+			&-title{
+				margin: 11px 0 0;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			span{
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 36px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		&-choose{
+			display: block;
+			margin: 0 auto 0;
+			width: 646px;
+		}
+	}
+
+	&__answer{
+		margin: 0 0 25px;
+		padding: 25px 37px 39px;
+		border-bottom: 1px solid #e5e4e4;
+
+		textarea{
+			margin: 0 0 36px;
+			padding: 28px 22px 10px;
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			min-height: 216px;
+			border: 1px solid #c6c4c4;
+		}
+
+		&-price{
+			margin: 0 0 39px;
+			font-size: 0;
+			line-height: 0;
+			text-align: left;
+
+			p{
+				margin: 19px 30px 0 0;
+				display: inline-block;
+				vertical-align: top;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #363636;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			input{
+				margin: 0 27px 0 0;
+				padding: 12px 5px;
+				display: inline-block;
+				vertical-align: top;
+				width: 170px;
+				border: none;
+				outline: none;
+				background: #f6f6f6;
+				border-radius: 2px;
+				font-family: Roboto-Regular, Arial, sans-serif;
+				font-size: 36px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
+
+			span{
+				margin: 19px 0 0;
+				display: inline-block;
+				vertical-align: top;
+				font-family: OpenSans-Light, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #363636;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		&-submit{
+			display: block;
+			margin: 0 auto 0;
+			width: 646px;
+		}
+	}
+
+	&__subtitle{
+		margin:  0 0 15px 33px;
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+}
+/*end of task-offers*/

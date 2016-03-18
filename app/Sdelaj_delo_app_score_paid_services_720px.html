@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Сделай дело</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<header class="task-header">
+			<div class="task-header__up clearfix">
+				<div class="task-header__sandwich"></div>
+
+				<div class="task-header__text">
+					Счет
+				</div>
+
+				<div class="task-header__action-button action-button"></div>
+
+				<div class="task-header__button task-header__button--score"></div>
+			</div>
+
+			<ul class="task-header__types">
+				<li class="task-header__types-item">
+					<a href="#">Мой счет</a>
+				</li>
+				<li class="task-header__types-item">
+					<a href="#">Мои ставки</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="active" href="#">Платные услуги</a>
+				</li>
+			</ul>
+
+			<!--header-menu-->
+			<div class="task-header__menu clearfix">
+				<ul class="task-header__menu-list">
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--main" href="#">Главная</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--add-task" href="#">Создать задание</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--all-tasks" href="#">Все задания</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--profile" href="#">Мой профиль</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--news" href="#">Новости</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--contacts" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="task-header__menu-close">Закрыть</div>
+			</div>
+		</header>
+
+		<form class="score-paid-services">
+			<h2 class="score-paid-services__title content-title">Заказать платную услугу</h2>
+
+			<div class="score-paid-services__subtitle">
+				<h3>Выберите вид услуги</h3>
+
+				<a class="action-button" href="#"></a>
+			</div>
+
+			<div class="score-paid-services__type">
+				<span>Рекламный баннер 240*400</span>
+
+				<div class="score-paid-services__type-img"><img src="img/banner.jpg" alt="banner"></div>
+			</div>
+
+			<div class="score-paid-services__subtitle score-paid-services__subtitle--calendar">
+				<h3>Выберите дату начала</h3>
+
+				<a class="action-button" href="#"></a>
+			</div>
+
+			<div class="score-paid-services__date">
+				<div class="score-paid-services__begin">
+					<span>Начало</span>22 ноября 2015
+				</div>
+				<div class="score-paid-services__end">
+					<span>Конец</span>22 декабря 2015
+				</div>
+			</div>
+
+			<div class="score-paid-services__subtitle">
+				<h3>Выберите период размещения</h3>
+			</div>
+
+			<div class="score-paid-services__term">
+				<input class="radio-input" type="radio" name="score-paid-services__term" id="score-paid-services__term-week">
+				<label class="radio-label" for="score-paid-services__term-week">Неделя</label>
+
+				<br>
+
+				<input class="radio-input" type="radio" name="score-paid-services__term" id="score-paid-services__term-month">
+				<label class="radio-label" for="score-paid-services__term-month">Месяц</label>
+			</div>
+
+			<div class="score-paid-services__cost">
+				<h3 class="content-title">Стоимость услуги составит</h3>
+
+				<span>300 руб</span>
+			</div>
+
+			<input class="score-paid-services__submit sandy-button" type="submit" name="score-paid-services__submit" id="score-paid-services__submit" value="Заказать услугу">
+		</form>
+
+		<!--calendar-->
+		<div class="calendar__background"></div>
+		<div class="calendar">
+			<h3 class="calendar__title">Выбор даты начала размещения</h3>
+
+			<div class="calendar__month">
+				<span></span>
+				<h4>Октябрь 2015</h4>
+				<span></span>
+			</div>
+
+			<div class="calendar__days">
+				<span><i>1</i></span>
+				<span><i>2</i></span>
+				<span><i>3</i></span>
+				<span><i>4</i></span>
+				<span><i>5</i></span>
+				<span><i>6</i></span>
+				<span><i>7</i></span>
+				<span><i>8</i></span>
+				<span><i>9</i></span>
+				<span><i>10</i></span>
+				<span><i>11</i></span>
+				<span><i>12</i></span>
+				<span><i>13</i></span>
+				<span><i>14</i></span>
+				<span><i>15</i></span>
+				<span><i>16</i></span>
+				<span><i>17</i></span>
+				<span><i>18</i></span>
+				<span><i>19</i></span>
+				<span><i>20</i></span>
+				<span><i>21</i></span>
+				<span><i>22</i></span>
+				<span><i>23</i></span>
+				<span><i>24</i></span>
+				<span><i>25</i></span>
+				<span><i>26</i></span>
+				<span><i>27</i></span>
+				<span><i>28</i></span>
+				<span><i class="active">29</i></span>
+				<span><i>30</i></span>
+				<span><i>31</i></span>
+			</div>
+
+			<div class="calendar__buttons">
+				<div class="calendar__cancel window-button">Отмена</div>
+				<div class="calendar__change window-button">Изменить</div>
+			</div>
+		</div>
+		<!--end of calendar-->
+
+		<!--side-menu-->
+		<div class="side-menu">
+			<footer class="side-menu__footer">
+				<div class="side-menu__footer-icon"></div>
+				<a class="side-menu__footer-back-link" href="#">Все задания</a>
+				<div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+				<div class="side-menu__footer-user-name">Татьяна Иванова</div>
+			</footer>
+
+			<ul class="side-menu__list">
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+						<span class="side-menu__list-link-number">3</span>Мои задания
+					</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+				</li>
+			</ul>
+		</div>
+		<div class="background"></div>
+		<!--end of side-menu-->
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

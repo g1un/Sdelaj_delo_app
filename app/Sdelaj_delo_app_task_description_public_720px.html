@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Сделай дело</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<header class="task-header">
+			<div class="task-header__up clearfix">
+				<div class="task-header__sandwich"></div>
+
+				<div class="task-header__text">
+					Задание
+				</div>
+
+				<div class="task-header__button"></div>
+			</div>
+
+			<ul class="task-header__types">
+				<li class="task-header__types-item">
+					<a class="active" href="#">Описание</a>
+				</li>
+				<li class="task-header__types-item">
+					<a href="#">Предложения (3)</a>
+				</li>
+				<li class="task-header__types-item">
+					<a href="#">Комментарии (2)</a>
+				</li>
+			</ul>
+
+			<!--header-menu-->
+			<div class="task-header__menu clearfix">
+				<ul class="task-header__menu-list">
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--main" href="#">Главная</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--add-task" href="#">Создать задание</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--all-tasks" href="#">Все задания</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--profile" href="#">Мой профиль</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--news" href="#">Новости</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--contacts" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="task-header__menu-close">Закрыть</div>
+			</div>
+		</header>
+
+		<div class="task-description">
+			<div class="task-description__title">
+				<h2>Отвезти детскую коляску</h2>
+			</div>
+
+			<div class="task-description__category">Категория: Грузоперевозки и курьерские услуги</div>
+
+			<div class="task-description__wrapper">
+				<div class="task-description__price">Открытая цена</div>
+
+				<div class="task-description__begin">12 ч 5 мин назад</div>
+			</div>
+
+			<div class="task-description__wrapper">
+				<div class="task-description__status">Статус: Открыто</div>
+
+				<div class="task-description__customer">
+					<div class="task-description__customer-photo"><img src="img/photo.jpg" alt="customer"></div>
+
+					<div class="task-description__customer-info">Наталья, 22</div>
+				</div>
+			</div>
+
+			<a class="task-description__offer sandy-button" href="#">Ответить предложением</a>
+
+			<div class="task-description__info">
+				<p class="task-description__text">Отвезти детскую коляску клиенту, весит 12 кг, успеть до 21:00</p>
+
+				<div class="task-description__time">
+					<span>1 Января 2015</span>
+					<span>12:00</span>
+				</div>
+
+				<div class="task-description__address">
+					<span>Хабаровск, ул Ленина дом 5</span>
+					<a class="action-button" href="#"></a>
+				</div>
+
+				<div class="task-description__weight">
+					<span>15 кг</span>
+				</div>
+
+				<div class="task-description__photo">
+					<img src="img/carriage.jpg" alt="carriage">
+				</div>
+			</div>
+		</div>
+
+		<!--side-menu-->
+		<div class="side-menu">
+			<footer class="side-menu__footer">
+				<div class="side-menu__footer-icon"></div>
+				<a class="side-menu__footer-back-link" href="#">Все задания</a>
+				<div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+				<div class="side-menu__footer-user-name">Татьяна Иванова</div>
+			</footer>
+
+			<ul class="side-menu__list">
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+						<span class="side-menu__list-link-number">3</span>Мои задания
+					</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+				</li>
+			</ul>
+		</div>
+		<div class="background"></div>
+		<!--end of side-menu-->
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

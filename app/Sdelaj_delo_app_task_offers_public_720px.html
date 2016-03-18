@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Сделай дело</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<header class="task-header">
+			<div class="task-header__up clearfix">
+				<div class="task-header__sandwich"></div>
+
+				<div class="task-header__text">
+					Задание
+				</div>
+
+				<div class="task-header__button"></div>
+			</div>
+
+			<ul class="task-header__types">
+				<li class="task-header__types-item">
+					<a href="#">Описание</a>
+				</li>
+				<li class="task-header__types-item">
+					<a class="active" href="#">Предложения (3)</a>
+				</li>
+				<li class="task-header__types-item">
+					<a href="#">Комментарии (2)</a>
+				</li>
+			</ul>
+
+			<!--header-menu-->
+			<div class="task-header__menu clearfix">
+				<ul class="task-header__menu-list">
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--main" href="#">Главная</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--add-task" href="#">Создать задание</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--all-tasks" href="#">Все задания</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--profile" href="#">Мой профиль</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--news" href="#">Новости</a>
+					</li>
+					<li class="task-header__menu-item">
+						<a class="task-header__menu-link task-header__menu-link--contacts" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="task-header__menu-close">Закрыть</div>
+			</div>
+		</header>
+
+		<div class="task-offers">
+			<div class="task-offers__title">
+				<h2>Отвезти детскую коляску</h2>
+
+				<div class="task-offers__title-img">
+					<img src="img/photo.jpg" alt="photo">
+				</div>
+			</div>
+
+			<div class="task-offers__category">Категория: Грузоперевозки и курьерские услуги</div>
+
+			<form class="task-offers__answer" action="#" method="get">
+				<textarea class="input-text" name="task-offers__comment" id="task-offers__comment" placeholder="Сообщение к своему предложению"></textarea>
+
+				<div class="task-offers__answer-price">
+					<p>Я готов предложить свою цену</p>
+					<input type="text" name="task-offers__price" id="task-offers__price" value="200">
+					<span>руб.</span>
+				</div>
+
+				<input class="task-offers__answer-submit sandy-button" type="submit" name="task-offers__answer-submit" id="task-offers__answer-submit" value="Ответить предложением">
+			</form>
+
+			<h3 class="task-offers__subtitle">Все предложения (2)</h3>
+
+			<div class="task-offers__item">
+				<div class="task-offers__item-performer">
+					<div class="task-offers__item-photo"><img src="img/client.jpg" alt="performer"></div>
+
+					<div class="task-offers__item-performer-name">
+						Татьяна
+						<span>5 отзывов</span>
+					</div>
+				</div>
+
+				<p class="task-offers__item-text">
+					Добрый день! Готова выполнить ваше задание
+				</p>
+
+				<div class="task-offers__item-price">
+					<div class="task-offers__item-price-title">Исполнитель готов предложить</div>
+					<span>200 руб</span>
+				</div>
+			</div>
+
+			<div class="task-offers__item">
+				<div class="task-offers__item-performer">
+					<div class="task-offers__item-photo"><img src="img/client.jpg" alt="performer"></div>
+
+					<div class="task-offers__item-performer-name">
+						Татьяна
+						<span>5 отзывов</span>
+					</div>
+				</div>
+
+				<p class="task-offers__item-text">
+					Добрый день! Готова выполнить ваше задание
+				</p>
+
+				<div class="task-offers__item-price">
+					<div class="task-offers__item-price-title">Исполнитель готов предложить</div>
+					<span>200 руб</span>
+				</div>
+			</div>
+		</div>
+
+		<!--side-menu-->
+		<div class="side-menu">
+			<footer class="side-menu__footer">
+				<div class="side-menu__footer-icon"></div>
+				<a class="side-menu__footer-back-link" href="#">Все задания</a>
+				<div class="side-menu__footer-photo"><img src="img/side-menu__footer-photo.png" alt="side-menu__footer-photo"></div>
+				<div class="side-menu__footer-user-name">Татьяна Иванова</div>
+			</footer>
+
+			<ul class="side-menu__list">
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--notification" href="#">Уведомления</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--all-tasks" href="#">
+						<span class="side-menu__list-link-number">3</span>Мои задания
+					</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--settings" href="#">Настройки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--balance" href="#">Счет</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--bookmarks" href="#">Закладки</a>
+				</li>
+				<li class="side-menu__list-item">
+					<a class="side-menu__list-link side-menu__list-link--exit" href="#">Выход</a>
+				</li>
+			</ul>
+		</div>
+		<div class="background"></div>
+		<!--end of side-menu-->
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

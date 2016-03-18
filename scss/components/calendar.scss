@@ -1,0 +1,141 @@
+/*calendar*/
+.calendar{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 34px 0 33px;
+	box-sizing: border-box;
+	width: 657px;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+	opacity: 0;
+	transition: opacity .5s;
+
+	&.show{
+		display: block;
+	}
+
+	&__title{
+		margin: 0 0 35px;
+		font-family: OpenSans-Light, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #464646;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__month{
+		margin: 0 43px 32px;
+		display: flex;
+		justify-content: space-between;
+
+		h4{
+			margin: 0;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 36px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		span{
+			margin: 9px 0 0;
+			display: block;
+			min-width: 22px;
+			width: 22px;
+			height: 22px;
+			border-left: 6px solid #bfbfbf;
+			border-bottom: 6px solid #bfbfbf;
+			cursor: pointer;
+
+			&:first-child{
+				transform: rotate(45deg);
+			}
+
+			&:last-child{
+				transform: rotate(225deg);
+			}
+		}
+	}
+
+	&__days{
+		margin: 0 27px 59px;
+		display: flex;
+		flex-wrap: wrap;
+
+		span{
+			display: block;
+			margin: 0 0 5px;
+			min-width: 14.28%;
+			text-align: center;
+			
+			i{
+				display: inline-block;
+				vertical-align: top;
+				width: 70px;
+				font-family: Pragmatica-Plain, Arial, sans-serif;
+				font-size: 37px;
+				line-height: 70px;
+				font-weight: 400;
+				color: #363636;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				font-style: normal;
+				cursor: pointer;
+				
+				&:hover,
+				&:focus,
+				&.active{
+					border-radius: 50%;
+					background: #f4bc32;
+				}
+			}
+		}
+	}
+
+	&__buttons{
+		margin: 0 42px 0;
+		text-align: right;
+	}
+
+	&__cancel{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 61px 0 0;
+	}
+
+	&__change{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+	}
+
+	&__background{
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.25);
+		opacity: 0;
+		transition: opacity .5s;
+
+		&.show{
+			display: block;
+		}
+	}
+}
+/*end of calendar*/

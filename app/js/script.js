@@ -225,3 +225,91 @@ if ($('.profile-photo').length) {
 	});
 }
 /*end of profile-photo window*/
+
+/*calendar*/
+if ($('.calendar').length) {
+	var calendarLink = $('.score-paid-services__subtitle--calendar a');
+	var calendar = $('.calendar');
+	var calendarCancel = $('.calendar__cancel');
+	var calendarBg = $('.calendar__background');
+
+	calendarLink.on('click', function(e){
+		e.preventDefault();
+		calendarBg.addClass('show');
+		calendar.addClass('show');
+		setTimeout(function(){
+			calendarBg.css('opacity', '1');
+			calendar.css('opacity', '1');
+		}, 50);
+		calendarCss();
+	});
+
+	function calendarCss() {
+		if (window.innerHeight >= calendar.outerHeight()) {
+			var calendarTop = (window.innerHeight - calendar.outerHeight()) / 2;
+			calendar.css('top', calendarTop);
+		}
+		var calendarLeft = ($('body').width() - calendar.outerWidth()) / 2;
+		calendar.css('left', calendarLeft);
+
+		console.log($('body').width());
+		console.log(calendar.outerWidth());
+	}
+
+	calendarCss();
+
+	$(window).on('resize', function () {
+		calendarCss();
+	});
+
+	calendarCancel.on('click', function () {
+		calendarBg.css('opacity', '0');
+		calendar.css('opacity', '0');
+		setTimeout(function(){
+			calendarBg.removeClass('show');
+			calendar.removeClass('show');
+		}, 500);
+
+	});
+
+	calendarBg.mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.calendar') || clicked.closest('.calendar').length) {
+			return;
+		} else {
+			calendarBg.css('opacity', '0');
+			calendar.css('opacity', '0');
+			setTimeout(function(){
+				calendarBg.removeClass('show');
+				calendar.removeClass('show');
+			}, 500);
+		}
+	});
+}
+/*end of calendar*/
+
+/*task-description__action*/
+if ($('.task-description__action').length) {
+	var link = $('.task-description__title a');
+	var taskDescEdit = $('.task-description__action');
+	var taskDescCancel = $('.task-description__action-cancel');
+
+	link.on('click',function(e){
+		e.preventDefault();
+		taskDescEdit.toggleClass('show');
+	});
+
+	taskDescCancel.on('click',function(){
+		taskDescEdit.removeClass('show');
+	});
+
+	$(window).mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.task-description__action') || clicked.closest('.task-description__action').length || clicked.is('.task-description__title a')) {
+			return;
+		} else {
+			taskDescEdit.removeClass('show');
+		}
+	});
+}
+/*end of task-description__action*/
