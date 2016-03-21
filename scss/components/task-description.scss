@@ -256,7 +256,8 @@
 		}
 	}
 
-	&__edit{
+	&__edit,
+	&__answer{
 		margin: 0 0 33px;
 		display: inline-block;
 		vertical-align: top;
@@ -270,7 +271,8 @@
 		letter-spacing: 0;
 	}
 
-	&__unpublish{
+	&__unpublish,
+	&__claim{
 		margin: 0;
 		font-family: OpenSans-Light, 'Arial', sans-serif;
 		font-size: 28px;

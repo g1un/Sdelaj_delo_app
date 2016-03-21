@@ -1,6 +1,7 @@
 /*task-offers*/
 .task-offers{
 	padding: 28px 0 10px;
+	position: relative;
 
 	&__title{
 		margin: 0;
@@ -52,11 +53,27 @@
 		text-decoration: none;
 		letter-spacing: 0;
 		border-bottom: 1px solid #e5e4e4;
+
+		&--borderless{
+			border: none;
+		}
 	}
 
 	&__item{
 		border-bottom: 1px solid #e5e4e4;
 		padding: 27px 36px 36px;
+
+		&--comments{
+
+			p{
+				margin-left: 124px;
+			}
+
+			.action-button{
+				margin: -12px -26px 0 0;
+				float: right;
+			}
+		}
 
 		&:last-child{
 			border: none;
@@ -153,6 +170,10 @@
 			display: block;
 			margin: 0 auto 0;
 			width: 646px;
+
+			&--comments{
+				margin: 10px auto 60px;
+			}
 		}
 	}
 
@@ -244,6 +265,10 @@
 		text-transform: none;
 		text-decoration: none;
 		letter-spacing: 0;
+	}
+
+	&__wrapper{
+		border-bottom: 1px solid #e5e4e4;
 	}
 }
 /*end of task-offers*/

@@ -313,3 +313,46 @@ if ($('.task-description__action').length) {
 	});
 }
 /*end of task-description__action*/
+
+/*task-description__action--comments*/
+if ($('.task-description__action--comments').length) {
+	var link = $('.task-offers__item--comments .action-button');
+	var taskDescEdit = $('.task-description__action--comments');
+	var taskDescCancel = $('.task-description__action-cancel');
+
+	for(var i=0; i<link.length; i++){
+		$(link[i]).on('click',function(e){
+			e.preventDefault();
+			taskDescEdit.toggleClass('show');
+			var position = $(this).position();
+			var left = ($('body').width() - (position.left + $(this).outerWidth()));
+			var top = position.top;
+			console.log(parseInt($(this).css('margin-top').replace('px','')));
+			if($(this).css('margin-top').replace('px','')<0){
+				top = top + (parseInt($(this).css('margin-top').replace('px','')));
+			}
+			//var _this = this;
+			taskDescEdit.css({
+				'position': 'absolute',
+				'top': top,
+				'right': ($('body').width() - (position.left + $(this).outerWidth()))
+			});
+		});
+	}
+
+	for(var i=0; i<link.length; i++){
+		$(taskDescCancel[i]).on('click',function(){
+			taskDescEdit.removeClass('show');
+		});
+	}
+
+	$(window).mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.task-description__action--comments') || clicked.closest('.task-description__action--comments').length || clicked.is('.task-offers__item--comments .action-button')) {
+			return;
+		} else {
+			taskDescEdit.removeClass('show');
+		}
+	});
+}
+/*end of task-description__action--comments*/

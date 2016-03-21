@@ -2937,7 +2937,7 @@ ul, p, h1, h2, h3 {
     .task-description__action-cancel {
       margin: 41px 0 0;
       float: right; }
-  .task-description__edit {
+  .task-description__edit, .task-description__answer {
     margin: 0 0 33px;
     display: inline-block;
     vertical-align: top;
@@ -2949,7 +2949,7 @@ ul, p, h1, h2, h3 {
     text-transform: none;
     text-decoration: none;
     letter-spacing: 0; }
-  .task-description__unpublish {
+  .task-description__unpublish, .task-description__claim {
     margin: 0;
     font-family: OpenSans-Light, 'Arial', sans-serif;
     font-size: 28px;
@@ -2963,7 +2963,8 @@ ul, p, h1, h2, h3 {
 /*end of task-description*/
 /*task-offers*/
 .task-offers {
-  padding: 28px 0 10px; }
+  padding: 28px 0 10px;
+  position: relative; }
   .task-offers__title {
     margin: 0;
     display: -webkit-box;
@@ -3010,9 +3011,16 @@ ul, p, h1, h2, h3 {
     text-decoration: none;
     letter-spacing: 0;
     border-bottom: 1px solid #e5e4e4; }
+    .task-offers__category--borderless {
+      border: none; }
   .task-offers__item {
     border-bottom: 1px solid #e5e4e4;
     padding: 27px 36px 36px; }
+    .task-offers__item--comments p {
+      margin-left: 124px; }
+    .task-offers__item--comments .action-button {
+      margin: -12px -26px 0 0;
+      float: right; }
     .task-offers__item:last-child {
       border: none; }
     .task-offers__item-performer {
@@ -3094,6 +3102,8 @@ ul, p, h1, h2, h3 {
       display: block;
       margin: 0 auto 0;
       width: 646px; }
+      .task-offers__item-choose--comments {
+        margin: 10px auto 60px; }
   .task-offers__answer {
     margin: 0 0 25px;
     padding: 25px 37px 39px;
@@ -3168,6 +3178,8 @@ ul, p, h1, h2, h3 {
     text-transform: none;
     text-decoration: none;
     letter-spacing: 0; }
+  .task-offers__wrapper {
+    border-bottom: 1px solid #e5e4e4; }
 
 /*end of task-offers*/
 /*end of style*/
