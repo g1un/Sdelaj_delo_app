@@ -1,0 +1,60 @@
+/*bookmarks*/
+.bookmarks{
+	padding: 0;
+
+	li{
+		padding: 33px 40px 29px 36px;
+		border-bottom: 3px solid #f2f2f2;
+		font-size: 0;
+		line-height: 0;
+
+		&:after{
+			clear: both;
+			display: table;
+			content: '';
+		}
+
+		&:last-child{
+			border: none;
+		}
+
+		img{
+			margin: 0 26px 0 0;
+			float: left;
+			width: 75px;
+		}
+
+		b{
+			margin: 12px 0 0;
+			float: left;
+			max-width: 25%;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 30px;
+			line-height: 55px;
+			font-weight: 400;
+			color: #474747;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		span{
+			margin: 10px 0 0;
+			float: right;
+			font-family: OpenSans-Light, Arial, sans-serif;
+			font-size: 23px;
+			line-height: 55px;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		.rating{
+			margin: 10px 53px 0 0;
+			float: right;
+		}
+	}
+}
+/*end of bookmarks*/

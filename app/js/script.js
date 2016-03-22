@@ -356,3 +356,78 @@ if ($('.task-description__action--comments').length) {
 	});
 }
 /*end of task-description__action--comments*/
+
+/*select-performer*/
+if ($('.select-performer').length) {
+	var selectPerformerLink = $('.task-offers__item-choose');
+	var selectPerformer = $('.select-performer');
+	var selectPerformerCancel = $('.select-performer__cancel');
+	var selectPerformerBg = $('.select-performer__background');
+
+	for(var i=0; i<selectPerformerLink.length; i++){
+		$(selectPerformerLink[i]).on('click', function(e){
+			e.preventDefault();
+			selectPerformerBg.addClass('show');
+			selectPerformer.addClass('show');
+			setTimeout(function(){
+				selectPerformerBg.css('opacity', '1');
+				selectPerformer.css('opacity', '1');
+			}, 50);
+			selectPerformerCss();
+		});
+	}
+
+	function selectPerformerCss() {
+		if (window.innerHeight >= selectPerformer.outerHeight()) {
+			var selectPerformerTop = (window.innerHeight - selectPerformer.outerHeight()) / 2;
+			var selectPerformerLeft = ($(window).width() - selectPerformer.outerWidth()) / 2;
+			selectPerformer.css({
+				'top': selectPerformerTop,
+				'position': 'fixed',
+				'left': selectPerformerLeft
+			});
+		}else{
+			selectPerformerLeft = ($('body').width() - selectPerformer.outerWidth()) / 2;
+			selectPerformer.css({
+				'position': 'absolute',
+				'top': 0,
+				'left': selectPerformerLeft
+			});
+		}
+
+
+		//console.log($('body').width());
+		//console.log(selectPerformer.outerWidth());
+	}
+
+	selectPerformerCss();
+
+	$(window).on('resize', function () {
+		selectPerformerCss();
+	});
+
+	selectPerformerCancel.on('click', function () {
+		selectPerformerBg.css('opacity', '0');
+		selectPerformer.css('opacity', '0');
+		setTimeout(function(){
+			selectPerformerBg.removeClass('show');
+			selectPerformer.removeClass('show');
+		}, 500);
+
+	});
+
+	selectPerformerBg.mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.select-performer') || clicked.closest('.select-performer').length) {
+			return;
+		} else {
+			selectPerformerBg.css('opacity', '0');
+			selectPerformer.css('opacity', '0');
+			setTimeout(function(){
+				selectPerformerBg.removeClass('show');
+				selectPerformer.removeClass('show');
+			}, 500);
+		}
+	});
+}
+/*end of select-performer*/

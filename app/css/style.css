@@ -373,6 +373,95 @@ ul, p, h1, h2, h3 {
     max-width: 100%; }
 
 /*end of logo*/
+/*rating*/
+.rating {
+  box-sizing: border-box;
+  margin: 0 0 30px 48px;
+  font-size: 0;
+  line-height: 0; }
+  .rating__thumbs {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 12px 0 0;
+    background: #a5ce39;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: Roboto-Bold, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative; }
+    .rating__thumbs::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: -8px;
+      background: url("../img/thumbs-up-icon.svg") no-repeat 0 0;
+      width: 26px;
+      height: 27px; }
+  .rating__stars {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 12px 0 0;
+    background: #fec61d;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: Roboto-Bold, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative; }
+    .rating__stars::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: -10px;
+      background: url("../img/star-icon--orange.svg") no-repeat 0 0;
+      width: 29px;
+      height: 27px; }
+  .rating__hats {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    background: #f9d612;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: Roboto-Bold, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative; }
+    .rating__hats::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: -14px;
+      background: url("../img/hat-icon.svg") no-repeat 0 0;
+      width: 40px;
+      height: 26px; }
+
+/*end of rating*/
 .task-header {
   min-height: 111px;
   width: 100%;
@@ -3031,6 +3120,7 @@ ul, p, h1, h2, h3 {
         margin: 4px 0 0;
         display: inline-block;
         vertical-align: top;
+        max-width: 50%;
         font-family: Roboto-Regular, Arial, sans-serif;
         font-size: 30px;
         line-height: 1.2em;
@@ -3104,6 +3194,9 @@ ul, p, h1, h2, h3 {
       width: 646px; }
       .task-offers__item-choose--comments {
         margin: 10px auto 60px; }
+  .task-offers__rating {
+    margin: 0;
+    float: right; }
   .task-offers__answer {
     margin: 0 0 25px;
     padding: 25px 37px 39px;
@@ -3182,4 +3275,137 @@ ul, p, h1, h2, h3 {
     border-bottom: 1px solid #e5e4e4; }
 
 /*end of task-offers*/
+/*select-performer*/
+.select-performer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 47px 0 33px;
+  box-sizing: border-box;
+  width: 543px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
+  .select-performer.show {
+    display: block; }
+  .select-performer__title {
+    margin: 0 37px 45px;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .select-performer .task-offers__item-performer {
+    margin: 0 0 23px; }
+    .select-performer .task-offers__item-performer-name {
+      margin: 2px 0 0;
+      font-size: 28px; }
+    .select-performer .task-offers__item-performer span {
+      float: right;
+      margin: 59px 55px 0 0;
+      font-family: OpenSans-Light, Arial, sans-serif;
+      font-size: 23px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+  .select-performer .task-offers__item-photo {
+    margin: 0 23px 0 38px;
+    width: 75px; }
+  .select-performer .task-offers__rating {
+    margin: 9px 0 0;
+    float: none; }
+    .select-performer .task-offers__rating div {
+      width: 55px; }
+  .select-performer p {
+    margin: 0 37px 50px;
+    font-family: OpenSans-Light, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #252525;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .select-performer__buttons {
+    margin: 0 49px 0;
+    text-align: right; }
+  .select-performer__cancel {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 55px 0 0; }
+  .select-performer__select {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0; }
+  .select-performer__background {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s; }
+    .select-performer__background.show {
+      display: block; }
+
+/*end of select-performer*/
+/*bookmarks*/
+.bookmarks {
+  padding: 0; }
+  .bookmarks li {
+    padding: 33px 40px 29px 36px;
+    border-bottom: 3px solid #f2f2f2;
+    font-size: 0;
+    line-height: 0; }
+    .bookmarks li:after {
+      clear: both;
+      display: table;
+      content: ''; }
+    .bookmarks li:last-child {
+      border: none; }
+    .bookmarks li img {
+      margin: 0 26px 0 0;
+      float: left;
+      width: 75px; }
+    .bookmarks li b {
+      margin: 12px 0 0;
+      float: left;
+      max-width: 25%;
+      font-family: Roboto-Regular, Arial, sans-serif;
+      font-size: 30px;
+      line-height: 55px;
+      font-weight: 400;
+      color: #474747;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .bookmarks li span {
+      margin: 10px 0 0;
+      float: right;
+      font-family: OpenSans-Light, Arial, sans-serif;
+      font-size: 23px;
+      line-height: 55px;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .bookmarks li .rating {
+      margin: 10px 53px 0 0;
+      float: right; }
+
+/*end of bookmarks*/
 /*end of style*/

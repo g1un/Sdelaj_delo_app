@@ -88,6 +88,7 @@
 				margin: 4px 0 0;
 				display: inline-block;
 				vertical-align: top;
+				max-width: 50%;
 				font-family: Roboto-Regular, Arial, sans-serif;
 				font-size: 30px;
 				line-height: 1.2em;
@@ -175,6 +176,11 @@
 				margin: 10px auto 60px;
 			}
 		}
+	}
+
+	&__rating{
+		margin: 0;
+		float: right;
 	}
 
 	&__answer{
