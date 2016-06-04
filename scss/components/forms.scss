@@ -33,6 +33,61 @@
 		transform: rotate(45deg);
 	}
 }
+
+.check-input-tumbler{
+	display: none;
+
+	&:checked + label{
+
+		&:before{
+			background: $light-green;
+		}
+
+		&:after{
+			background: $sand-green;
+			right: -4px;
+		}
+	}
+}
+
+.check-label-tumbler{
+	font-family: $roboto;
+	font-size: $small-font-size + px;
+	line-height: 36/$small-font-size + em;
+	font-weight: 400;
+	color: $grey;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	display: block;
+	cursor: pointer;
+	position: relative;
+
+	&:before{
+		content: '';
+		position: absolute;
+		top: 8px;
+		right: 0;
+		width: 65px;
+		height: 18px;
+		background: $border;
+		border-radius: 9px;
+		transition: all .5s;
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 33px;
+		width: 34px;
+		height: 34px;
+		background: $button;
+		border-radius: 50%;
+		box-shadow: 0 2px 4px 0 #dbd9d9;
+		transition: all .5s;
+	}
+}
 /*end of checkbox*/
 
 /*radio*/
@@ -87,7 +142,7 @@
 }
 /*end of radio*/
 
-/*type='input'*/
+/*type='text'*/
 .input-text{
 	outline: none;
 	border: none;
@@ -134,5 +189,5 @@
 		letter-spacing: 0;
 	}
 }
-/*end of type='input'*/
+/*end of type='text'*/
 /*end of FORMS*/

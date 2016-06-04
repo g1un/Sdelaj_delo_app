@@ -131,8 +131,6 @@ if($('.profile-choose-work__list').length){
 	var profileChooseWorkList = $('.profile-choose-work__list');
 	var profileChooseWorkTitle = $('.profile-choose-work__list-title');
 
-	//console.log(profileChooseWorkTitle);
-
 	for(i=0; i<profileChooseWorkTitle.length; i++){
 		$(profileChooseWorkTitle[i]).on('click', function() {
 			$(this).toggleClass('opened');
@@ -251,9 +249,6 @@ if ($('.calendar').length) {
 		}
 		var calendarLeft = ($('body').width() - calendar.outerWidth()) / 2;
 		calendar.css('left', calendarLeft);
-
-		console.log($('body').width());
-		console.log(calendar.outerWidth());
 	}
 
 	calendarCss();
@@ -285,6 +280,27 @@ if ($('.calendar').length) {
 			}, 500);
 		}
 	});
+
+	/*calendar button in settings*/
+	if($('.settings__select select').length){
+		var settingsCalendarLink = $('.settings__select select');
+
+		for(var i=0; i<settingsCalendarLink.length; i++){
+			$(settingsCalendarLink[i]).css('pointer-events', 'none');
+		}
+
+		settingsCalendarLink.on('click', function(e){
+			e.preventDefault();
+			calendarBg.addClass('show');
+			calendar.addClass('show');
+			setTimeout(function(){
+				calendarBg.css('opacity', '1');
+				calendar.css('opacity', '1');
+			}, 50);
+			calendarCss();
+		});
+	}
+	/*end of calendar button in settings*/
 }
 /*end of calendar*/
 
@@ -327,7 +343,7 @@ if ($('.task-description__action--comments').length) {
 			var position = $(this).position();
 			var left = ($('body').width() - (position.left + $(this).outerWidth()));
 			var top = position.top;
-			console.log(parseInt($(this).css('margin-top').replace('px','')));
+			//console.log(parseInt($(this).css('margin-top').replace('px','')));
 			if($(this).css('margin-top').replace('px','')<0){
 				top = top + (parseInt($(this).css('margin-top').replace('px','')));
 			}
@@ -394,10 +410,6 @@ if ($('.select-performer').length) {
 				'left': selectPerformerLeft
 			});
 		}
-
-
-		//console.log($('body').width());
-		//console.log(selectPerformer.outerWidth());
 	}
 
 	selectPerformerCss();
@@ -431,3 +443,115 @@ if ($('.select-performer').length) {
 	});
 }
 /*end of select-performer*/
+
+/*map window*/
+if ($('.map').length) {
+	var mapLink = $('.contacts__address-item a');
+	var map = $('.map');
+	var mapCancel = $('.map .window-button');
+	var mapBg = $('.map__background');
+
+	mapLink.on('click', function(e){
+		e.preventDefault();
+		mapBg.addClass('show');
+		map.addClass('show');
+		setTimeout(function(){
+			mapBg.css('opacity', '1');
+			map.css('opacity', '1');
+		}, 50);
+		mapCss();
+	});
+
+	function mapCss() {
+		//if (window.innerHeight >= map.outerHeight()) {
+		//	var mapTop = (window.innerHeight - map.outerHeight()) / 2;
+		//	map.css('top', mapTop);
+		//}
+		//var mapLeft = ($('body').width() - map.outerWidth()) / 2;
+		//map.css('left', mapLeft);
+
+		if (window.innerHeight >= map.outerHeight()) {
+			var mapTop = (window.innerHeight - map.outerHeight()) / 2;
+			var mapLeft = ($(window).width() - map.outerWidth()) / 2;
+			map.css({
+				'top': mapTop,
+				'position': 'fixed',
+				'left': mapLeft
+			});
+		}else{
+			mapLeft = ($('body').width() - map.outerWidth()) / 2;
+			map.css({
+				'position': 'absolute',
+				'top': 0,
+				'left': mapLeft
+			});
+		}
+	}
+
+	mapCss();
+
+	$(window).on('resize', function () {
+		mapCss();
+	});
+
+	mapCancel.on('click', function () {
+		mapBg.css('opacity', '0');
+		map.css('opacity', '0');
+		setTimeout(function(){
+			mapBg.removeClass('show');
+			map.removeClass('show');
+		}, 500);
+
+	});
+
+	mapBg.mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.map') || clicked.closest('.map').length) {
+			return;
+		} else {
+			mapBg.css('opacity', '0');
+			map.css('opacity', '0');
+			setTimeout(function(){
+				mapBg.removeClass('show');
+				map.removeClass('show');
+			}, 500);
+		}
+	});
+}
+/*end of map window*/
+
+/*yandex map*/
+if($('#map').length){
+
+	function init () {
+		var myMap = new ymaps.Map("map", {
+					center: [48.50345629671856,135.112862],
+					zoom: 15
+				}),
+
+		// Создаем метку с помощью вспомогательного класса.
+				myPlacemark1 = new ymaps.Placemark([48.50345629671856,135.112862], {
+					hintContent: '',
+					//balloonContent: ''
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'img/marker.png',
+					// Размеры метки.
+					iconImageSize: [112, 106],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [0, 0]
+				});
+
+		//myMap.controls.add('smallZoomControl');
+		// Добавляем все метки на карту.
+		myMap.geoObjects
+				.add(myPlacemark1);
+	}
+
+	ymaps.ready(init);
+}
+/*end of yandex map*/

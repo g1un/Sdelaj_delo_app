@@ -35,4 +35,57 @@
       }
     }
   }
+
+  &-unit{
+		padding: 0 0 52px;
+
+		&__img{
+			margin: 0 0 23px;
+			width: 100%;
+			font-size: 0;
+			line-height: 0;
+			text-align: center;
+
+			img{
+				max-width: 100%;
+			}
+		}
+
+		&>h2{
+			margin: 0 41px 13px;
+			font-family: Roboto-Regular, Arial, sans-serif;
+			font-size: 50px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&>span{
+			display: block;
+			margin: 0 41px 62px;
+			font-family: OpenSans-Regular, Arial, sans-serif;
+			font-size: 24px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #949594;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&>p{
+			margin: 0 41px 10px;
+			font-family: OpenSans-Light, Arial, sans-serif;
+			font-size: 30px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #363636;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
 }
