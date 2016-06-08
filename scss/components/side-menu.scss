@@ -4,11 +4,11 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: -610px;
-	width: 610px;
+	left: -305px;
+	width: 305px;
 	background: #fff;
 	z-index: 1;
-	box-shadow: 5px 0 10px 10px rgba(0,0,0,.17);
+	box-shadow: 3px 0 5px 5px rgba(0,0,0,.17);
 	transition: left .5s;
 
 	&--show{
@@ -16,51 +16,48 @@
 	}
 
 	&__footer{
+		padding: 3px 0 9px;
 		background: $light-foxy;
-		padding-top: 5px;
-		padding-bottom: 33px;
 
 		&-icon{
+			margin: 14px 22px 0 0;
 			float: right;
-			margin-top: 27px;
-			margin-right: 43px;
-			width: 32px;
-			height: 41px;
+			width: 16px;
+			height: 21px;
 			background: url("../img/profile-icon--dark.svg") no-repeat 0 0;
 		}
 
 		&-back-link{
+			margin: 14px 0 14px;
+			padding: 0 0 0 54px;
 			display: inline-block;
 			font-family: $roboto;
 			font-size: $big-font-size + px;
-			line-height: 40/$big-font-size + em;
+			line-height: 1.2em;
 			font-weight: 400;
 			color: #000;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
-			margin-top: 28px;
-			margin-bottom: 27px;
-			padding-left: 107px;
 			position: relative;
 
 			&:before{
 				content: '';
 				position: absolute;
-				top: 9px;
-				left: 21px;
-				width: 36px;
-				height: 23px;
+				top: 5px;
+				left: 11px;
+				width: 18px;
+				height: 12px;
 				background: url("../img/arrow-left-icon.svg") no-repeat 0 0;
 			}
 		}
 
 		&-photo{
-			width: 126px;
-			height: 126px;
+			margin: 0 0 8px 7px;
+			width: 48px;
+			height: 48px;
 			border-radius: 50%;
-			margin-left: 29px;
-			margin-bottom: 32px;
+			overflow: hidden;
 
 			img{
 				max-width: 100%;
@@ -68,15 +65,15 @@
 		}
 
 		&-user-name{
+			margin: 0 0 0 10px;
 			font-family: $roboto;
 			font-size: $small-font-size + px;
-			line-height: 36/$small-font-size + em;
+			line-height: 1.2em;
 			font-weight: 400;
 			color: $dirty-sand;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
-			margin-left: 35px;
 		}
 	}
 
@@ -84,16 +81,18 @@
 		background: #fff;
 
 		&-link{
-			display: block;
+			padding: 20px 0 20px 55px;
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
 			font-family: $open-sans-reg;
-			font-size: $big-font-size-minus + px;
-			line-height: 40/$big-font-size-minus + em;
+			font-size: $big-font-size + px;
+			line-height: 1.2em;
 			font-weight: 400;
 			color: #000;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
-			padding: 39px 0 31px 108px;
 			position: relative;
 
 			&:hover,
@@ -102,20 +101,16 @@
 			}
 
 			&-number{
+				margin: 0 22px 0 0;
+				padding: 0 5px;
 				display: block;
-				float: right;
-				margin-top: 7px;
-				margin-right: 43px;
-				padding-top: 6px;
-				width: 38px;
-				height: 38px;
 				box-sizing: border-box;
 				background: $light-foxy;
 				text-align: center;
 				border-radius: 50%;
 				font-family: $open-sans-sb;
 				font-size: $smallest-font-size-minus + px;
-				line-height: 24/$smallest-font-size-minus + em;
+				line-height: 1.4em;
 				font-weight: 400;
 				color: #000;
 				text-transform: none;
@@ -128,10 +123,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 44px;
-					left: 39px;
-					width: 29px;
-					height: 33px;
+					top: 50%;
+					left: 25px;
+					margin: -8px 0 0;
+					width: 15px;
+					height: 17px;
 					background: url("../img/notification-icon.svg") no-repeat 0 0;
 				}
 			}
@@ -141,10 +137,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 48px;
-					left: 42px;
-					width: 23px;
-					height: 29px;
+					top: 50%;
+					left: 25px;
+					margin: -7px 0 0;
+					width: 12px;
+					height: 15px;
 					background: url("../img/all-tasks-icon--light.svg") no-repeat 0 0;
 				}
 			}
@@ -154,10 +151,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 44px;
-					left: 41px;
-					width: 31px;
-					height: 31px;
+					top: 50%;
+					left: 25px;
+					margin: -7px 0 0;
+					width: 16px;
+					height: 16px;
 					background: url("../img/settings-icon.svg") no-repeat 0 0;
 				}
 			}
@@ -167,10 +165,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 48px;
-					left: 41px;
-					width: 31px;
-					height: 31px;
+					top: 50%;
+					left: 25px;
+					margin: -7px 0 0;
+					width: 16px;
+					height: 16px;
 					background: url("../img/balance-icon.svg") no-repeat 0 0;
 				}
 			}
@@ -180,10 +179,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 46px;
-					left: 45px;
-					width: 22px;
-					height: 29px;
+					top: 50%;
+					left: 25px;
+					margin: -7px 0 0;
+					width: 11px;
+					height: 15px;
 					background: url("../img/bookmarks-icon.svg") no-repeat 0 0;
 				}
 			}
@@ -193,10 +193,11 @@
 				&:before{
 					content: '';
 					position: absolute;
-					top: 48px;
-					left: 43px;
-					width: 29px;
-					height: 29px;
+					top: 50%;
+					left: 25px;
+					margin: -7px 0 0;
+					width: 15px;
+					height: 15px;
 					background: url("../img/exit-icon.svg") no-repeat 0 0;
 				}
 			}

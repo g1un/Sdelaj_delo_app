@@ -3,11 +3,11 @@
 	outline: none;
 	border: none;
 	display: block;
-	padding: 26px 0 25px;
+	padding: 13px 0 13px;
 	background: #ebebeb;
 	box-shadow: 0 1px 1px 0 rgba(139,139,139,.74);
 	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: 31px;
+	font-size: $medium-font-size + px;
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #000;
@@ -16,8 +16,7 @@
 	letter-spacing: .045em;
 	cursor: pointer;
 	
-	&:hover,
-	&:focus{
+	&:hover{
 		box-shadow: none;
 		background: #fff;
 	}
@@ -28,10 +27,10 @@
 	border: none;
 	box-shadow: none;
 	display: block;
-	padding: 26px 0 25px;
+	padding: 13px 0 13px;
 	background: #f3af27;
 	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: 31px;
+	font-size: $medium-font-size + px;
 	line-height: 1.2em;
 	font-weight: 700;
 	color: #fff;
@@ -40,33 +39,32 @@
 	letter-spacing: .045em;
 	text-align: center;
 
-	&:hover,
-	&:focus{
+	&:hover{
 		background: #e9a722;
 	}
 }
 
 .action-button{
 	display: block;
-	width: 66px;
-	height: 66px;
+	width: 33px;
+	height: 33px;
 	background: url("../img/action-button.svg") no-repeat 0 0;
 	border-radius: 50%;
 	cursor: pointer;
 
-	&:hover,
-	&:focus{
+	&:hover{
 		background: url("../img/action-button--hover.svg") no-repeat 0 0;
 	}
 }
 
 .grey-button{
+	padding: 14px 0 12px;
 	display: block;
 	outline: none;
 	border: none;
 	box-shadow: none;
 	font-family: Roboto-Regular, Arial, sans-serif;
-	font-size: 32px;
+	font-size: $medium-font-size + px;
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #464647;
@@ -75,18 +73,16 @@
 	letter-spacing: 0;
 	text-align: center;
 	background: #f2f2f2;
-	border-radius: 2px;
-	padding: 28px 0 24px;
+	border-radius: 1px;
 
-	&:hover,
-	&:focus{
-		box-shadow: 0 3px 7px 0 rgba(0,0,0,.15);
+	&:hover{
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
 	}
 }
 
 .window-button{
 	font-family: Roboto-Regular, Arial, sans-serif;
-	font-size: 29px;
+	font-size: $small-font-size + px;
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #959595;
@@ -99,10 +95,9 @@
 	border: none;
 	padding: 0;
 
-	&:hover,
-	&:focus{
-		color: #f3bc2f;
+	&:hover{
 		padding: 0;
+		color: #f3bc2f;
 	}
 }
 /*end of buttons*/

@@ -1,96 +1,103 @@
-//main-list
+/*main-list*/
 .main-list{
 
-  &__link{
-    display: block;
-    font-family: $roboto;
-    font-size: $big-font-size + px;
-    line-height: 40/$big-font-size + em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-    padding: 54px 0 55px 108px;
-    border-bottom: 3px solid $button;
-    position: relative;
+	&__link{
+		display: block;
+		font-family: $roboto;
+		font-size: $big-font-size + px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		padding: 25px 0 25px 55px;
+		border-bottom: 3px solid $button;
+		position: relative;
 
-    &--add-task{
+		&--add-task{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 60px;
-        left: 38px;
-        width: 27px;
-        height: 32px;
-        background: url("../img/add-task-icon.svg") no-repeat 0 0;
-      }
-    }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -8px 0 0;
+				width: 14px;
+				height: 16px;
+				background: url("../img/add-task-icon.svg") no-repeat 0 0;
+			}
+		}
 
-    &--all-tasks{
+		&--all-tasks{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 50px;
-        left: 38px;
-        width: 31px;
-        height: 38px;
-        background: url("../img/all-tasks-icon.svg") no-repeat 0 0;
-      }
-    }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -10px 0 0;
+				width: 16px;
+				height: 19px;
+				background: url("../img/all-tasks-icon.svg") no-repeat 0 0;
+			}
+		}
 
-    &--profile{
+		&--profile{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 49px;
-        left: 37px;
-        width: 32px;
-        height: 41px;
-        background: url("../img/profile-icon.svg") no-repeat 0 0;
-      }
-    }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -11px 0 0;
+				width: 16px;
+				height: 21px;
+				background: url("../img/profile-icon.svg") no-repeat 0 0;
+			}
+		}
 
-    &--news{
+		&--news{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 59px;
-        left: 37px;
-        width: 35px;
-        height: 31px;
-        background: url("../img/news-icon.svg") no-repeat 0 0;
-      }
-    }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -9px 0 0;
+				width: 18px;
+				height: 16px;
+				background: url("../img/news-icon.svg") no-repeat 0 0;
+			}
+		}
 
-    &--about{
+		&--about{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 57px;
-        left: 37px;
-        width: 36px;
-        height: 36px;
-        background: url("../img/about-icon.svg") no-repeat 0 0;
-      }
-    }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -9px 0 0;
+				width: 18px;
+				height: 18px;
+				background: url("../img/about-icon.svg") no-repeat 0 0;
+			}
+		}
 
-    &--contacts{
+		&--contacts{
 
-      &:before{
-        content: '';
-        position: absolute;
-        top: 66px;
-        left: 37px;
-        width: 34px;
-        height: 24px;
-        background: url("../img/contacts-icon.svg") no-repeat 0 0;
-      }
-    }
-  }
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 19px;
+				margin: -6px 0 0;
+				width: 17px;
+				height: 12px;
+				background: url("../img/contacts-icon.svg") no-repeat 0 0;
+			}
+		}
+	}
 }
+/*end of main-list*/

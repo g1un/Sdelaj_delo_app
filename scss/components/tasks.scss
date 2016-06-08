@@ -1,170 +1,160 @@
 //tasks
 .tasks{
 
-  &__title{
-    display: block;
-    text-decoration: none;
-    padding-top: 20px;
-    padding-left: 38px;
-    padding-bottom: 22px;
-    border-bottom: 3px solid #E5E4E4;
-    position: relative;
+	&__title{
+		padding: 10px 0 11px 19px;
+		display: block;
+		text-decoration: none;
+		border-bottom: 1px solid #E5E4E4;
+		position: relative;
 
-    &-text{
-      font-family: $roboto;
-      font-size: $small-font-size + px;
-      line-height: 36/$small-font-size + em;
-      font-weight: 400;
-      color: $light-grey;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      background: none;
-      border: none;
-      outline: none;
-    }
+		&-text{
+			padding: 0 45px 0 0;
+			font-family: $roboto;
+			font-size: $small-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: $light-grey;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			background: none;
+			border: none;
+			outline: none;
+		}
 
-    &-link{
-      top: 26px;
+		&-link{
+			top: 12px;
+			margin: 0;
 
-      @extend .three-points-button;
-    }
-  }
+			@extend .three-points-button;
+		}
+	}
 
-  &__category{
-    font-family: $roboto;
-    font-size: $small-font-size + px;
-    line-height: 36/$small-font-size + em;
-    font-weight: 400;
-    color: $light-grey;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
-    background: none;
-    border: none;
-    outline: none;
-  }
+	&__category{
+		padding: 0 45px 0 0;
+		font-family: $roboto;
+		font-size: $small-font-size + px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: $light-grey;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		background: none;
+		border: none;
+		outline: none;
+	}
 
-  &__item{
-    display: block;
-    padding-top: 8px;
-    padding-left: 33px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    border-bottom: 3px solid #E5E4E4;
+	&__item{
+		padding: 4px 0 5px 17px;
+		display: block;
+		text-decoration: none;
+		border-bottom: 1px solid #E5E4E4;
 
-    &:last-child{
-      border-bottom: none;
-    }
+		&:last-child{
+			border-bottom: none;
+		}
 
-    &-cost{
-      float: right;
-      max-width: 190px;
-      margin-top: 53px;
-      margin-right: 28px;
-      margin-bottom: 34px;
-      font-family: $roboto;
-      font-size: $big-font-size + px;
-      line-height: 40/$big-font-size + em;
-      font-weight: 400;
-      color: $light-grey-plus;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: right;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 420px;
-    }
+		&-cost{
+			margin: 27px 14px 17px 0;
+			float: right;
+			max-width: 95px;
+			font-family: $roboto;
+			font-size: $big-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: $light-grey-plus;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: right;
+			width: 210px;
+		}
 
-    &-photo{
-      float: right;
-      clear: both;
-      max-width: 51px;
-      margin-right: 65px;
-      line-height: 0;
+		&-photo{
+			margin-right: 33px;
+			float: right;
+			clear: both;
+			max-width: 26px;
+			line-height: 0;
+			border-radius: 50%;
+			overflow: hidden;
 
-      img{
-        max-width: 100%;
-      }
-    }
+			img{
+				max-width: 100%;
+			}
+		}
 
-    &-date{
-      display: block;
-      margin-top: 13px;
-      margin-left: 5px;
-      margin-bottom: 15px;
-      font-family: $open-sans-reg;
-      font-size: $smallest-font-size + px;
-      line-height: 30/$smallest-font-size + em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
+		&-date{
+			margin: 7px 0 8px;
+			display: block;
+			font-family: $open-sans-reg;
+			font-size: $smallest-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			position: relative;
 
-      &--time{
-        margin-top: 9px;
-        margin-left: 0;
-        margin-bottom: 11px;
-        padding-left: 47px;
-        position: relative;
+			&--time{
+				padding: 0 0 0 24px;
 
-        &::before{
-          content: '';
-          position: absolute;
-          top: -2px;
-          left: 1px;
-          width: 25px;
-          height: 30px;
-          background: url("../img/time-icon.svg") no-repeat 0 0;
-        }
-      }
-    }
+				&::before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin: -8px 0 0;
+					width: 13px;
+					height: 15px;
+					background: url("../img/time-icon.svg") no-repeat 0 0;
+				}
+			}
+		}
 
-    &-text{
-      display: block;
-      margin-bottom: 21px;
-      margin-right: 230px;
-      min-height: 67px;
-      font-family: $roboto;
-      font-size: $big-font-size + px;
-      line-height: 1em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-    }
+		&-text{
+			margin: 0 115px 11px 0;
+			display: block;
+			font-family: $roboto;
+			font-size: $big-font-size + px;
+			line-height: 1em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
 
-    &-address{
-      display: block;
-      margin-bottom: 10px;
-      padding-left: 47px;
-      font-family: $open-sans-reg;
-      font-size: $smallest-font-size + px;
-      line-height: 30/$smallest-font-size + em;
-      font-weight: 400;
-      color: $light-grey-plus;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      max-width: 420px;
-      position: relative;
+		&-address{
+			margin: 0 115px 5px 0;
+			padding: 0 0 0 24px;
+			display: block;
+			font-family: $open-sans-reg;
+			font-size: $smallest-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: $light-grey-plus;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			position: relative;
 
-      &::before{
-        content: '';
-        position: absolute;
-        top: 3px;
-        left: 1px;
-        width: 27px;
-        height: 27px;
-        background: url("../img/address-icon.svg") no-repeat 0 0;
-      }
-    }
-  }
+			&::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin: -7px 0 0;
+				width: 14px;
+				height: 14px;
+				background: url("../img/address-icon.svg") no-repeat 0 0;
+			}
+		}
+	}
 }

@@ -17,19 +17,23 @@ $button: #f2f2f2;
 $color: #e0e0e0;
 
 //fonts
-$roboto: 'Roboto';
-$open-sans: 'Open Sans'; //light
-$open-sans-reg: 'Open Sans Reg';
-$open-sans-sb: 'Open Sans Sb';
-$pragmatica: 'PragmaticaLightC';
+$roboto: 'Roboto-Regular', sans-serif;
+$open-sans: 'OpenSans-Light', sans-serif; //light
+$open-sans-reg: 'Open Sans Regular', sans-serif;
+$open-sans-sb: 'Open Sans Sb', sans-serif;
+$pragmatica: 'PragmaticaLightC', sans-serif;
 
 //font-size
-$bigger-font-size: 45;
-$big-font-size: 36;
-$big-font-size-minus: 35;
-$medium-font-size: 32;
-$small-font-size: 30;
-$smaller-font-size-plus: 28;
-$smaller-font-size: 27;
-$smallest-font-size: 24;
-$smallest-font-size-minus: 22;
+$bigger-font-size: 46/2;
+$big-font-size: 36/2;
+$big-font-size-minus: 36/2;
+$medium-font-size: 32/2;
+$small-font-size: 30/2;
+$smaller-font-size-plus: 28/2;
+$smaller-font-size: 28/2;
+$smallest-font-size: 24/2;
+$smallest-font-size-minus: 22/2;
+$mini-font-size: 20/2;
+$mini-font-size-minus: 18/2;
+$micro-font-size: 16/2;
+
