@@ -12,7 +12,7 @@
 		text-decoration: none;
 		letter-spacing: 0;
 		padding: 25px 0 25px 55px;
-		border-bottom: 3px solid $button;
+		border-bottom: 1px solid $button;
 		position: relative;
 
 		&--add-task{
@@ -96,6 +96,75 @@
 				width: 17px;
 				height: 12px;
 				background: url("../img/contacts-icon.svg") no-repeat 0 0;
+			}
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+
+		&__link{
+			font-size: $big-font-size * 2 + px;
+			padding: 50px 0 50px 110px;
+			border-bottom: 3px solid $button;
+
+			&--add-task{
+
+				&:before{
+					left: 38px;
+					margin: -16px 0 0;
+					width: 28px;
+					height: 32px;
+				}
+			}
+
+			&--all-tasks{
+
+				&:before{
+					left: 38px;
+					margin: -19px 0 0;
+					width: 32px;
+					height: 38px;
+				}
+			}
+
+			&--profile{
+
+				&:before{
+					left: 38px;
+					margin: -21px 0 0;
+					width: 32px;
+					height: 42px;
+				}
+			}
+
+			&--news{
+
+				&:before{
+					left: 38px;
+					margin: -18px 0 0;
+					width: 36px;
+					height: 32px;
+				}
+			}
+
+			&--about{
+
+				&:before{
+					left: 38px;
+					margin: -18px 0 0;
+					width: 36px;
+					height: 36px;
+				}
+			}
+
+			&--contacts{
+
+				&:before{
+					left: 38px;
+					margin: -12px 0 0;
+					width: 34px;
+					height: 24px;
+				}
 			}
 		}
 	}

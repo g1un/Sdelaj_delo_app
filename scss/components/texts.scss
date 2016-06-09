@@ -25,7 +25,7 @@
 
 	&-undermain{
 		font-family: OpenSans-Regular, 'Arial', sans-serif;
-		font-size: 24px;
+		font-size: $smallest-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #949594;
@@ -33,28 +33,50 @@
 		text-decoration: none;
 		letter-spacing: 0;
 	}
+
+	@media (min-width: $media-ipad-min + px) {
+
+		&-main{
+			font-size: $big-font-size * 2 + px;
+		}
+
+		&-middle{
+			font-size: $smaller-font-size-plus * 2 + px;
+		}
+
+		&-undermain{
+			font-size: $smallest-font-size * 2 + px;
+		}
+	}
 }
 
 .slogan{
 	font-family: OpenSans-Regular, 'Arial', sans-serif;
-	font-size: 48px;
+	font-size: $bigger-font-size + px;
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #000;
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: 0;
+
+	@media (min-width: $media-ipad-min + px) {
+		font-size: $bigger-font-size * 2 + px;
+	}
 }
 
 .content-title{
 	font-family: Roboto-Regular, Arial, sans-serif;
-	font-size: 30px;
+	font-size: $small-font-size + px;
 	line-height: 1.2em;
 	font-weight: 400;
 	color: #363636;
 	text-transform: none;
 	text-decoration: none;
 	letter-spacing: 0;
-}
 
+	@media (min-width: $media-ipad-min + px) {
+		font-size: $small-font-size * 2 + px;
+	}
+}
 /*end of texts*/

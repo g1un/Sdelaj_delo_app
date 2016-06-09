@@ -157,4 +157,74 @@
 			}
 		}
 	}
+
+	@media (min-width: $media-ipad-min + px) {
+		&__title{
+			padding: 20px 0 22px 38px;
+			border-bottom: 2px solid #E5E4E4;
+
+			&-text{
+				padding: 0 90px 0 0;
+				font-size: $small-font-size * 2 + px;
+			}
+
+			&-link{
+				top: 24px;
+			}
+		}
+
+		&__category{
+			padding: 0 90px 0 0;
+			font-size: $small-font-size * 2 + px;
+		}
+
+		&__item{
+			padding: 8px 0 10px 34px;
+			border-bottom: 2px solid #E5E4E4;
+
+			&-cost{
+				margin: 54px 28px 34px 0;
+				max-width: 190px;
+				width: 420px;
+				font-size: $big-font-size * 2 + px;
+			}
+
+			&-photo{
+				margin-right: 66px;
+				max-width: 52px;
+			}
+
+			&-date{
+				margin: 14px 0 16px;
+				font-size: $smallest-font-size * 2 + px;
+
+				&--time{
+					padding: 0 0 0 48px;
+
+					&::before{
+						margin: -16px 0 0;
+						width: 26px;
+						height: 30px;
+					}
+				}
+			}
+
+			&-text{
+				margin: 0 230px 22px 0;
+				font-size: $big-font-size * 2 + px;
+			}
+
+			&-address{
+				margin: 0 230px 10px 0;
+				padding: 0 0 0 48px;
+				font-size: $smallest-font-size * 2 + px;
+
+				&::before{
+					margin: -14px 0 0;
+					width: 28px;
+					height: 28px;
+				}
+			}
+		}
+	}
 }

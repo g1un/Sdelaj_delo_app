@@ -1,6 +1,6 @@
-//my variables
+/*my variables*/
 
-//colors
+/*colors*/
 $dirty-sand: #aa832e;
 $foxy: #f3af27;
 $light-foxy: #f4bc32;
@@ -15,18 +15,21 @@ $light-grey: #d7d7d7;
 $border: #e5e4e4;
 $button: #f2f2f2;
 $color: #e0e0e0;
+/*end of colors*/
 
-//fonts
+/*fonts*/
 $roboto: 'Roboto-Regular', sans-serif;
 $open-sans: 'OpenSans-Light', sans-serif; //light
 $open-sans-reg: 'Open Sans Regular', sans-serif;
 $open-sans-sb: 'Open Sans Sb', sans-serif;
 $pragmatica: 'PragmaticaLightC', sans-serif;
+/*end of fonts*/
 
-//font-size
+/*font-size*/
+$biggest-font-size: 50/2;
 $bigger-font-size: 46/2;
 $big-font-size: 36/2;
-$big-font-size-minus: 36/2;
+$big-font-size-minus: 34/2;
 $medium-font-size: 32/2;
 $small-font-size: 30/2;
 $smaller-font-size-plus: 28/2;
@@ -36,4 +39,10 @@ $smallest-font-size-minus: 22/2;
 $mini-font-size: 20/2;
 $mini-font-size-minus: 18/2;
 $micro-font-size: 16/2;
+/*end of font-size*/
 
+/*media queries*/
+$media-ipad-min: 768;
+/*end of media queries*/
+
+/*end of my variables*/

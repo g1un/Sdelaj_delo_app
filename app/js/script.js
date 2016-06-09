@@ -446,7 +446,7 @@ if ($('.select-performer').length) {
 
 /*map window*/
 if ($('.map').length) {
-	var mapLink = $('.contacts__address-item a');
+	var mapLink = $('.contacts__address-item-map');
 	var map = $('.map');
 	var mapCancel = $('.map .window-button');
 	var mapBg = $('.map__background');
@@ -470,16 +470,16 @@ if ($('.map').length) {
 		//var mapLeft = ($('body').width() - map.outerWidth()) / 2;
 		//map.css('left', mapLeft);
 
-		if (window.innerHeight >= map.outerHeight()) {
-			var mapTop = (window.innerHeight - map.outerHeight()) / 2;
-			var mapLeft = ($(window).width() - map.outerWidth()) / 2;
+		if (window.innerHeight >= map[0].clientHeight) {
+			var mapTop = (window.innerHeight - map[0].clientHeight) / 2;
+			var mapLeft = (window.innerWidth - map[0].clientWidth) / 2;
 			map.css({
 				'top': mapTop,
 				'position': 'fixed',
 				'left': mapLeft
 			});
 		}else{
-			mapLeft = ($('body').width() - map.outerWidth()) / 2;
+			mapLeft = (window.innerWidth - map[0].clientWidth) / 2;
 			map.css({
 				'position': 'absolute',
 				'top': 0,
@@ -543,7 +543,7 @@ if($('#map').length){
 					iconImageSize: [112, 106],
 					// Смещение левого верхнего угла иконки относительно
 					// её "ножки" (точки привязки).
-					iconImageOffset: [0, 0]
+					iconImageOffset: [-43, -97]
 				});
 
 		//myMap.controls.add('smallZoomControl');

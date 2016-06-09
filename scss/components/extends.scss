@@ -13,17 +13,12 @@
   &:hover{
     background: url("../img/action-button--hover.svg") no-repeat 0 0;
   }
-	//
-  //&--date{
-  //  top: -19px;
-  //}
-	//
-  //&--time{
-  //  top: -12px;
-  //}
-	//
-  //&--city{
-  //  top: -10px;
-  //}
+
+  @media (min-width: $media-ipad-min + px) {
+		right: 10px;
+		margin: -34px 0 0;
+		width: 66px;
+		height: 66px;
+  }
 }
 /*end of extends*/

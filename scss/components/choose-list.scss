@@ -126,9 +126,8 @@
 			left: 0;
 			width: 20px;
 			height: 10px;
-			border-left: 2px solid;
-			border-bottom: 2px solid;
-			border-color: $border;
+			border-left: 2px solid $border;
+			border-bottom: 2px solid $border;
 			transform: rotate(-45deg);
 		}
 	}
@@ -159,5 +158,69 @@
 
 	&--show{
 		display: block;
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		padding: 20px 0 44px;
+		top: 104px;
+		right: 70px;
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,.15);
+		border-radius: 4px;
+		width: 544px;
+		max-height: 960px;
+
+		&__link{
+			padding: 26px 0 22px 32px;
+			font-size: $smaller-font-size-plus * 2 + px;
+		}
+
+		&__form{
+			padding: 30px 10px 42px 26px;
+			top: 104px;
+			right: 70px;
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,.19);
+			border-radius: 4px;
+			width: 526px;
+
+			&--task-status{
+				top: 170px;
+				max-width: 440px;
+			}
+
+			&-title{
+				margin: 0 0 52px;
+				font-size: $smaller-font-size-plus * 2 + px;
+			}
+
+			&-buttons{
+				margin: 58px 0 0 76px;
+				width: 378px;
+
+				&--task-status{
+					margin-left: 6px;
+				}
+			}
+
+			&-cancel{
+				font-size: $medium-font-size * 2 + px;
+			}
+		}
+
+		&__label{
+			margin: 0 0 44px;
+			padding: 0 0 0 78px;
+			font-size: $smaller-font-size-plus * 2 + px;
+
+			&:before{
+				width: 40px;
+				height: 20px;
+				border-left: 4px solid $border;
+				border-bottom: 4px solid $border;
+			}
+		}
+
+		&__submit{
+			font-size: $medium-font-size * 2 + px;
+		}
 	}
 }

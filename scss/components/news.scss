@@ -1,22 +1,25 @@
-//news
+/*news*/
 .news{
 
   &__list{
 
     &-item{
-      padding: 30px 20px 21px 29px;
-      border-bottom: 3px solid $button;
+      padding: 15px 10px 11px 15px;
+      border-bottom: 1px solid $button;
 
       &:last-child{
         border-bottom: none;
       }
 
       &-img{
+				margin: 7px 0 0 3px;
         display: block;
         float: left;
-        margin-top: 13px;
-        margin-left: 5px;
-        width: 93px;
+        width: 47px;
+				font-size: 0;
+				line-height: 0;
+				border-radius: 50%;
+				overflow: hidden;
 
         img{
           max-width: 100%;
@@ -24,24 +27,52 @@
       }
 
       &-link{
+				margin: 0 0 6px 66px;
         display: block;
-        margin-left: 131px;
-        margin-bottom: 11px;
       }
 
       &-date{
+				margin: 0 0 0 66px;
         display: block;
-        margin-left: 131px;
       }
     }
+
+		@media (min-width: $media-ipad-min + px){
+
+			&-item{
+				padding: 30px 20px 21px 29px;
+				border-bottom: 3px solid $button;
+
+				&-img{
+					margin: 13px 0 0 5px;
+					width: 93px;
+				}
+
+				&-link{
+					margin: 0 0 11px 131px;
+				}
+
+				&-date{
+					margin: 0 0 0 131px;
+				}
+			}
+		}
   }
 
   &-unit{
-		padding: 0 0 52px;
+		padding: 0 0 26px;
+
+		&>img{
+			margin: 0 auto 12px;
+			display: block;
+			max-width: 100%;
+			font-size: 0;
+			line-height: 0;
+		}
 
 		&__img{
-			margin: 0 0 23px;
-			width: 100%;
+			margin: 0 0 12px;
+			max-width: 100%;
 			font-size: 0;
 			line-height: 0;
 			text-align: center;
@@ -52,9 +83,9 @@
 		}
 
 		&>h2{
-			margin: 0 41px 13px;
+			margin: 0 21px 7px;
 			font-family: Roboto-Regular, Arial, sans-serif;
-			font-size: 50px;
+			font-size: $biggest-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #000;
@@ -65,9 +96,9 @@
 
 		&>span{
 			display: block;
-			margin: 0 41px 62px;
+			margin: 0 21px 31px;
 			font-family: OpenSans-Regular, Arial, sans-serif;
-			font-size: 24px;
+			font-size: $smallest-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #949594;
@@ -77,15 +108,45 @@
 		}
 
 		&>p{
-			margin: 0 41px 10px;
+			margin: 0 21px 5px;
 			font-family: OpenSans-Light, Arial, sans-serif;
-			font-size: 30px;
+			font-size: $small-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #363636;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+
+			img{
+				max-width: 100%;
+				font-size: 0;
+				line-height: 0;
+			}
+		}
+
+		@media (min-width: $media-ipad-min + px) {
+			padding: 0 0 52px;
+
+			&-img{
+				margin: 0 0 23px;
+			}
+
+			&>h2{
+				margin: 0 41px 13px;
+				font-size: $biggest-font-size * 2 + px;
+			}
+
+			&>span{
+				margin: 0 41px 62px;
+				font-size: $smallest-font-size * 2 + px;
+			}
+
+			&>p{
+				margin: 0 41px 10px;
+				font-size: $small-font-size * 2 + px;
+			}
 		}
 	}
 }
+/*end of news*/

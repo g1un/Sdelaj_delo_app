@@ -95,8 +95,7 @@
 			letter-spacing: 0;
 			position: relative;
 
-			&:hover,
-			&:focus{
+			&:hover{
 				background: $button;
 			}
 
@@ -199,6 +198,120 @@
 					width: 15px;
 					height: 15px;
 					background: url("../img/exit-icon.svg") no-repeat 0 0;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		left: -610px;
+		width: 610px;
+		box-shadow: 6px 0 10px 10px rgba(0,0,0,.17);
+
+		&__footer{
+			padding: 6px 0 18px;
+
+			&-icon{
+				margin: 28px 44px 0 0;
+				width: 32px;
+				height: 42px;
+			}
+
+			&-back-link{
+				margin: 28px 0 28px;
+				padding: 0 0 0 108px;
+				font-size: $big-font-size * 2 + px;
+
+				&:before{
+					top: 10px;
+					left: 22px;
+					width: 36px;
+					height: 24px;
+				}
+			}
+
+			&-photo{
+				margin: 0 0 16px 14px;
+				width: 96px;
+				height: 96px;
+			}
+
+			&-user-name{
+				margin: 0 0 0 20px;
+				font-size: $small-font-size * 2 + px;
+			}
+		}
+
+		&__list{
+
+			&-link{
+				padding: 40px 0 40px 110px;
+				font-size: $big-font-size * 2 + px;
+
+				&-number{
+					margin: 0 44px 0 0;
+					padding: 0 10px;
+					font-size: $smallest-font-size-minus * 2 + px;
+				}
+
+				&--notification{
+
+					&:before{
+						left: 50px;
+						margin: -16px 0 0;
+						width: 30px;
+						height: 34px;
+					}
+				}
+
+				&--all-tasks{
+
+					&:before{
+						left: 50px;
+						margin: -14px 0 0;
+						width: 24px;
+						height: 30px;
+					}
+				}
+
+				&--settings{
+
+					&:before{
+						left: 50px;
+						margin: -14px 0 0;
+						width: 32px;
+						height: 32px;
+					}
+				}
+
+				&--balance{
+
+					&:before{
+						left: 50px;
+						margin: -14px 0 0;
+						width: 32px;
+						height: 32px;
+					}
+				}
+
+				&--bookmarks{
+
+					&:before{
+						left: 50px;
+						margin: -14px 0 0;
+						width: 22px;
+						height: 30px;
+					}
+				}
+
+				&--exit{
+
+					&:before{
+						left: 50px;
+						margin: -14px 0 0;
+						width: 30px;
+						height: 30px;
+					}
 				}
 			}
 		}

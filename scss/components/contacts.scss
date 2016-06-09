@@ -1,13 +1,13 @@
 /*contacts*/
 .contacts{
-	padding: 32px 36px 41px;
+	padding: 16px 18px 21px;
 
 	&__address{
-		margin: 0 0 38px;
+		margin: 0 0 19px;
 
 		&-item{
-			margin: 0 0 48px;
-			padding: 0 0 0 61px;
+			margin: 0 0 24px;
+			padding: 0 0 0 31px;
 			position: relative;
 
 			&:last-child{
@@ -19,10 +19,10 @@
 				&::before{
 					content: '';
 					position: absolute;
-					top: 4px;
+					top: 2px;
 					left: 0;
-					width: 30px;
-					height: 38px;
+					width: 15px;
+					height: 19px;
 					background: url("../img/address-icon--gold.svg") no-repeat 0 0;
 				}
 			}
@@ -32,10 +32,10 @@
 				&::before{
 					content: '';
 					position: absolute;
-					top: 6px;
+					top: 3px;
 					left: 0;
-					width: 32px;
-					height: 32px;
+					width: 16px;
+					height: 16px;
 					background: url("../img/clock-icon--gold.svg") no-repeat 0 0;
 				}
 			}
@@ -45,10 +45,10 @@
 				&::before{
 					content: '';
 					position: absolute;
-					top: 8px;
+					top: 4px;
 					left: 0;
-					width: 34px;
-					height: 35px;
+					width: 17px;
+					height: 18px;
 					background: url("../img/tel-icon--gold.svg") no-repeat 0 0;
 				}
 			}
@@ -56,7 +56,7 @@
 			h3{
 				margin: 0;
 				font-family: OpenSans-Semibold, Arial, sans-serif, Arial, sans-serif;
-				font-size: 34px;
+				font-size: $big-font-size-minus + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #000;
@@ -68,7 +68,7 @@
 			p{
 				margin: 0;
 				font-family: OpenSans-Regular, Arial, sans-serif, Arial, sans-serif;
-				font-size: 34px;
+				font-size: $big-font-size-minus + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #000;
@@ -77,11 +77,12 @@
 				letter-spacing: 0;
 			}
 
-			a{
-				display: block;
-				margin: 32px 0 0;
+			&-map{
+				display: inline-block;
+				vertical-align: top;
+				margin: 16px 0 0;
 				font-family: OpenSans-Semibold, Arial, sans-serif, Arial, sans-serif;
-				font-size: 34px;
+				font-size: $big-font-size-minus + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #fdd049;
@@ -89,63 +90,176 @@
 				text-decoration: underline;
 				letter-spacing: 0;
 			}
+
+			&-tel{
+				display: inline-block;
+				vertical-align: top;
+				font-family: OpenSans-Regular, Arial, sans-serif, Arial, sans-serif;
+				font-size: $big-font-size-minus + px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
 		}
 	}
 
 	&__text{
-		margin: 0 0 40px;
-		font-family: OpenSans-Regular, Arial, sans-serif, Arial, sans-serif;
-		font-size: 28px;
+		margin: 0 0 20px;
+		font-family: $open-sans-reg;
+		font-size: $smaller-font-size-plus + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #252525;
 		text-transform: none;
 		text-decoration: none;
 		letter-spacing: 0;
+
+		&-link{
+			font-family: $open-sans-sb;
+			font-size: $smaller-font-size-plus + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #252525;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
 	}
 
 	&__mail{
 		margin: 0;
-		padding: 0 0 0 61px;
+		padding: 0 0 0 31px;
 		position: relative;
 
 		&::before{
 			content: '';
 			position: absolute;
-			top: 5px;
+			top: 3px;
 			left: 0;
-			width: 39px;
-			height: 26px;
+			width: 20px;
+			height: 13px;
 			background: url("../img/mail-icon--gold.svg") no-repeat 0 0;
 		}
 
 		&-item{
-			margin: 0 0 19px;
+			margin: 0 0 10px;
 
 			h3{
-				margin: 0 0 2px;
+				margin: 0 0 1px;
 				font-family: OpenSans-Regular, Arial, sans-serif, Arial, sans-serif;
-				font-size: 24px;
+				font-size: $smallest-font-size + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #121212;
 				text-transform: none;
 				text-decoration: none;
 				letter-spacing: 0;
-
 			}
 
-			p{
+			a{
 				margin: 0;
+				display: inline-block;
+				vertical-align: top;
 				font-family: OpenSans-Semibold, Arial, sans-serif, Arial, sans-serif;
-				font-size: 34px;
+				font-size: $big-font-size-minus + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #f4bc32;
 				text-transform: none;
 				text-decoration: none;
 				letter-spacing: 0;
+			}
+		}
+	}
 
+	@media (min-width: $media-ipad-min + px) {
+		padding: 32px 36px 41px;
+
+		&__address{
+			margin: 0 0 38px;
+
+			&-item{
+				margin: 0 0 48px;
+				padding: 0 0 0 61px;
+
+				&--address{
+
+					&::before{
+						top: 4px;
+						width: 30px;
+						height: 38px;
+					}
+				}
+
+				&--schedule{
+
+					&::before{
+						top: 6px;
+						width: 32px;
+						height: 32px;
+					}
+				}
+
+				&--support{
+
+					&::before{
+						top: 8px;
+						width: 34px;
+						height: 35px;
+					}
+				}
+
+				h3{
+					font-size: $big-font-size-minus * 2 + px;
+				}
+
+				p{
+					font-size: $big-font-size-minus * 2 + px;
+				}
+
+				&-map{
+					margin: 32px 0 0;
+					font-size: $big-font-size-minus * 2 + px;
+				}
+
+				&-tel{
+					font-size: $big-font-size-minus * 2 + px;
+				}
+			}
+		}
+
+		&__text{
+			margin: 0 0 40px;
+			font-size: $smaller-font-size * 2 + px;
+
+			&-link{
+				font-size: $smaller-font-size * 2 + px;
+			}
+		}
+
+		&__mail{
+			padding: 0 0 0 61px;
+
+			&::before{
+				top: 5px;
+				width: 39px;
+				height: 26px;
+			}
+
+			&-item{
+				margin: 0 0 19px;
+
+				h3{
+					margin: 0 0 2px;
+					font-size: $smallest-font-size * 2 + px;
+				}
+
+				a{
+					font-size: $big-font-size-minus * 2 + px;
+				}
 			}
 		}
 	}
