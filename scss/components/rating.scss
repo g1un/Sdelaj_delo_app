@@ -1,53 +1,84 @@
 /*rating*/
 .rating{
 	box-sizing: border-box;
-	margin: 0 0 30px 48px;
+	margin: 0 0 15px 24px;
 	font-size: 0;
 	line-height: 0;
 
 	&__thumbs{
-	display: inline-block;
-	vertical-align: top;
-	margin: 0 12px 0 0;
-	background: #a5ce39;
-	width: 55px;
-	height: 55px;
-	box-sizing: border-box;
-	border-radius: 50%;
-	font-family: Roboto-Bold, Arial, sans-serif;
-	font-size: 28px;
-	line-height: 55px;
-	font-weight: 400;
-	color: #fff;
-	text-transform: none;
-	text-decoration: none;
-	letter-spacing: 0;
-	text-align: center;
-	position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6px 0 0;
+		background: #a5ce39;
+		width: 28px;
+		height: 28px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		font-family: Roboto-Bold, Arial, sans-serif;
+		font-size: $smaller-font-size + px;
+		line-height: 28px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+		position: relative;
 
-	&::before{
-		content: '';
-		position: absolute;
-		bottom: -3px;
-		left: -8px;
-		background: url("../img/thumbs-up-icon.svg") no-repeat 0 0;
-		width: 26px;
-		height: 27px;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: -4px;
+			background: url("../img/thumbs-up-icon.svg") no-repeat 0 0;
+			width: 13px;
+			height: 14px;
+		}
 	}
-}
 
 	&__stars{
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 12px 0 0;
+		margin: 0 6px 0 0;
 		background: #fec61d;
-		width: 55px;
-		height: 55px;
+		width: 28px;
+		height: 28px;
 		box-sizing: border-box;
 		border-radius: 50%;
 		font-family: Roboto-Bold, Arial, sans-serif;
-		font-size: 28px;
-		line-height: 55px;
+		font-size: $smaller-font-size + px;
+		line-height: 28px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: -5px;
+			background: url("../img/star-icon--orange.svg") no-repeat 0 0;
+			width: 15px;
+			height: 14px;
+		}
+	}
+
+	&__hats{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		background: #f9d612;
+		width: 28px;
+		height: 28px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		font-family: Roboto-Bold, Arial, sans-serif;
+		font-size: $smaller-font-size + px;
+		line-height: 28px;
 		font-weight: 400;
 		color: #fff;
 		text-transform: none;
@@ -60,44 +91,59 @@
 			content: '';
 			position: absolute;
 			bottom: -3px;
-			left: -10px;
-			background: url("../img/star-icon--orange.svg") no-repeat 0 0;
-			width: 29px;
-			height: 27px;
+			left: -7px;
+			background: url("../img/hat-icon.svg") no-repeat 0 0;
+			width: 20px;
+			height: 13px;
 		}
 	}
 
-	&__hats{
-		display: inline-block;
-		vertical-align: top;
-		margin: 0;
-		background: #f9d612;
-		width: 55px;
-		height: 55px;
-		box-sizing: border-box;
-		border-radius: 50%;
-		font-family: Roboto-Bold, Arial, sans-serif;
-		font-size: 28px;
-		line-height: 55px;
-		font-weight: 400;
-		color: #fff;
-		text-transform: none;
-		text-decoration: none;
-		letter-spacing: 0;
-		text-align: center;
-		position: relative;
+	@media (min-width: $media-ipad-min + px) {
+		margin: 0 0 30px 48px;
 
-		&::before{
-			content: '';
-			position: absolute;
-			bottom: -5px;
-			left: -14px;
-			background: url("../img/hat-icon.svg") no-repeat 0 0;
-			width: 40px;
-			height: 26px;
+		&__thumbs{
+			margin: 0 12px 0 0;
+			width: 55px;
+			height: 55px;
+			font-size: $smaller-font-size * 2 + px;
+			line-height: 55px;
+
+			&::before{
+				bottom: -3px;
+				left: -8px;
+				width: 26px;
+				height: 27px;
+			}
+		}
+
+		&__stars{
+			margin: 0 12px 0 0;
+			width: 55px;
+			height: 55px;
+			font-size: $smaller-font-size * 2 + px;
+			line-height: 55px;
+
+			&::before{
+				bottom: -3px;
+				left: -10px;
+				width: 29px;
+				height: 27px;
+			}
+		}
+
+		&__hats{
+			width: 55px;
+			height: 55px;
+			font-size: $smaller-font-size * 2 + px;
+			line-height: 55px;
+
+			&::before{
+				bottom: -5px;
+				left: -14px;
+				width: 40px;
+				height: 26px;
+			}
 		}
 	}
 }
-
-
 /*end of rating*/

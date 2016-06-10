@@ -1,30 +1,35 @@
 /*login-page*/
 .login-page{
+	min-height: 100vh;
 	background: #fdd049;
 	text-align: center;
-	padding: 73px 0 139px;
 
 	&__logo{
-		margin: 0 0 68px;
+		margin: 0 auto;
+		width: 240px;
+		height: 19vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__slogan{
-		margin: 0 auto 94px;
+		height: 18vh;
 	}
 
 	&__form{
-		display: inline-block;
-		vertical-align: top;
 		margin: 0 auto;
-		padding: 89px 31px 60px;
+		padding: 45px 15px 30px;
+		box-sizing: border-box;
+		width: 290px;
 		background: #fff;
-		box-shadow: 3px 3px 5px 0 rgba(148,120,45,.45);
-		border-radius: 4px;
+		box-shadow: 2px 2px 3px 0 rgba(148,120,45,.45);
+		border-radius: 2px;
 	}
 
 	&__label{
 		display: block;
-		padding: 0 0 0 68px;
+		padding: 0 0 0 34px;
 		position: relative;
 
 		&::before{
@@ -33,25 +38,25 @@
 		}
 
 		&--tel{
-			margin: 0 0 67px;
+			margin: 0 0 34px;
 
 			&::before{
-				top: 9px;
+				top: 5px;
 				left: 0;
-				width: 34px;
-				height: 34px;
+				width: 17px;
+				height: 17px;
 				background: url("../img/tel-icon--grey.svg") no-repeat 0 0;
 			}
 		}
 
 		&--password{
-			margin: 0 0 72px;
+			margin: 0 0 36px;
 
 			&::before{
 				top: 0;
 				left: 0;
-				width: 32px;
-				height: 42px;
+				width: 16px;
+				height: 21px;
 				background: url("../img/lock-icon--grey.svg") no-repeat 0 0;
 			}
 		}
@@ -61,13 +66,13 @@
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
-		padding: 1px 1px 9px;
+		padding: 1px 1px 5px;
 		outline: none;
 		border: none;
-		border-bottom: 2px solid #e5e4e4;
+		border-bottom: 1px solid #e5e4e4;
 		background: transparent;
 		font-family: 'Open Sans Reg', 'Arial', sans-serif;
-		font-size: 36px;
+		font-size: $big-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #000;
@@ -77,7 +82,7 @@
 
 		&::-webkit-input-placeholder{
 			font-family: 'Open Sans Reg', 'Arial', sans-serif;
-			font-size: 36px;
+			font-size: $big-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #b7b7b7;
@@ -88,7 +93,7 @@
 
 		&:-ms-input-placeholder{
 			font-family: 'Open Sans Reg', 'Arial', sans-serif;
-			font-size: 36px;
+			font-size: $big-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #b7b7b7;
@@ -99,7 +104,7 @@
 
 		&::-moz-placeholder{
 			font-family: 'Open Sans Reg', 'Arial', sans-serif;
-			font-size: 36px;
+			font-size: $big-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #b7b7b7;
@@ -110,20 +115,86 @@
 	}
 
 	&__submit{
-		margin: 0 auto 45px;
+		margin: 0 auto 23px;
 		display: block;
-		width: 580px;
+		width: 260px;
 	}
 
 	&__password-recover{
 		font-family: 'Open Sans', 'Arial', sans-serif;
-		font-size: 32px;
+		font-size: $medium-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #adacad;
 		text-transform: none;
 		text-decoration: none;
 		letter-spacing: 0;
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+
+		&__logo{
+			margin: 0 auto;
+			width: 480px;
+		}
+
+		&__form{
+			margin: 0 auto;
+			padding: 89px 31px 60px;
+			width: 580px;
+			box-shadow: 3px 3px 5px 0 rgba(148,120,45,.45);
+			border-radius: 4px;
+		}
+
+		&__label{
+			padding: 0 0 0 68px;
+
+			&--tel{
+				margin: 0 0 67px;
+
+				&::before{
+					top: 9px;
+					width: 34px;
+					height: 34px;
+				}
+			}
+
+			&--password{
+				margin: 0 0 72px;
+
+				&::before{
+					width: 32px;
+					height: 42px;
+				}
+			}
+		}
+
+		&__input-text{
+			padding: 1px 1px 9px;
+			border-bottom: 2px solid #e5e4e4;
+			font-size: $big-font-size * 2 + px;
+
+			&::-webkit-input-placeholder{
+				font-size: $big-font-size * 2 + px;
+			}
+
+			&:-ms-input-placeholder{
+				font-size: $big-font-size * 2 + px;
+			}
+
+			&::-moz-placeholder{
+				font-size: $big-font-size * 2 + px;
+			}
+		}
+
+		&__submit{
+			margin: 0 auto 45px;
+			width: 520px;
+		}
+
+		&__password-recover{
+			font-size: $medium-font-size * 2 + px;
+		}
 	}
 }
 /*end of login-page*/

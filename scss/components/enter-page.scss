@@ -2,24 +2,47 @@
 .enter-page{
 	background: #fdd049;
 	text-align: center;
-	padding: 167px 0 279px;
+	padding: 84px 0 140px;
 
 	&__logo{
-		margin: 0 0 68px;
+		margin: 0 auto 34px;
+		width: 240px;
 	}
 
 	&__slogan{
-		margin: 0 auto 225px;
+		margin: 0 auto 113px;
 	}
 
 	&__login{
-		margin: 0 auto 29px;
-		width: 646px;
+		margin: 0 auto 15px;
+		width: 290px;
 	}
 
 	&__reg{
-		margin: 0 auto 0;
-		width: 646px;
+		margin: 0 auto;
+		width: 290px;
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		padding: 167px 0 279px;
+
+		&__logo{
+			margin: 0 auto 68px;
+			width: 480px;
+		}
+
+		&__slogan{
+			margin: 0 auto 225px;
+		}
+
+		&__login{
+			margin: 0 auto 29px;
+			width: 580px;
+		}
+
+		&__reg{
+			width: 580px;
+		}
 	}
 }
 /*end of enter-page*/
