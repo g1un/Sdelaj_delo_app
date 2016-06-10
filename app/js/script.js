@@ -555,3 +555,14 @@ if($('#map').length){
 	ymaps.ready(init);
 }
 /*end of yandex map*/
+
+/*about-page content height*/
+console.log(document.querySelector('.task-header').clientHeight);
+if(document.querySelector('.task-header')){
+	$('.about-page').css('height', window.innerHeight - document.querySelector('.task-header').clientHeight);
+
+	window.onresize = function () {
+		$('.about-page').css('height', window.innerHeight - document.querySelector('.task-header').clientHeight);
+	};
+}
+/*end of about-page content height*/

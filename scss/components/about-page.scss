@@ -1,18 +1,27 @@
 /*about-page*/
 .about-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	background: #fdd049;
-	padding: 107px 0 39px;
+	height: 100vh;
 	text-align: center;
 
 	&__logo{
-		margin: 0 0 90px;
-		width: 483px;
+		height: 26%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 242px;
 	}
 
 	&__text{
-		margin: 0 0 145px;
+		height: 25%;
+		display: flex;
+		align-items: flex-start;
 		font-family: OpenSans-Regular, Arial, sans-serif;
-		font-size: 44px;
+		font-size: $bigger-font-size + px;
 		line-height: 1.4em;
 		font-weight: 400;
 		color: #000;
@@ -23,9 +32,11 @@
 	}
 
 	&__version{
-		margin: 0 0 343px;
+		height: 31%;
+		display: flex;
+		align-items: flex-start;
 		font-family: OpenSans-Regular, Arial, sans-serif;
-		font-size: 36px;
+		font-size: $big-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #000;
@@ -36,9 +47,11 @@
 	}
 
 	&__developer{
-		margin: 0;
+		height: 18%;
+		display: flex;
+		align-items: center;
 		font-family: OpenSans-Regular, Arial, sans-serif;
-		font-size: 30px;
+		font-size: $small-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #b28f30;
@@ -49,6 +62,25 @@
 
 		span{
 			font-family: OpenSans-Semibold, Arial, sans-serif;
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+
+		&__logo{
+			width: 483px;
+		}
+
+		&__text{
+			font-size: $bigger-font-size * 2 + px;
+		}
+
+		&__version{
+			font-size: $big-font-size * 2 + px;
+		}
+
+		&__developer{
+			font-size: $small-font-size * 2 + px;
 		}
 	}
 }
