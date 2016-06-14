@@ -1,28 +1,28 @@
 /*settings*/
 .settings{
-	padding: 0 38px 64px;
+	padding: 0 19px 32px;
 
 	&--notifications{
-		padding: 0 0 64px;
+		padding: 0 0 32px;
 
 		ul{
-			margin: 0 0 44px;
+			margin: 0 0 22px;
 		}
 
 		input[type='submit'] {
-			margin-right: 38px;
+			margin-right: 19px;
 		}
 	}
 
 	ul{
-		margin: 0 0 44px;
+		margin: 0 0 22px;
 	}
 
 	&__item{
 		border-bottom: 1px solid #e5e4e4;
 
 		&--notifications{
-			padding: 52px 38px 20px;
+			padding: 26px 19px 10px;
 		}
 
 		&:last-child{
@@ -30,10 +30,10 @@
 		}
 
 		&-title{
-			margin: 39px 0 19px;
+			margin: 20px 0 10px;
 			display: block;
 			font-family: Roboto-Regular, Arial, sans-serif;
-			font-size: 30px;
+			font-size: $small-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
 			color: #464646;
@@ -42,34 +42,34 @@
 			letter-spacing: 0;
 
 			&--notifications{
-				margin: 39px 0 8px;
-				padding: 0 38px 0;
+				margin: 10px 0 4px;
+				padding: 0 19px 0;
 			}
 		}
 
 		.radio-label{
 			display: inline-block;
 			vertical-align: top;
-			padding: 0 0 0 65px;
-			margin: 0 0 30px;
+			padding: 0 0 0 33px;
+			margin: 0 0 15px;
 		}
 
 		.check-label-tumbler{
 			font-family: OpenSans-Light, Arial, sans-serif;
-			margin: 0 0 39px;
-			padding: 0 75px 0 0;
+			margin: 0 0 20px;
+			padding: 0 38px 0 0;
 		}
 	}
 
 	input[type='text']{
-		margin: 0 0 23px;
+		margin: 0 0 12px;
 		padding: 0;
 		display: block;
 		width: 100%;
 	}
 
 	input[type='password']{
-		margin: 28px 0 23px;
+		margin: 14px 0 12px;
 		display: block;
 		width: 100%;
 
@@ -87,14 +87,14 @@
 	}
 
 	input[type='submit']{
-		width: 337px;
+		width: 169px;
 		float: right;
 	}
 
 	&__select{
 
 		label{
-			padding: 0 0 12px;
+			padding: 0 0 6px;
 			display: block;
 			width: 46%;
 			border-bottom: 1px solid #e5e4e4;
@@ -103,13 +103,13 @@
 			&::after{
 				content: '';
 				position: absolute;
-				bottom: 22px;
+				bottom: 11px;
 				right: 0;
 				width: 0;
 				height: 0;
-				border-top: 17px solid #c2c2c1;
-				border-left: 12px solid transparent;
-				border-right: 12px solid transparent;
+				border-top: 9px solid #c2c2c1;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
 				pointer-events: none;
 			}
 		}
@@ -126,14 +126,14 @@
 		outline: 0;
 		box-shadow: none;
 		margin: 0;
-		padding: 0 24px 0 0;
+		padding: 0 12px 0 0;
 		box-sizing: border-box;
 		background: #fff;
 		display: inline-block;
 		vertical-align: top;
 		width: 100%;
 		font-family: OpenSans-Light, Arial, sans-serif;
-		font-size: 30px;
+		font-size: $small-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #464646;
@@ -148,15 +148,15 @@
 		border-collapse: collapse;
 		border: 0;
 		padding: 0;
-		margin: 19px 0 0;
+		margin: 10px 0 0;
 
 		td{
 			border: 0;
-			padding: 38px 0;
+			padding: 19px 0;
 			vertical-align: top;
 
 			&:first-child{
-				padding-left: 72px;
+				padding-left: 36px;
 				box-sizing: border-box;
 				width: 100%;
 			}
@@ -164,7 +164,7 @@
 			h3{
 				margin: 0 0 13px;
 				font-family: Roboto-Regular, Arial, sans-serif;
-				font-size: 30px;
+				font-size: $small-font-size + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #464646;
@@ -178,11 +178,11 @@
 					&::before{
 						content: '';
 						position: absolute;
-						top: 5px;
-						left: -72px;
+						top: 3px;
+						left: -36px;
 						background: url("../img/tel-icon.svg") no-repeat 0 0;
-						width: 30px;
-						height: 26px;
+						width: 15px;
+						height: 13px;
 					}
 				}
 
@@ -191,18 +191,18 @@
 					&::before{
 						content: '';
 						position: absolute;
-						top: 5px;
-						left: -72px;
+						top: 3px;
+						left: -36px;
 						background: url("../img/mail-icon.svg") no-repeat 0 0;
-						width: 29px;
-						height: 19px;
+						width: 15px;
+						height: 10px;
 					}
 				}
 			}
 
 			span{
 				font-family: OpenSans-Light, Arial, sans-serif, Arial, sans-serif;
-				font-size: 30px;
+				font-size: $small-font-size + px;
 				line-height: 1.2em;
 				font-weight: 400;
 				color: #959595;
@@ -223,12 +223,147 @@
 						content: '';
 						position: absolute;
 						top: 0;
-						right: 13px;
-						width: 21px;
-						height: 40px;
-						border-right: 3px solid #b4d338;
-						border-bottom: 3px solid #b4d338;
+						right: 7px;
+						width: 11px;
+						height: 20px;
+						border-right: 1px solid #b4d338;
+						border-bottom: 1px solid #b4d338;
 						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		padding: 0 38px 64px;
+
+		&--notifications{
+			padding: 0 0 64px;
+
+			ul{
+				margin: 0 0 44px;
+			}
+
+			input[type='submit'] {
+				margin-right: 38px;
+			}
+		}
+
+		ul{
+			margin: 0 0 44px;
+		}
+
+		&__item{
+			border-bottom: 1px solid #e5e4e4;
+
+			&--notifications{
+				padding: 52px 38px 20px;
+			}
+
+			&-title{
+				margin: 39px 0 19px;
+				font-size: $small-font-size * 2 + px;
+
+				&--notifications{
+					margin: 39px 0 8px;
+					padding: 0 38px 0;
+				}
+			}
+
+			.radio-label{
+				padding: 0 0 0 65px;
+				margin: 0 0 30px;
+			}
+
+			.check-label-tumbler{
+				margin: 0 0 39px;
+				padding: 0 75px 0 0;
+			}
+		}
+
+		input[type='text']{
+			margin: 0 0 23px;
+		}
+
+		input[type='password']{
+			margin: 28px 0 23px;
+		}
+
+		input[type='submit']{
+			width: 337px;
+		}
+
+		&__select{
+
+			label{
+				padding: 0 0 12px;
+				border-bottom: 1px solid #e5e4e4;
+
+				&::after{
+					bottom: 22px;
+					border-top: 17px solid #c2c2c1;
+					border-left: 12px solid transparent;
+					border-right: 12px solid transparent;
+				}
+			}
+		}
+
+		select{
+			padding: 0 24px 0 0;
+			font-size: $small-font-size * 2 + px;
+		}
+
+		&__contacts{
+			margin: 19px 0 0;
+
+			td{
+				padding: 38px 0;
+
+				&:first-child{
+					padding-left: 72px;
+				}
+
+				h3{
+					margin: 0 0 13px;
+					font-size: $small-font-size * 2 + px;
+
+					&.tel{
+
+						&::before{
+							top: 5px;
+							left: -72px;
+							width: 30px;
+							height: 26px;
+						}
+					}
+
+					&.mail{
+
+						&::before{
+							top: 5px;
+							left: -72px;
+							width: 29px;
+							height: 19px;
+						}
+					}
+				}
+
+				span{
+					font-size: $small-font-size * 2 + px;
+				}
+
+				a{
+
+					&.confirmed{
+
+						&::before{
+							right: 13px;
+							width: 21px;
+							height: 40px;
+							border-right: 3px solid #b4d338;
+							border-bottom: 3px solid #b4d338;
+						}
 					}
 				}
 			}

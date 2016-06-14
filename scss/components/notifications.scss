@@ -1,73 +1,111 @@
-//notifications
+/*notifications*/
 .notifications{
 
-  &__list{
+	&__list{
 
-    &-item{
-      padding: 18px 27px 20px 161px;
-      border-bottom: 3px solid $button;
-      position: relative;
+		&-item{
+			padding: 9px 14px 10px 81px;
+			border-bottom: 1px solid $button;
+			position: relative;
 
-      &:last-child{
-        border-bottom: none;
-      }
+			&:last-child{
+				border-bottom: none;
+			}
 
-      &::before{
-        content: '';
-        position: absolute;
-        top: 37px;
-        left: 34px;
-        width: 93px;
-        height: 93px;
-        background: url("../img/notification-icon--big.svg") no-repeat 0 0;
-      }
+			&::before{
+				content: '';
+				position: absolute;
+				top: 19px;
+				left: 17px;
+				width: 47px;
+				height: 47px;
+				background: url("../img/notification-icon--big.svg") no-repeat 0 0;
+			}
 
-      &--unread{
+			&--unread{
 
-        &::before{
-          background: url("../img/notification-icon--big-green.svg") no-repeat 0 0;
-        }
-      }
+				&::before{
+					background: url("../img/notification-icon--big-green.svg") no-repeat 0 0;
+				}
+			}
 
-      &-time{
-        display: block;
-        float: left;
-        color: #000;
-        margin-bottom: 17px;
-      }
+			&-time{
+				display: block;
+				float: left;
+				color: #000;
+				margin-bottom: 9px;
+			}
 
-      &-status{
-        display: block;
-        float: right;
-      }
+			&-status{
+				display: block;
+				float: right;
+			}
 
-      &-link{
-        clear: both;
-        display: block;
-        max-height: 68px;
-        margin-bottom: 11px;
-        overflow: hidden;
-        line-height: 1.25em;
-        transition: all .5s;
-      }
+			&-link{
+				clear: both;
+				display: block;
+				max-height: 34px;
+				margin-bottom: 6px;
+				overflow: hidden;
+				line-height: 1.25em;
+				transition: all .5s;
+			}
 
-      &-close{
-        display: none;
-        float: right;
-        color: $light-grey;
-        cursor: pointer;
-        position: relative;
+			&-close{
+				display: none;
+				float: right;
+				color: $light-grey;
+				cursor: pointer;
+				position: relative;
 
-        &::before{
-          content: '';
-          position: absolute;
-          top: 6px;
-          left: -31px;
-          width: 15px;
-          height: 21px;
-          background: url("../img/arrow-up-icon.svg") no-repeat 0 0;
-        }
-      }
-    }
-  }
+				&::before{
+					content: '';
+					position: absolute;
+					top: 3px;
+					left: -16px;
+					width: 8px;
+					height: 11px;
+					background: url("../img/arrow-up-icon.svg") no-repeat 0 0;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+
+		&__list{
+
+			&-item{
+				padding: 18px 27px 20px 161px;
+				border-bottom: 3px solid $button;
+
+				&::before{
+					top: 37px;
+					left: 34px;
+					width: 93px;
+					height: 93px;
+				}
+
+				&-time{
+					margin-bottom: 17px;
+				}
+
+				&-link{
+					max-height: 68px;
+					margin-bottom: 11px;
+				}
+
+				&-close{
+
+					&::before{
+						top: 6px;
+						left: -31px;
+						width: 15px;
+						height: 21px;
+					}
+				}
+			}
+		}
+	}
 }
+/*end of notifications*/

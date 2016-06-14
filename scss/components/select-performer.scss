@@ -4,12 +4,12 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 47px 0 33px;
+	padding: 24px 0 17px;
 	box-sizing: border-box;
-	width: 543px;
-	border-radius: 6px;
+	width: 272px;
+	border-radius: 3px;
 	background: #fff;
-	box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
 	opacity: 0;
 	transition: opacity .5s;
 
@@ -18,9 +18,9 @@
 	}
 
 	&__title{
-		margin: 0 37px 45px;
+		margin: 0 18px 23px;
 		font-family: Roboto-Regular, Arial, sans-serif;
-		font-size: 40px;
+		font-size: $big-font-size-plus + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #000;
@@ -34,18 +34,18 @@
 		&__item{
 
 			&-performer{
-				margin: 0 0 23px;
+				margin: 0 0 12px;
 
 				&-name{
-					margin: 2px 0 0;
-					font-size: 28px;
+					margin: 1px 0 0;
+					font-size: 14px;
 				}
 
 				span{
 					float: right;
-					margin: 59px 55px 0 0;
+					margin: 30px 28px 0 0;
 					font-family: OpenSans-Light, Arial, sans-serif;
-					font-size: 23px;
+					font-size: $smallest-font-size + px;
 					line-height: 1.2em;
 					font-weight: 400;
 					color: #464646;
@@ -56,25 +56,25 @@
 			}
 
 			&-photo{
-				margin: 0 23px 0 38px;
-				width: 75px;
+				margin: 0 12px 0 18px;
+				width: 38px;
 			}
 		}
 
 		&__rating{
-			margin: 9px 0 0;
+			margin: 5px 0 0;
 			float: none;
 
 			div{
-				width: 55px;
+				width: 28px;
 			}
 		}
 	}
 
 	p{
-		margin: 0 37px 50px;
+		margin: 0 18px 25px;
 		font-family: OpenSans-Light, Arial, sans-serif;
-		font-size: 28px;
+		font-size: $smaller-font-size + px;
 		line-height: 1.2em;
 		font-weight: 400;
 		color: #252525;
@@ -84,14 +84,14 @@
 	}
 
 	&__buttons{
-		margin: 0 49px 0;
+		margin: 0 25px 0;
 		text-align: right;
 	}
 
 	&__cancel{
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 55px 0 0;
+		margin: 0 28px 0 0;
 	}
 
 	&__select{
@@ -113,6 +113,64 @@
 
 		&.show{
 			display: block;
+		}
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		padding: 47px 0 33px;
+		width: 543px;
+		border-radius: 6px;
+		box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+
+		&__title{
+			margin: 0 37px 45px;
+			font-size: $big-font-size-plus * 2 + px;
+		}
+
+		.task-offers{
+
+			&__item{
+
+				&-performer{
+					margin: 0 0 23px;
+
+					&-name{
+						margin: 2px 0 0;
+						font-size: 28px;
+					}
+
+					span{
+						margin: 59px 55px 0 0;
+						font-size: $smallest-font-size * 2 + px;
+					}
+				}
+
+				&-photo{
+					margin: 0 23px 0 38px;
+					width: 75px;
+				}
+			}
+
+			&__rating{
+				margin: 9px 0 0;
+
+				div{
+					width: 55px;
+				}
+			}
+		}
+
+		p{
+			margin: 0 37px 50px;
+			font-size: $smaller-font-size * 2 + px;
+		}
+
+		&__buttons{
+			margin: 0 49px 0;
+		}
+
+		&__cancel{
+			margin: 0 55px 0 0;
 		}
 	}
 }
