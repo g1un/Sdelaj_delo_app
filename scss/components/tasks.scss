@@ -1,5 +1,6 @@
 //tasks
 .tasks{
+	padding: 48px 0 0;
 
 	&__title{
 		padding: 10px 0 11px 19px;
@@ -159,6 +160,8 @@
 	}
 
 	@media (min-width: $media-ipad-min + px) {
+		padding: 96px 0 0;
+
 		&__title{
 			padding: 20px 0 22px 38px;
 			border-bottom: 2px solid #E5E4E4;

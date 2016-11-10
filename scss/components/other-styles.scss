@@ -1,0 +1,19 @@
+/*other styles*/
+.ajax-pager-loading {
+	display: block;
+	padding: 50px 0;
+	background: url(../img/wait.gif) no-repeat center center #FFF;
+}
+
+.delete{
+	position:absolute;
+	top:-11px;
+	right:-11px;
+	z-index: 1;
+	width:21px;
+	height:21px;
+	background:url(../img/delete.png) 0 0 no-repeat #fff;
+	border-radius:50%;
+	border:1px solid #616161;
+}
+/*end of other styles*/

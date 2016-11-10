@@ -60,6 +60,18 @@
 				background: url("../img/lock-icon--grey.svg") no-repeat 0 0;
 			}
 		}
+
+		&--name{
+			margin: 0 0 36px;
+
+			&::before{
+				top: 0;
+				left: 0;
+				width: 17px;
+				height: 21px;
+				background: url("../img/profile-icon--light.svg") no-repeat 0 0;
+			}
+		}
 	}
 
 	&__input-text{

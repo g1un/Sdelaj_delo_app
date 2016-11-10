@@ -1,12 +1,13 @@
 /*score*/
 .score{
-	padding: 21px 0 0;
+	padding: 80px 0 0;
 
 	&__balance{
 		margin: 0 0 17px;
 		padding: 0 19px 0;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		&-title{
 			margin: 0;
@@ -109,22 +110,51 @@
 		&__item{
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 			margin: 0;
 			padding: 11px 18px 12px 19px;
 			border-top: 1px solid #f2f2f2;
 			
 			&-icon{
-				margin: 7px 15px 0 0;
-				width: 21px;
+				margin: 0 15px 0 0;
 				min-width: 21px;
 				height: 21px;
+				background: url("../img/cancel-icon.svg") no-repeat 0 0;
+				background-size: 100%;
 
-				&--minus{
-					background: url("../img/minus-icon.svg") no-repeat 0 0;
+				&--draft{
+					background: url("../img/draft-icon.svg") no-repeat 0 0;
+					background-size: 100%;
 				}
 
-				&--check{
-					background: url("../img/check-icon.svg") no-repeat 0 0;
+				&--moderate{
+					background: url("../img/moderate-icon.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&--new{
+					background: url("../img/new-icon.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&--process{
+					background: url("../img/process-icon.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&--moderatefail{
+					background: url("../img/moderatefail-icon.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&--finish{
+					background: url("../img/finish-icon.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&--timeout{
+					background: url("../img/timeout-icon.svg") no-repeat 0 0;
+					background-size: 100%;
 				}
 			}
 
@@ -146,7 +176,6 @@
 				min-width: 125px;
 				padding: 0 0 0 5px;
 				box-sizing: border-box;
-				margin: 6px 0 0;
 				font-family: Roboto-Regular, Arial, sans-serif;
 				font-size: $big-font-size + px;
 				line-height: 1.2em;
@@ -289,7 +318,7 @@
 	}
 
 	@media (min-width: $media-ipad-min + px) {
-		padding: 42px 0 0;
+		padding: 160px 0 0;
 
 		&__balance{
 			margin: 0 0 34px;
@@ -352,8 +381,7 @@
 				border-top: 3px solid #f2f2f2;
 
 				&-icon{
-					margin: 14px 29px 0 0;
-					width: 42px;
+					margin: 0 29px 0 0;
 					min-width: 42px;
 					height: 42px;
 				}
@@ -365,7 +393,6 @@
 				&-price{
 					min-width: 250px;
 					padding: 0 0 0 10px;
-					margin: 12px 0 0;
 					font-size: $big-font-size * 2 + px;
 
 					span{

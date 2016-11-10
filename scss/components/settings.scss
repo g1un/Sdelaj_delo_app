@@ -113,34 +113,41 @@
 				pointer-events: none;
 			}
 		}
+
+		&--fullwidth{
+
+			label{
+				width: 100%;
+			}
+		}
+
+		select{
+			appearance: none;
+			border: 0;
+			outline: 0;
+			box-shadow: none;
+			margin: 0;
+			padding: 0 12px 0 0;
+			box-sizing: border-box;
+			background: #fff;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			font-family: OpenSans-Light, Arial, sans-serif;
+			font-size: $small-font-size + px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			cursor: pointer;
+		}
 	}
 
 	&__wrapper{
 		display: flex;
 		justify-content: space-between;
-	}
-
-	select{
-		appearance: none;
-		border: 0;
-		outline: 0;
-		box-shadow: none;
-		margin: 0;
-		padding: 0 12px 0 0;
-		box-sizing: border-box;
-		background: #fff;
-		display: inline-block;
-		vertical-align: top;
-		width: 100%;
-		font-family: OpenSans-Light, Arial, sans-serif;
-		font-size: $small-font-size + px;
-		line-height: 1.2em;
-		font-weight: 400;
-		color: #464646;
-		text-transform: none;
-		text-decoration: none;
-		letter-spacing: 0;
-		cursor: pointer;
 	}
 
 	&__contacts{

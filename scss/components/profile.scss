@@ -127,7 +127,7 @@
 			
 			&-title{
 				margin: 0 20px 5px 19px;
-				padding: 13px 0 13px 11px;
+				padding: 13px 25px 13px 11px;
 				background: #f4f4f4;
 				font-family: OpenSans-Regular, Arial, sans-serif;
 				font-size: $small-font-size + px;
@@ -194,7 +194,7 @@
 
 				&-title{
 					margin: 0 39px 10px 37px;
-					padding: 25px 0 26px 21px;
+					padding: 25px 50px 26px 21px;
 					font-size: $small-font-size * 2 + px;
 
 					&::after{
@@ -325,10 +325,10 @@
 
 	&__hire{
 		margin: 0 auto 0;
-		width: 646px;
+		width: 290px;
 
 		@media (min-width: $media-ipad-min + px) {
-			width: 323px;
+			width: 580px;
 		}
 	}
 
@@ -450,10 +450,10 @@
 	}
 
 	&-individual{
-		padding: 17px 0 32px;
+		padding: 65px 0 32px;
 
 		@media (min-width: $media-ipad-min + px) {
-			padding: 33px 0 64px;
+			padding: 129px 0 64px;
 		}
 	}
 
@@ -462,10 +462,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 221px;
-		height: 221px;
+		width: 241px;
+		height: 241px;
 		border-radius: 50%;
-		background: #fafaf8;
 		font-size: 0;
 		line-height: 0;
 		position: relative;
@@ -492,6 +491,11 @@
 			background: url("../img/star-icon.svg") no-repeat 0 0;
 			width: 25px;
 			height: 24px;
+		}
+
+		&[data-behavior="avatar-moderate"]{
+			opacity: .6;
+			position: relative;
 		}
 	}
 
@@ -643,6 +647,9 @@
 
 		p{
 			margin: 14px 0 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			word-wrap: break-word;
 		}
 	}
 

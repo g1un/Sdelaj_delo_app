@@ -1,4 +1,4 @@
-//side-menu
+/*side-menu*/
 .side-menu{
 	display: none;
 	position: absolute;
@@ -52,8 +52,15 @@
 			}
 		}
 
+		&-wrapper{
+			margin: 0 0 8px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
 		&-photo{
-			margin: 0 0 8px 7px;
+			margin: 0 0 0 7px;
 			width: 48px;
 			height: 48px;
 			border-radius: 50%;
@@ -70,10 +77,74 @@
 			font-size: $small-font-size + px;
 			line-height: 1.2em;
 			font-weight: 400;
-			color: $dirty-sand;
+			color: #000;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+		}
+
+		&-city{
+			margin: 0 0 0 25px;
+			padding: 0 50px 0 30px;
+			position: relative;
+
+			&::before{
+				content: '';
+				position: absolute;
+				top: 9px;
+				left: 0;
+				background: url("../img/address-icon--dirty-sand.svg") no-repeat 0 0;
+				width: 16px;
+				height: 16px;
+			}
+
+			p{
+				margin: 0 35px 0 0;
+				font-family: $roboto;
+				font-size: $smaller-font-size + px;
+				line-height: 33px;
+				font-weight: 400;
+				color: $dirty-sand;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.action-button{
+				float: right;
+			}
+
+			&-list{
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 50px;
+				z-index: 1;
+				background: #fff;
+				border-radius: 2px;
+				box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+				overflow: hidden;
+
+				li{
+					padding: 10px;
+					font-family: $open-sans;
+					font-size: $smaller-font-size-plus + px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: $dark;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					cursor: pointer;
+
+					&:hover{
+						background: $button;
+					}
+				}
+			}
 		}
 	}
 
@@ -81,7 +152,7 @@
 		background: #fff;
 
 		&-link{
-			padding: 20px 0 20px 55px;
+			padding: 20px 50px 20px 55px;
 			display: flex;
 			justify-content: space-between;
 			align-items: baseline;
@@ -100,7 +171,7 @@
 			}
 
 			&-number{
-				margin: 0 22px 0 0;
+				margin: 0;
 				padding: 0 5px;
 				display: block;
 				box-sizing: border-box;
@@ -230,8 +301,12 @@
 				}
 			}
 
+			&-wrapper{
+				margin: 0 0 16px;
+			}
+
 			&-photo{
-				margin: 0 0 16px 14px;
+				margin: 0 0 0 14px;
 				width: 96px;
 				height: 96px;
 			}
@@ -240,16 +315,44 @@
 				margin: 0 0 0 20px;
 				font-size: $small-font-size * 2 + px;
 			}
+
+			&-city{
+				margin: 0 0 0 50px;
+				padding: 0 100px 0 60px;
+
+				&::before{
+					top: 17px;
+					width: 32px;
+					height: 32px;
+				}
+
+				p{
+					margin: 0 70px 0 0;
+					font-size: $smaller-font-size * 2 + px;
+					line-height: 66px;
+				}
+
+				&-list{
+					right: 100px;
+					border-radius: 4px;
+					box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+
+					li{
+						padding: 20px;
+						font-size: 2 * $smaller-font-size-plus + px;
+					}
+				}
+			}
 		}
 
 		&__list{
 
 			&-link{
-				padding: 40px 0 40px 110px;
+				padding: 40px 100px 40px 110px;
 				font-size: $big-font-size * 2 + px;
 
 				&-number{
-					margin: 0 44px 0 0;
+					margin: 0;
 					padding: 0 10px;
 					font-size: $smallest-font-size-minus * 2 + px;
 				}
@@ -317,3 +420,4 @@
 		}
 	}
 }
+/*end of side-menu*/

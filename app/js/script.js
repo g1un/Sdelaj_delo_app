@@ -566,3 +566,26 @@ if(document.querySelector('.task-header')){
 	};
 }
 /*end of about-page content height*/
+
+/*side-menu__footer-city-list*/
+if($('.side-menu__footer-city-list').length){
+	$('.side-menu__footer-city .action-button').on('click', function(e){
+		e.preventDefault();
+		$('.side-menu__footer-city-list').show();
+	});
+
+	$(window).mousedown(function (e) {
+		var clicked = $(e.target);
+		if (clicked.is('.side-menu__footer-city-list') || clicked.closest('.side-menu__footer-city-list').length) {
+			return;
+		} else {
+			$('.side-menu__footer-city-list').hide();
+		}
+	});
+
+	$('.side-menu__footer-city-list li').on('click', function () {
+		$('.side-menu__footer-city p').text($(this).text());
+		$('.side-menu__footer-city-list').hide();
+	});
+}
+/*end of side-menu__footer-city-list*/

@@ -45,6 +45,11 @@
 	letter-spacing: .045em;
 	text-align: center;
 
+	a{
+		color: #fff;
+		text-decoration: underline;
+	}
+
 	&:hover{
 		background: #e9a722;
 	}
@@ -122,8 +127,17 @@
 		color: #f3bc2f;
 	}
 
+	&__group{
+		padding-top: 20px;
+		text-align: right;
+	}
+
 	@media (min-width: $media-ipad-min + px) {
 		font-size: $small-font-size * 2 + px;
+
+		&__group{
+			padding-top: 40px;
+		}
 	}
 }
 /*end of buttons*/

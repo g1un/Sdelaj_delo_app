@@ -1,0 +1,226 @@
+/*task-window*/
+.task-window{
+	margin: 48px auto 0;
+	padding: 25px;
+	box-sizing: border-box;
+	width: 290px;
+	border-radius: 3px;
+	background: #fff;
+	font-family: Roboto-Regular, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #464646;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+
+	a{
+		color: #464646;
+		text-decoration: underline;
+	}
+
+	h3{
+		margin: 5px 0;
+		font-family: Roboto-Regular, Arial, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	input[type='text'],
+	input[type='password'],
+	textarea{
+		@extend .input-text;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #e5e4e4;
+	}
+
+	input[type='checkbox'],
+	input[type='radio']{
+		margin: 0 5px 0 0;
+	}
+
+	input[type='button'],
+	input[type='submit']{
+		@extend .grey-button;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	select{
+		margin-bottom: 10px;
+		padding: 0 12px 12px 0;
+		border: 0;
+		border-bottom: 1px solid #e5e4e4;
+		appearance: none;
+		outline: 0;
+		box-shadow: none;
+		box-sizing: border-box;
+		background: #fff;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		font-family: OpenSans-Light, Arial, sans-serif;
+		font-size: $small-font-size + px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #464646;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		cursor: pointer;
+	}
+
+	&__wrapper{
+		padding: 10px;
+		box-sizing: border-box;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.25);
+		opacity: 0;
+		transition: opacity .5s;
+	}
+
+	&__title{
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	&__item{
+		margin: 0 0 20px;
+		padding: 0 0 6px;
+	}
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	input[name='addBeforeAfterPhoto']:checked ~ .task-window__photo{
+		display: block;
+	}
+
+	&__photo{
+		display: none;
+		font-size: 0;
+
+		&-item{
+			margin: 10px 0;
+			display: inline-block;
+			vertical-align: top;
+			width: 47.5%;
+
+			&:first-child{
+				margin-right: 5%;
+			}
+		}
+
+		.grey-button{
+			margin: 10px 0 0;
+			font-size: $smallest-font-size-minus + px;
+
+			input{
+				display: none;
+			}
+		}
+
+		&-list{
+
+			li{
+				margin: 10px 0 0;
+				width: 100%;
+				position: relative;
+
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+
+	&__buttons{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (min-width: $media-ipad-min + px) {
+		margin: 96px auto 0;
+		padding: 50px;
+		width: 580px;
+		border-radius: 5px;
+		font-size: 30px;
+
+		h3{
+			margin: 10px 0;
+			font-size: 36px;
+		}
+
+		input[type='text'],
+		input[type='password'],
+		textarea{
+			margin-bottom: 20px;
+		}
+
+		input[type='checkbox'],
+		input[type='radio']{
+			margin: 0 10px 0 0;
+		}
+
+		input[type='button'],
+		input[type='submit']{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		select{
+			margin-bottom: 20px;
+			padding: 0 24px 24px 0;
+			font-size: 2 * $small-font-size + px;
+		}
+
+		&__wrapper{
+			padding: 20px;
+			min-height: calc(100% - 96px);
+		}
+
+		&__title{
+			margin: 0 0 20px;
+		}
+
+		&__item{
+			margin: 0 0 40px;
+			padding: 0 0 12px;
+		}
+
+		.grey-button {
+			margin: 20px 0 0;
+			font-size: 2 * $smallest-font-size-minus + px;
+		}
+
+		&__photo{
+
+			&-item{
+				margin: 20px 0;
+			}
+
+			&-list{
+
+				li{
+					margin: 20px 0 0;
+				}
+			}
+		}
+	}
+}
+/*end of task-window*/
